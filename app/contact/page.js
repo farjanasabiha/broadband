@@ -4,7 +4,8 @@ import Header from '../Components/Header';
 const page = () => {
     return (
         <div>
-            <Header header={eefggf}/>
+            <Header header={eefggf} />
+            <h1>This is headser</h1>
         </div>
     );
 };
