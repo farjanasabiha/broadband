@@ -22,8 +22,7 @@ const Services = () => {
               No loading on any social media, video streaming, etc.
             </p>
             <div className="text-center mx-auto">
-
-
+              <MdSocialDistance className="text-4xl  mx-auto text-center text-[#ff0033]" />
             </div>
           </div>
 
