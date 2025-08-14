@@ -11,21 +11,23 @@ import HappyClientsSection from "./Components/Home/HappyClientsSection";
 import PricingCard from "./Components/Home/PricingCard";
 import Navbar from "./Components/Common/Navbar/Navbar";
 import Footer from "./Components/Common/Footer/Footer";
+import TopBar from "./Components/Common/Navbar/TopBar";
 export default function Home() {
   return (
-    <ReactLenis root>
-      <main className='space-y-20'>
-        <Navbar/>
+    <ReactLenis root data-theme="none">
+      <main className="space-y-20">
+        <TopBar />
+        <Navbar />
         <HomeHeader />
         <HomeSlider />
         <Network />
         <Services />
-        <VideoAndServicesOne/>
-        <VideoAndServicesTwo/>
-        <SpeedLanding/>
-        <HappyClientsSection/>
-        <PricingCard/>
-        <Footer/>
+        <VideoAndServicesOne />
+        <VideoAndServicesTwo />
+        <SpeedLanding />
+        <HappyClientsSection />
+        <PricingCard />
+        <Footer />
       </main>
     </ReactLenis>
   );
