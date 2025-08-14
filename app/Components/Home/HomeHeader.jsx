@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-
+import { FaArrowRightLong } from "react-icons/fa6";
 const HomeHeader = () => {
   return (
     <div className="container mx-auto px-5  py-28">
@@ -11,13 +11,12 @@ const HomeHeader = () => {
         <p className="text-lg font-normal text-[#b2b5af]">
           You have never experienced internet speed like this before.
         </p>
-        <div>
-          <Link
-            className="rounded-4xl  text-[16px] bg-secondary py-3 px-8 font-semibold "
-            href="#"
-          >
-            Check Experience
-          </Link>
+        <div className="text-center mx-auto">
+          <button className="py-3 px-6 rounded-3xl font-medium bg-gradient-to-b from-[#ff0033] to-[#bd556a63]">
+            <div className="flex items-center text-medium justify-between gap-2">
+              <span>Check Experience</span> <FaArrowRightLong />
+            </div>
+          </button>
         </div>
       </div>
     </div>
