@@ -10,7 +10,7 @@ const TopBar = () => {
 
   return (
     <div className="bg-[#5e731f] text-black text-sm py-2 px-4 mb-0">
-      <div className=" container max-w-6xl mx-auto flex justify-end md:justify-between items-center">
+      <div className="container max-w-6xl mx-auto flex justify-end md:justify-between items-center">
         {/* Left Side: Contact Info */}
         <div className="hidden md:block ">
           <div className="flex items-center space-x-6 ">
@@ -35,9 +35,8 @@ const TopBar = () => {
             </div>
           </div>
         </div>
-
         {/* Right Side: Language Selector */}
-        <div className="dropdown dropdown-end">
+        <div className="dropdown dropdown-end ">
           <div
             tabIndex={0}
             role="button"
@@ -97,5 +96,4 @@ const TopBar = () => {
     </div>
   );
 };
-
 export default TopBar;

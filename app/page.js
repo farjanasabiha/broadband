@@ -12,6 +12,7 @@ import PricingCard from "./Components/Home/PricingCard";
 import Navbar from "./Components/Common/Navbar/Navbar";
 import Footer from "./Components/Common/Footer/Footer";
 import TopBar from "./Components/Common/Navbar/TopBar";
+import SpeedTest from "./Components/Home/SpeedTest";
 export default function Home() {
   return (
     <ReactLenis root data-theme="none">
@@ -20,6 +21,7 @@ export default function Home() {
         <Navbar />
         <HomeHeader />
         <HomeSlider />
+        <SpeedTest />
         <Network />
         <Services />
         <VideoAndServicesOne />

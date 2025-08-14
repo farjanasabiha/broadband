@@ -10,8 +10,4 @@ module.exports = {
     extend: {},
   },
   plugins: [require("daisyui")],
-  daisyui: {
-    themes: false, // ⛔️ This turns off automatic theme styling
-    logs: false, // Optional: suppress DaisyUI logs
-  },
 };
