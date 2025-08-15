@@ -28,7 +28,7 @@ const PricingCard = () => {
         {
           text: "Up to 20 Mbps Internet (1:10 Ratio)",
         },
-        {  text: "IPv4 Public IP" },
+        { text: "IPv4 Public IP" },
         {
           text: "Basic BDIX FTP Servers",
         },
@@ -146,28 +146,24 @@ const PricingCard = () => {
             Most Popular Package
           </h2>
 
-              <div className="flex items-center justify-center">
-      <div className="flex items-center w-40"> {/* limit total width */}
-        {/* Left Line */}
-        <div className="flex-1 border-t border-[#bd2335]"></div>
-
-        {/* Star Icon */}
-        <div className="mx-2 text-[#bd2335]">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            viewBox="0 0 24 24"
-            className="w-6 h-6"
-          >
-            <path d="M12 2l2.39 6.9h7.27l-5.88 4.27 2.39 6.9L12 15.8l-5.88 4.27 2.39-6.9L2.63 8.9h7.27L12 2z" />
-          </svg>
-        </div>
-
-        {/* Right Line */}
-        <div className="flex-1 border-t border-[#bd2335]"></div>
-      </div>
-    </div>
-
+          <div className="flex items-center justify-center">
+            <div className="flex items-center w-40">
+              <div className="flex-1 border-t border-[#bd2335]"></div>
+              {/* Star Icon */}
+              <div className="mx-2 text-[#bd2335]">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  className="w-6 h-6"
+                >
+                  <path d="M12 2l2.39 6.9h7.27l-5.88 4.27 2.39 6.9L12 15.8l-5.88 4.27 2.39-6.9L2.63 8.9h7.27L12 2z" />
+                </svg>
+              </div>
+              {/* Right Line */}
+              <div className="flex-1 border-t border-[#bd2335]"></div>
+            </div>
+          </div>
         </div>
 
         {/* Pricing Cards Grid */}
@@ -188,12 +184,12 @@ const PricingCard = () => {
                       </div>
                     </div>
 
-                      <div className="text-2xl lg:text-3xl xl:text-4xl font-medium">
-                        {plan.price}
-                      </div>
-                      <div className=''>
-                        <GrSchedulePlay className='h-17 w-17 mx-auto text-center text-[#bd2335]' />
-                      </div>
+                    <div className="text-2xl lg:text-3xl xl:text-4xl font-medium">
+                      {plan.price}
+                    </div>
+                    <div className="">
+                      <GrSchedulePlay className="h-17 w-17 mx-auto text-center text-[#bd2335]" />
+                    </div>
                   </div>
                   {/* Features */}
                   <div className="space-y-3 mb-8 flex-grow col-span-6">

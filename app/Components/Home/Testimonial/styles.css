@@ -1,0 +1,58 @@
+#app {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  font-family:
+    Helvetica Neue,
+    Helvetica,
+    Arial,
+    sans-serif;
+  font-size: 14px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: linear-gradient(to top, #ff00333a, #bd556a1f);
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* Make Swiper navigation arrows larger */
+.swiper-button-next,
+.swiper-button-prev {
+  width: 50px;           /* button area size */
+  height: 50px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 24px;       /* actual arrow size */
+  font-weight: bold;     /* make arrow thicker */
+}
