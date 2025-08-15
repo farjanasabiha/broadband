@@ -3,7 +3,7 @@ import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 const HomeHeader = () => {
   return (
-    <div className="container mx-auto px-5  py-28">
+    <div className="container mx-auto px-5  pb-28">
       <div className="text-center space-y-10">
         <h1 className="font-medium text-8xl text-white">
           Upgrade Your <br /> Internet Experience

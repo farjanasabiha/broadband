@@ -3,7 +3,7 @@ import React from "react";
 
 const Network = () => {
   return (
-    <div className=" container max-w-6xl  mx-auto  px-5">
+    <div className="container max-w-6xl mx-auto px-5">
       <div className="py-28">
         <h1 className="text-[40px] font-semibold text-center  bg-gradient-to-r from-[#ff0033] to-[#f39f5a] bg-clip-text text-transparent pb-8">
           Asian Networ
