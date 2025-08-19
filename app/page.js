@@ -9,8 +9,8 @@ import VideoAndServicesTwo from "./Components/Home/VideoAndServicesTwo";
 import SpeedLanding from "./Components/Home/SpeedLanding";
 import HappyClientsSection from "./Components/Home/HappyClientsSection";
 import PricingCard from "./Components/Home/PricingCard";
-// import TopBar from "./Components/Common/Navbar/TopBar";
-// import Navbar from "./Components/Common/Navbar/Navbar";
+import TopBar from "./Components/Common/Navbar/TopBar";
+import Navbar from "./Components/Common/Navbar/Navbar";
 import Footer from "./Components/Common/Footer/Footer";
 
 import CTA from "./Components/Common/CTA";
@@ -20,23 +20,25 @@ import Testimonial from "./Components/Home/Testimonial/Testimonial";
 export default function Home() {
   return (
     <ReactLenis root data-theme="none">
-      <main className="space-y-24 font-sf">
-        {/* <TopBar />
-        <Navbar /> */}
-        <HomeHeader />
-        <HomeSlider />
-        <SpeedTest />
-        <Network />
-        <Services />
-        <VideoAndServicesOne />
-        <VideoAndServicesTwo />
-        <SpeedLanding />
-        <PricingCard />
-        <HappyClientsSection />
-        <Testimonial />
-        <CTA />
-        <FAQ />
-        <Footer />
+      <main className="font-sf">
+        <TopBar />
+        <Navbar />
+        <div className="space-y-24">
+          <HomeHeader />
+          <HomeSlider />
+          <SpeedTest />
+          <Network />
+          <Services />
+          <VideoAndServicesOne />
+          <VideoAndServicesTwo />
+          <SpeedLanding />
+          <PricingCard />
+          <HappyClientsSection />
+          <Testimonial />
+          <CTA />
+          <FAQ />
+          <Footer />
+        </div>
       </main>
     </ReactLenis>
   );

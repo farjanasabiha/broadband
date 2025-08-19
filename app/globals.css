@@ -6,20 +6,20 @@
   --color-secondary: #ae445a;
   --color-tertiary: #f39f5a;
   --color-dark: #1d1a39;
-  --font-sf: 'SF Pro', sans-serif;
+  --font-sf: "SF Pro", sans-serif;
 }
 
 @font-face {
-  font-family: 'SF Pro';
-  src: url('/fonts/sf-pro/SF-Pro-Display-Regular.otf') format('opentype');
+  font-family: "SF Pro";
+  src: url("/fonts/sf-pro/SF-Pro-Display-Regular.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'SF Pro';
-  src: url('/fonts/sf-pro/SF-Pro-Display-Bold.otf') format('opentype');
+  font-family: "SF Pro";
+  src: url("/fonts/sf-pro/SF-Pro-Display-Bold.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
