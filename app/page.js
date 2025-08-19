@@ -19,8 +19,8 @@ import SpeedTest from "./Components/Home/SpeedTest";
 import Testimonial from "./Components/Home/Testimonial/Testimonial";
 export default function Home() {
   return (
-    <ReactLenis root data-theme="none">
-      <main className="font-sf">
+    <ReactLenis root data-theme="dark">
+      <main className="font-sf bg-black">
         <TopBar />
         <Navbar />
         <div className="space-y-24">
