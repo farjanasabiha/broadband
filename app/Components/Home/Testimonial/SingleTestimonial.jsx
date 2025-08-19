@@ -10,7 +10,7 @@ const SingleTestimonial = ({
 }) => {
   return (
     <div className="">
-      <div className="px-20">
+      <div className="px-5 md:px-10 lg:px-20">
         <div className="grid gris-cols-1 md:grid-cols-2 gap-10 items-center  py-10">
           {/* Left Section */}
           <div className="relative overflow-hidden text-center  space-y-4">

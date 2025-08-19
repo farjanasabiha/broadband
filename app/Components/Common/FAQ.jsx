@@ -40,11 +40,13 @@ export default function FAQSection() {
           {/* Left Side - FAQ Content */}
           <div className="order-2 lg:order-1">
             <div className="text-left mb-8">
-              <h1 className="text-4xl lg:text-6xl xl:text-[35px] font-semibold mb-3 text-white">
-                Your Queries
-                <br />
-                Our Solution
-              </h1>
+                        <h1 className="text-3xl md:text-4xl leading-snug font-medium mb-6">
+            Your Queries
+            <br />
+            <span className="bg-gradient-to-r from-[#ff0033] to-[#f39f5a] bg-clip-text text-transparent">
+              Our Solution
+            </span>
+          </h1>
             </div>
 
             <div className="space-y-4">
@@ -93,7 +95,7 @@ export default function FAQSection() {
               width={500}
               height={500}
               alt="FAQ"
-              className="object-cover group-hover:scale-105 transition-transform duration-500 rounded-full"
+              className="object-cover h-full w-full group-hover:scale-105 transition-transform duration-500 rounded-full"
             />
           </div>
         </div>

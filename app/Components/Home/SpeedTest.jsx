@@ -29,7 +29,7 @@ const SpeedTest = () => {
           />
         </div>
       </div>
-      <div>
+      {/* <div>
         Provided by{" "}
         <a
           href="https://www.meter.net"
@@ -39,7 +39,7 @@ const SpeedTest = () => {
         >
           Meter.net
         </a>
-      </div>
+      </div> */}
     </div>
   );
 };

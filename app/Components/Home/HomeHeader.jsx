@@ -1,11 +1,10 @@
-import Link from "next/link";
 import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 const HomeHeader = () => {
   return (
-    <div className="container mx-auto px-5  pb-28">
-      <div className="text-center space-y-10">
-        <h1 className="font-medium text-8xl text-white">
+    <div className="container mx-auto px-5 py-20 lg:py-28">
+      <div className="text-center space-y-5 lg:space-y-10">
+        <h1 className="font-medium text-4xl md:text-5xl lg:text-8xl text-white leading-relaxed">
           Upgrade Your <br /> Internet Experience
         </h1>
         <p className="text-lg font-normal text-[#b2b5af]">

@@ -64,10 +64,10 @@ const SpeedLanding = () => {
   return (
     <div className="min-h-screen bg-black   container max-w-6xl  mx-auto  px-5 overflow-hidden">
       {/* Main Container */}
-      <div className="container mx-auto px-4 py-8 lg:py-16">
+      <div className="container mx-auto px-4">
         {/* Header Section */}
         <div className="text-left">
-          <h1 className="text-4xl lg:text-6xl xl:text-[35px] font-semibold mb-6 lg:mb-8">
+          <h1 className="text-3xl md:text-4xl leading-snug font-medium mb-6 lg:mb-8">
             Get in the Era of
             <br />
             <span className="bg-gradient-to-r from-[#ff0033] to-[#f39f5a] bg-clip-text text-transparent">
@@ -127,7 +127,7 @@ const SpeedLanding = () => {
 
         <div className=" mb-10">
           {/* Description */}
-          <div className="pt-8 flex items-center justify-between gap-16">
+          <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-16">
             <p className="text-[#b2b5af] leading-relaxed">
               Whatever you are doing, it will give you the best feeling that
               solves your tasks and gives you nothing less online experience
@@ -142,7 +142,7 @@ const SpeedLanding = () => {
         </div>
 
         {/* Stats Section */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 pt-10 lg:pt-20">
           {/* Stat 1 */}
           <div className="text-center group">
             <div className=" flex items-center justify-center mb-5">
@@ -154,7 +154,7 @@ const SpeedLanding = () => {
                 className="w-8 h-8 lg:w-16 lg:h-16 text-white"
               />
             </div>
-            <div className="text-2xl lg:text-3xl font-bold text-primary mb-2">
+            <div className="text-2xl lg:text-3xl font-bold text-white mb-2">
               5000+
             </div>
             <div className="text-gray-400 text-sm lg:text-base">Users</div>
@@ -171,7 +171,7 @@ const SpeedLanding = () => {
                 className="w-8 h-8 lg:w-16 lg:h-16 text-white"
               />
             </div>
-            <div className="text-2xl lg:text-3xl font-bold text-primary mb-2">
+            <div className="text-2xl lg:text-3xl font-bold text-white mb-2">
               5
             </div>
             <div className="text-gray-400 text-sm lg:text-base">Locations</div>
@@ -188,7 +188,7 @@ const SpeedLanding = () => {
                 className="w-8 h-8 lg:w-16 lg:h-16 text-white"
               />
             </div>
-            <div className="text-2xl lg:text-3xl font-bold text-primary mb-2">
+            <div className="text-2xl lg:text-3xl font-bold text-white mb-2">
               24/7
             </div>
             <div className="text-gray-400 text-sm lg:text-base">Support</div>
@@ -205,7 +205,7 @@ const SpeedLanding = () => {
                 className="w-8 h-8 lg:w-16 lg:h-16 text-white"
               />
             </div>
-            <div className="text-2xl lg:text-3xl font-bold text-primary mb-2">
+            <div className="text-2xl lg:text-3xl font-bold text-white mb-2">
               130
             </div>
             <div className="text-gray-400 text-sm lg:text-base">Countries</div>

@@ -8,14 +8,14 @@ const Services = () => {
     <section className="   container max-w-6xl  mx-auto  px-5">
       <div className="bg-black text-white">
         {/* Title */}
-        <h2 className="text-3xl font-medium text-left leading-snug mb-12">
+        <h2 className="text-3xl md:text-4xl font-medium text-left leading-snug mb-12">
           It’s a Beast for <br />{" "}
           <span className="text-white">Day to Day Heavy Use</span>
         </h2>
 
-        <div className="flex flex-col md:flex-row items-center justify-between gap-14">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-14">
           {/* Left Box */}
-          <div className="bg-gradient-to-t from-[#ff00333a] to-[#bd556a1f] rounded-2xl p-6 text-center w-72">
+          <div className="bg-gradient-to-t from-[#ff00333a] to-[#bd556a1f] rounded-2xl p-6 text-center w-full md:w-72">
             <h3 className="bg-gradient-to-r from-[#ff0033] to-[#f39f5a] bg-clip-text text-transparent text-[32px] font-normal mb-3">
               Powerful
             </h3>
@@ -40,7 +40,7 @@ const Services = () => {
           </div>
 
           {/* Right Box */}
-          <div className="bg-gradient-to-t from-[#ff00333a] to-[#bd556a1f] rounded-2xl p-6 text-center w-72">
+          <div className="bg-gradient-to-t from-[#ff00333a] to-[#bd556a1f] rounded-2xl p-6 text-center  w-full md:w-72">
             <div>
               <h3 className="bg-gradient-to-r from-[#ff0033] to-[#f39f5a] bg-clip-text text-transparent text-[32px] font-normal mb-3">
                 Buffer-less
@@ -57,8 +57,8 @@ const Services = () => {
 
         {/* Bottom Box */}
         <div className="w-full mx-auto text-center flex items-center justify-center">
-          <div className="flex justify-center mt-12 bg-gradient-to-t from-[#ff00333a] to-[#bd556a1f] rounded-2xl p-6 text-center w-[540px]">
-            <div className="flex items-center justify-betweeen gap-14">
+          <div className="flex justify-center mt-6 bg-gradient-to-t from-[#ff00333a] to-[#bd556a1f] rounded-2xl p-6 text-center w-full md:w-[540px]">
+            <div className="flex flex-col md:flex-row items-center justify-betweeen gap-14">
               <div className="space-y-5">
                 <h3 className="bg-gradient-to-r from-[#ff0033] to-[#f39f5a] bg-clip-text text-transparent text-[32px] font-normal mb-3 text-center mx-auto">
                   BDIX FTP Servers

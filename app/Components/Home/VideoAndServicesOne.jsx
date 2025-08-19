@@ -7,13 +7,13 @@ const VideoAndServicesOne = () => {
       <section className=" container max-w-6xl  mx-auto  px-5">
         <div className="">
           {/* Title */}
-          <h2 className="text-3xl font-medium text-left leading-snug mb-12">
+          <h2 className="text-3xl md:text-4xl font-medium text-left leading-snug mb-12">
             It’s a Beast for <br />{" "}
             <span className="text-white">Day to Day Heavy Use</span>
           </h2>
           <div className="w-full aspect-video mb-10">
             <iframe
-              className="w-full h-[600px] rounded-lg shadow-lg"
+              className="w-full h-full lg:h-[600px] rounded-lg shadow-lg"
               src="https://www.youtube.com/embed/dQw4w9WgXcQ"
               title="YouTube video player"
               frameBorder="0"
@@ -22,80 +22,80 @@ const VideoAndServicesOne = () => {
             ></iframe>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center justify-between">
-            <div className="lg:col-span-5 lg:pr-10">
-              <p className="text-[18px] font-normal text-[#b2b5af] pb-5">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start justify-between mt-10 lg:mt-24">
+            {/* Left Content */}
+            <div className="col-span-12 lg:col-span-5 lg:pr-10">
+              <p className="text-base md:text-[18px] font-normal text-[#b2b5af] pb-5 leading-relaxed">
                 Asian Network is designed to solve gamer’s{" "}
                 <span className="font-medium bg-gradient-to-r from-[#ff0033] to-[#f39f5a] bg-clip-text text-transparent">
                   subconscious pain
                 </span>{" "}
                 by reducing lags & Increasing FPS and other game-related stuff.
               </p>
-              <p className="text-[18px] font-normal text-[#b2b5af]  pb-5">
+              <p className="text-base md:text-[18px] font-normal text-[#b2b5af] pb-5 leading-relaxed">
                 That makes gaming more detailed graphic performance{" "}
                 <span className="font-medium bg-gradient-to-r from-[#ff0033] to-[#f39f5a] bg-clip-text text-transparent">
                   realistic characters
                 </span>{" "}
                 and with industry-leading internet speed.
               </p>
-              <p className="text-[18px] font-normal text-[#b2b5af]">
+              <p className="text-base md:text-[18px] font-normal text-[#b2b5af] leading-relaxed">
                 Asian Network is designed to solve gamer’s subconscious pain by
                 reducing lags & Increasing FPS and other game-related stuff.
               </p>
+              <p className="text-base md:text-[18px] font-bold mt-5 text-[#b2b5af]">
+                Be Smart, Be Champion
+              </p>
             </div>
-            <div className="lg:col-span-7">
-              <div className="grid grid-cols-2 gap-10">
-                <div className="bg-gradient-to-t from-[#ff00333a] to-[#bd556a1f] rounded-2xl p-8 text-center w-72">
-                  <h3 className="bg-gradient-to-r from-[#ff0033] to-[#f39f5a] bg-clip-text text-transparent text-[32px] font-normal mb-3">
-                    Powerful
+
+            {/* Right Content */}
+            <div className="col-span-12 lg:col-span-7">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10">
+                {/* Card 1 */}
+                <div className="bg-gradient-to-t from-[#ff00333a] to-[#bd556a1f] rounded-2xl p-8 text-center w-full">
+                  <h3 className="bg-gradient-to-r from-[#ff0033] to-[#f39f5a] bg-clip-text text-transparent text-xl md:text-[28px] lg:text-[32px] font-normal mb-3">
+                    Powerful 1
                   </h3>
-                  <p className="text-[#b2b5af] text-[17px] font-normal mb-4">
+                  <p className="text-[#b2b5af] text-sm md:text-[17px] font-normal mb-4">
                     Local CDN & IPv4/IPv6 gives fast internet experience.
                   </p>
-                  <div className="text-center mx-auto">
-                    <MdSocialDistance className="text-5xl  mx-auto text-center text-[#ff0033]" />
-                  </div>
+                  <MdSocialDistance className="text-4xl md:text-5xl mx-auto text-[#ff0033]" />
                 </div>
-                <div className="bg-gradient-to-t from-[#ff00333a] to-[#bd556a1f] rounded-2xl p-8 text-center w-72">
-                  <div>
-                    <h3 className="bg-gradient-to-r from-[#ff0033] to-[#f39f5a] bg-clip-text text-transparent text-[32px] font-normal mb-3">
-                      Buffer-less
-                    </h3>
-                    <p className="text-[#b2b5af] text-[17px] font-normal mb-4">
-                      No loading on any social media, video streaming, etc.
-                    </p>
-                    <div className="text-center mx-auto">
-                      <MdSocialDistance className="text-5xl  mx-auto text-center text-[#ff0033]" />
-                    </div>
-                  </div>
+
+                {/* Card 2 */}
+                <div className="bg-gradient-to-t from-[#ff00333a] to-[#bd556a1f] rounded-2xl p-8 text-center w-full">
+                  <h3 className="bg-gradient-to-r from-[#ff0033] to-[#f39f5a] bg-clip-text text-transparent text-xl md:text-[28px] lg:text-[32px] font-normal mb-3">
+                    Buffer-less
+                  </h3>
+                  <p className="text-[#b2b5af] text-sm md:text-[17px] font-normal mb-4">
+                    No loading on any social media, video streaming, etc.
+                  </p>
+                  <MdSocialDistance className="text-4xl md:text-5xl mx-auto text-[#ff0033]" />
                 </div>
+
                 {/* Bottom Box */}
-                <div className="w-full mx-auto text-center flex items-center justify-center col-span-2">
-                  <div className="flex justify-center mt-12 bg-gradient-to-t from-[#ff00333a] to-[#bd556a1f] rounded-2xl p-8 text-center w-full">
-                    <div className="flex items-center justify-betweeen gap-20">
-                      <div className="space-y-5">
-                        <h3 className="bg-gradient-to-r from-[#ff0033] to-[#f39f5a] bg-clip-text text-transparent text-[32px] font-normal mb-3 text-center mx-auto">
-                          BDIX FTP Servers
-                        </h3>
-                        <p className="text-[#b2b5af] text-[17px] font-normal mb-4">
-                          So many FTP server helps you <br /> to entertain &
-                          educate yourself. <br />
-                          Movies, Tutorials, Games, etc.
-                        </p>
-                        <div className="text-center mx-auto">
-                          <button className="py-2 px-6 rounded-3xl font-medium bg-gradient-to-b from-[#ff0033] to-[#bd556a63]">
-                            <div className="flex items-center justify-between gap-2">
-                              <span>Use Today</span> <FaArrowRightLong />
-                            </div>
-                          </button>
+                <div className="w-full col-span-1 md:col-span-2 flex items-center justify-center">
+                  <div className="flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-20 bg-gradient-to-t from-[#ff00333a] to-[#bd556a1f] rounded-2xl p-8 w-full text-center">
+                    {/* Left Content */}
+                    <div className="space-y-5 max-w-lg">
+                      <h3 className="bg-gradient-to-r from-[#ff0033] to-[#f39f5a] bg-clip-text text-transparent text-xl md:text-[28px] lg:text-[32px] font-normal mb-3">
+                        BDIX FTP Servers
+                      </h3>
+                      <p className="text-[#b2b5af] text-sm md:text-[17px] font-normal mb-4">
+                        So many FTP server helps you <br /> to entertain &
+                        educate yourself.
+                        <br />
+                        Movies, Tutorials, Games, etc.
+                      </p>
+                      <button className="py-2 px-6 rounded-3xl font-medium bg-gradient-to-b from-[#ff0033] to-[#bd556a63]">
+                        <div className="flex items-center justify-center gap-2">
+                          <span>Use Today</span> <FaArrowRightLong />
                         </div>
-                      </div>
-                      <div>
-                        <div className="text-center mx-auto">
-                          <MdSocialDistance className="text-5xl  mx-auto text-center text-[#ff0033]" />
-                        </div>
-                      </div>
+                      </button>
                     </div>
+
+                    {/* Right Icon */}
+                    <MdSocialDistance className="text-4xl md:text-5xl text-[#ff0033]" />
                   </div>
                 </div>
               </div>

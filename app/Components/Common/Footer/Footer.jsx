@@ -9,20 +9,22 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="">
-      <div className="max-w-6xl mx-auto px-6 pt-12 pb-8 grid md:grid-cols-12 gap-10">
+    <footer className="bg-gray-900">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-8 grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10">
         {/* Left - Logo & Description */}
-        <div className="flex flex-col justify-between col-span-4">
-          <div className="md:pr-8">
+        <div className="flex flex-col justify-between col-span-12 lg:col-span-4">
+          <div className="lg:pr-8">
             <div className="flex items-center space-x-3 mb-4">
               <div>
-                <h1 className="text-lime-400 font-bold text-lg leading-tight">
+                <h1 className="text-lime-400 font-bold text-lg sm:text-xl leading-tight">
                   ASIAN NETWORK
                 </h1>
-                <p className="text-xs text-white">CONNECT TO HAPPINESS</p>
+                <p className="text-xs sm:text-sm text-white">
+                  CONNECT TO HAPPINESS
+                </p>
               </div>
             </div>
-            <p className="text-[15px] text-[#b2b2b2] leading-relaxed mb-4">
+            <p className="text-sm sm:text-[15px] text-[#b2b2b2] leading-relaxed mb-4">
               Asian Network is the largest ISP service provider in Gazipur,
               Dhaka, Bangladesh. Home Internet, Corporate Internet, Gaming &
               Streaming Internet is the most popular package of this ISP. Super
@@ -31,117 +33,147 @@ const Footer = () => {
               buffer-less internet galaxy.
             </p>
             <div className="flex space-x-4 mt-4">
-              <a href="#">
-                <FaFacebookF className="text-lime-400 text-lg" />
+              <a href="#" className="hover:text-white transition-colors">
+                <FaFacebookF className="text-lime-400 text-lg hover:text-white transition-colors" />
               </a>
-              <a href="#">
-                <FaYoutube className="text-lime-400 text-lg" />
+              <a href="#" className="hover:text-white transition-colors">
+                <FaYoutube className="text-lime-400 text-lg hover:text-white transition-colors" />
               </a>
             </div>
           </div>
         </div>
 
-        <div className="col-span-8">
-          <div className=" grid md:grid-cols-3">
+        {/* Right Section */}
+        <div className="col-span-12 lg:col-span-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
             {/* Company */}
             <div>
-              <h2 className="text-white text-2xl font-semibold mb-4">
+              <h2 className="text-white text-lg sm:text-xl md:text-2xl font-semibold mb-3 sm:mb-4">
                 Company
               </h2>
-              <ul className="text-[14px] text-[#b2b2b2] space-y-1">
+              <ul className="text-sm text-[#b2b2b2] space-y-1 sm:space-y-2">
                 <li>
-                  <a href="#">Blog</a>
+                  <a href="#" className="hover:text-lime-400 transition-colors">
+                    Blog
+                  </a>
                 </li>
                 <li>
-                  <a href="#">Privacy Policy</a>
+                  <a href="#" className="hover:text-lime-400 transition-colors">
+                    Privacy Policy
+                  </a>
                 </li>
                 <li>
-                  <a href="#">Terms & Conditions</a>
+                  <a href="#" className="hover:text-lime-400 transition-colors">
+                    Terms & Conditions
+                  </a>
                 </li>
                 <li>
-                  <a href="#">Career</a>
+                  <a href="#" className="hover:text-lime-400 transition-colors">
+                    Career
+                  </a>
                 </li>
               </ul>
             </div>
 
             {/* Services */}
             <div>
-              <h2 className="text-white text-2xl font-semibold mb-4">
+              <h2 className="text-white text-lg sm:text-xl md:text-2xl font-semibold mb-3 sm:mb-4">
                 Services
               </h2>
-              <ul className="text-[14px] text-[#b2b2b2] space-y-1">
+              <ul className="text-sm text-[#b2b2b2] space-y-1 sm:space-y-2">
                 <li>
-                  <a href="#">Packages</a>
+                  <a href="#" className="hover:text-lime-400 transition-colors">
+                    Packages
+                  </a>
                 </li>
                 <li>
-                  <a href="#">Coverage Area</a>
+                  <a href="#" className="hover:text-lime-400 transition-colors">
+                    Coverage Area
+                  </a>
                 </li>
                 <li>
-                  <a href="#">Support</a>
+                  <a href="#" className="hover:text-lime-400 transition-colors">
+                    Support
+                  </a>
                 </li>
               </ul>
             </div>
 
             {/* Address */}
             <div>
-              <h2 className="text-white text-2xl font-semibold mb-4">
+              <h2 className="text-white text-lg sm:text-xl md:text-2xl font-semibold mb-3 sm:mb-4">
                 Address
               </h2>
-              <ul className="text-[14px] text-[#b2b2b2] space-y-1">
+              <ul className="text-sm text-[#b2b2b2] space-y-2">
                 <li className="flex items-start">
-                  <FaPhoneAlt className="text-lime-400 mt-1 mr-2" />
-                  09638233233
+                  <FaPhoneAlt className="text-lime-400 mt-1 mr-2 flex-shrink-0" />
+                  <span className="hover:text-lime-400 transition-colors">
+                    09638233233
+                  </span>
                 </li>
                 <li className="flex items-start">
-                  <FaEnvelope className="text-lime-400 mt-1 mr-2" />
-                  support@asiannetworkbd.net
+                  <FaEnvelope className="text-lime-400 mt-1 mr-2 flex-shrink-0" />
+                  <a
+                    href="mailto:support@asiannetworkbd.net"
+                    className="hover:text-lime-400 transition-colors"
+                  >
+                    support@asiannetworkbd.net
+                  </a>
                 </li>
                 <li className="flex items-start">
-                  <FaMapMarkerAlt className="text-lime-400 mt-1 mr-2" />
-                  08, Eidgha Road, Pagar, <br /> Tongi, Gazipur-1710
+                  <FaMapMarkerAlt className="text-lime-400 mt-1 mr-2 flex-shrink-0" />
+                  <span className="hover:text-lime-400 transition-colors">
+                    08, Eidgha Road, Pagar, <br /> Tongi, Gazipur-1710
+                  </span>
                 </li>
               </ul>
             </div>
           </div>
+
           {/* Divider */}
-          <div className="border-t-1 border-[#b2b2b2b8] my-6 "></div>
+          <div className="border-t border-[#b2b2b2b8] my-6"></div>
 
           {/* Bottom Row */}
-          <div className="max-w-6xl mx-auto pb-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
             {/* Left - App download */}
             <div>
-              <p className="text-[18px] text-[#b2b2b2] mb-2">
+              <p className="text-sm sm:text-base text-[#b2b2b2] mb-1">
                 For smooth experience
               </p>
-              <p className="text-[25px] font-semibold text-white mb-3">
+              <p className="text-lg sm:text-xl md:text-2xl font-semibold text-white mb-3">
                 Download Our Mobile App
               </p>
-              <div className="flex space-x-3">
-                <a href="#">
+              <div className="flex flex-wrap gap-2 sm:gap-3">
+                <a href="#" className="hover:opacity-90 transition-opacity">
                   <img
                     src="https://asiannetworkbd.net/wp-content/uploads/2024/06/google-play.svg"
                     alt="Google Play"
-                    className="h-8 object-contain"
+                    className="h-8 sm:h-10 object-contain"
                   />
                 </a>
-                <a href="#">
+                <a href="#" className="hover:opacity-90 transition-opacity">
                   <img
                     src="https://asiannetworkbd.net/wp-content/uploads/2024/06/app-store.svg"
                     alt="App Store"
-                    className="h-8 object-contain"
+                    className="h-8 sm:h-10 object-contain"
                   />
                 </a>
               </div>
             </div>
 
             {/* Right - Copyright */}
-            <div className="flex flex-col md:items-end text-sm text-gray-400 justify-between">
+            <div className="flex flex-col md:items-end text-xs sm:text-sm text-gray-400 text-center md:text-right mt-4 md:mt-0">
               <p className="mb-1 md:mb-2">
                 © All Rights Reserved – Asian Network
               </p>
               <p>
                 Developed by{" "}
-                <span className="text-lime-400 font-medium">Boyshero</span>
+                <a
+                  href="#"
+                  className="text-lime-400 font-medium hover:underline"
+                >
+                  Boyshero
+                </a>
               </p>
             </div>
           </div>

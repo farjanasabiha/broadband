@@ -23,7 +23,7 @@ const HappyClientsSection = () => {
       <div className="container mx-auto px-4">
         {/* Header Section */}
         <div className="text-left">
-          <h1 className="text-4xl lg:text-6xl xl:text-[35px] font-semibold mb-6">
+          <h1 className="text-3xl md:text-4xl leading-snug font-medium mb-6">
             Some of our
             <br />
             <span className="bg-gradient-to-r from-[#ff0033] to-[#f39f5a] bg-clip-text text-transparent">

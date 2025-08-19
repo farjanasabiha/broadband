@@ -138,11 +138,11 @@ const PricingCard = () => {
   ];
 
   return (
-    <div className="bg-black   container max-w-6xl  mx-auto  px-5 py-16 lg:py-24">
+    <div className="bg-black   container max-w-6xl  mx-auto  px-5">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-6 lg:mb-9">
-          <h2 className="text-4xl lg:text-6xl xl:text-[35px] font-semibold mb-8">
+          <h2 className="text-3xl md:text-4xl leading-snug font-medium mb-8">
             Most Popular Package
           </h2>
 
@@ -167,49 +167,55 @@ const PricingCard = () => {
         </div>
 
         {/* Pricing Cards Grid */}
-        <div className="lg:px-20  gap-20 space-y-20">
+        <div className="gap-10 md:gap-16 lg:gap-20 space-y-10 md:space-y-16 lg:space-y-20">
           {pricingPlans.map((plan, index) => (
             <div key={plan.id} className="relative group">
               {/* Card */}
-              <div className="relative bg-gradient-to-t from-[#ff00333a] to-[#bd556a1f] rounded-2xl lg:rounded-3xl p-6 lg:p-12 shadow-2xl transform group-hover:scale-105 transition-all duration-300 h-full flex flex-col">
-                <div className="grid grid-cols-12 gap-10 justify-center  items-center text-center mx-auto">
+              <div className="relative bg-gradient-to-t from-[#ff00333a] to-[#bd556a1f] rounded-xl md:rounded-2xl lg:rounded-4xl p-4 sm:p-6 lg:px-12 lg:py-20 shadow-xl md:shadow-2xl transform group-hover:scale-[1.02] md:group-hover:scale-105 transition-all duration-300 h-full flex flex-col">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 md:gap-10 lg:gap-16 text-left md:text-center items-center md:mx-auto">
                   {/* Plan Badge */}
-                  <div className=" space-y-5 col-span-3">
-                    <div className="inline-block px-3 text-gray-200/70 py-1 rounded-full text-xs font-medium border-gray-100/50 border self-start">
-                      {plan.name}
+                  <div className="space-y-3 sm:space-y-4 md:space-y-5 col-span-12 lg:col-span-3">
+                    <div>
+                      <div className="inline-block px-2 sm:px-3 text-gray-200/70 py-1 rounded-full text-xs font-medium border-gray-100/50 border self-start">
+                        {plan.name}
+                      </div>
                     </div>
                     <div>
-                      <div className="inline-block  px-3 py-1 text-white rounded-full  bg-gradient-to-b from-[#ff0033] to-[#bd556a63] font-bold text-base lg:text-xl">
+                      <div className="inline-block px-3 sm:px-4 py-2 sm:py-3 text-white rounded-full bg-red-700 font-extrabold text-lg sm:text-xl md:text-2xl lg:text-[28px]">
                         {plan.speed}
                       </div>
                     </div>
-
-                    <div className="text-2xl lg:text-3xl xl:text-4xl font-medium">
+                    <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold">
                       {plan.price}
                     </div>
-                    <div className="">
-                      <GrSchedulePlay className="h-17 w-17 mx-auto text-center text-[#bd2335]" />
+                    <div>
+                      <GrSchedulePlay className="h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 lg:h-17 lg:w-17 md:mx-auto text-red-700" />
                     </div>
                   </div>
+
                   {/* Features */}
-                  <div className="space-y-3 mb-8 flex-grow col-span-6">
+                  <div className="space-y-2 sm:space-y-3 mb-6 sm:mb-8 flex-grow col-span-12 lg:col-span-6 text-left lg:text-center lg:mx-auto">
                     {plan.features.map((feature, featureIndex) => (
                       <div
                         key={featureIndex}
-                        className="flex items-start space-x-3 text-gray-300"
+                        className="flex items-start space-x-2 sm:space-x-3 text-gray-300 md:justify-start"
                       >
-                        <CheckCircle className="w-3 h-3 text-primary flex-shrink-0 mt-0.5" />
-                        <span className="text-sm lg:text-sm leading-relaxed">
+                        <CheckCircle className="w-3 h-3 text-white flex-shrink-0 mt-0.5" />
+                        <p className="text-xs sm:text-sm md:text-base leading-relaxed">
                           {feature.text}
-                        </span>
+                        </p>
                       </div>
                     ))}
                   </div>
+
                   {/* CTA Button */}
-                  <div className="text-center mx-auto col-span-3">
-                    <button className="py-2 px-6 rounded-3xl font-medium bg-gradient-to-b from-[#ff0033] to-[#bd556a63]">
-                      <div className="flex items-center justify-between gap-2">
-                        <span>Get Started</span> <FaArrowRightLong />
+                  <div className="text-left md:text-center md:mx-auto col-span-12 lg:col-span-3">
+                    <button className="py-2 sm:py-3 px-4 sm:px-6 rounded-2xl sm:rounded-3xl font-medium bg-gradient-to-b from-[#ff0033] to-[#bd556a63]">
+                      <div className="flex items-center justify-center md:justify-between gap-1 sm:gap-2">
+                        <p className="text-sm sm:text-base md:text-lg font-semibold">
+                          Get Started
+                        </p>
+                        <FaArrowRightLong className="text-sm sm:text-base" />
                       </div>
                     </button>
                   </div>
