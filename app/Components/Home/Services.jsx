@@ -35,7 +35,7 @@ const Services = () => {
               alt="Person using phone"
               width={250}
               height={300}
-              className="relative z-10 rounded-lg"
+              className="relative top-6 z-10 rounded-lg"
             />
           </div>
 

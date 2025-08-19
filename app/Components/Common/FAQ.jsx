@@ -92,10 +92,10 @@ export default function FAQSection() {
           <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
             <Image
               src="/faq-1-300x300.webp"
-              width={500}
-              height={500}
+              width={400}
+              height={400}
               alt="FAQ"
-              className="object-cover h-full w-full group-hover:scale-105 transition-transform duration-500 rounded-full"
+              className=""
             />
           </div>
         </div>

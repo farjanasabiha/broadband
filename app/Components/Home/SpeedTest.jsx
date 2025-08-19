@@ -2,7 +2,7 @@ import React from "react";
 
 const SpeedTest = () => {
   return (
-    <div className="text-right ontainer max-w-6xl mx-auto px-5">
+    <div className="text-right container max-w-6xl mx-auto px-5">
       <div style={{ minHeight: "360px" }}>
         <div
           style={{

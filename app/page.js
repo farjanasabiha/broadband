@@ -2,7 +2,7 @@
 import { ReactLenis } from "lenis/react";
 import HomeHeader from "./Components/Home/HomeHeader";
 import HomeSlider from "./Components/Home/Slider/HomeSlider";
-import { Network } from "lucide-react";
+import Network from "./Components/Home/Network";
 import Services from "./Components/Home/Services";
 import VideoAndServicesOne from "./Components/Home/VideoAndServicesOne";
 import VideoAndServicesTwo from "./Components/Home/VideoAndServicesTwo";

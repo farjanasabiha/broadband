@@ -9,7 +9,7 @@ const CTA = () => {
       <div className="bg-black container max-w-6xl mx-auto px-5 ">
         <div className="pb-10">
           <div className="text-left mb-8">
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-medium leading-relaxed mb-3 text-white">
+            <h1 className="text-3xl lg:text-[35px] font-medium leading-relaxed mb-3 text-white">
               To get this
               <br />
               High-Speed Internet
@@ -33,7 +33,7 @@ const CTA = () => {
           </div>
         </div>
         <div className="text-left mb-6">
-          <h1 className="text-3xl md:text-5xl lg:text-6xl xl:text-[35px] font-medium leading-relaxed mb-3 text-white">
+          <h1 className="text-3xl lg:text-[35px] font-medium leading-relaxed mb-3 text-white">
             Best Broadband WIFI
             <br />
             Internet Packages For You
