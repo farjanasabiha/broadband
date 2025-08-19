@@ -12,7 +12,6 @@ import PricingCard from "./Components/Home/PricingCard";
 import TopBar from "./Components/Common/Navbar/TopBar";
 import Navbar from "./Components/Common/Navbar/Navbar";
 import Footer from "./Components/Common/Footer/Footer";
-
 import CTA from "./Components/Common/CTA";
 import FAQ from "./Components/Common/FAQ";
 import SpeedTest from "./Components/Home/SpeedTest";

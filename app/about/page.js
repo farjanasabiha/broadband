@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "../Components/Header";
 import TopBar from "../Components/Common/Navbar/TopBar";
 import Navbar from "../Components/Common/Navbar/Navbar";
 import Footer from "../Components/Common/Footer/Footer";
@@ -9,7 +8,7 @@ import Timeline from "./TimeLine";
 
 const page = () => {
   return (
-    <div>
+    <div className="bg-black">
       <TopBar />
       <Navbar />
       <AboutHeader />
