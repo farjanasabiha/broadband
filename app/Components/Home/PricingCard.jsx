@@ -15,6 +15,7 @@ import {
   Shield,
   Clock,
 } from "lucide-react";
+import Link from "next/link";
 
 const PricingCard = () => {
   const pricingPlans = [
@@ -138,8 +139,8 @@ const PricingCard = () => {
   ];
 
   return (
-    <div className="bg-black   container max-w-6xl  mx-auto  px-5">
-      <div className="container mx-auto px-4">
+    <div className="bg-black container max-w-6xl mx-auto px-5">
+      <div className="container mx-auto">
         {/* Header */}
         <div className="text-center mb-6 lg:mb-9">
           <h2 className="text-3xl md:text-4xl leading-snug font-medium mb-8">
@@ -171,7 +172,7 @@ const PricingCard = () => {
           {pricingPlans.map((plan, index) => (
             <div key={plan.id} className="relative group">
               {/* Card */}
-              <div className="relative bg-gradient-to-t from-[#ff00333a] to-[#bd556a1f] rounded-xl md:rounded-2xl lg:rounded-4xl p-4 sm:p-6 lg:px-12 lg:py-20 shadow-xl md:shadow-2xl transform group-hover:scale-[1.02] md:group-hover:scale-105 transition-all duration-300 h-full flex flex-col">
+              <div className="relative bg-gradient-to-t from-[#ff00333a] to-[#bd556a1f] rounded-xl md:rounded-2xl lg:rounded-4xl p-4 sm:p-6 lg:px-12 lg:py-20 shadow-xl md:shadow-2xl h-full flex flex-col">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 md:gap-10 lg:gap-16 text-left md:text-center items-center md:mx-auto">
                   {/* Plan Badge */}
                   <div className="space-y-3 sm:space-y-4 md:space-y-5 col-span-12 lg:col-span-3">
@@ -210,13 +211,16 @@ const PricingCard = () => {
 
                   {/* CTA Button */}
                   <div className="text-left md:text-center md:mx-auto col-span-12 lg:col-span-3">
-                    <button className="py-2 sm:py-3 px-4 sm:px-6 rounded-2xl sm:rounded-3xl font-medium bg-gradient-to-b from-[#ff0033] to-[#bd556a63]">
-                      <div className="flex items-center justify-center md:justify-between gap-1 sm:gap-2">
+                    <button>
+                      <Link
+                        href={""}
+                        className="flex items-center justify-center md:justify-between gap-1 sm:gap-2 py-2 sm:py-3 px-4 sm:px-6 rounded-2xl sm:rounded-3xl font-medium bg-gradient-to-b from-[#ff0033] to-[#bd556a63]"
+                      >
                         <p className="text-sm sm:text-base md:text-lg font-semibold">
                           Get Started
                         </p>
                         <FaArrowRightLong className="text-sm sm:text-base" />
-                      </div>
+                      </Link>
                     </button>
                   </div>
                 </div>

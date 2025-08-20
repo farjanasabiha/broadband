@@ -34,19 +34,19 @@ export default function FAQSection() {
   };
 
   return (
-    <div className="container max-w-6xl mx-auto px-5 pb-24">
+    <div className="container max-w-6xl mx-auto px-5">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left Side - FAQ Content */}
           <div className="order-2 lg:order-1">
             <div className="text-left mb-8">
-                        <h1 className="text-3xl md:text-4xl leading-snug font-medium mb-6">
-            Your Queries
-            <br />
-            <span className="bg-gradient-to-r from-[#ff0033] to-[#f39f5a] bg-clip-text text-transparent">
-              Our Solution
-            </span>
-          </h1>
+              <h1 className="text-3xl md:text-4xl leading-snug font-medium mb-6">
+                Your Queries
+                <br />
+                <span className="bg-gradient-to-r from-[#ff0033] to-[#f39f5a] bg-clip-text text-transparent">
+                  Our Solution
+                </span>
+              </h1>
             </div>
 
             <div className="space-y-4">
@@ -92,8 +92,8 @@ export default function FAQSection() {
           <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
             <Image
               src="/faq-1-300x300.webp"
-              width={400}
-              height={400}
+              width={300}
+              height={300}
               alt="FAQ"
               className=""
             />

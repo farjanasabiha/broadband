@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { MdSocialDistance } from "react-icons/md";
 import { FaArrowRightLong } from "react-icons/fa6";
+import Link from "next/link";
 
 const Services = () => {
   return (
@@ -35,7 +36,7 @@ const Services = () => {
               alt="Person using phone"
               width={250}
               height={300}
-              className="relative top-6 z-10 rounded-lg"
+              className="relative top-14  md:top-6 z-10 rounded-lg"
             />
           </div>
 
@@ -69,10 +70,13 @@ const Services = () => {
                   Movies, Tutorials, Games, etc.
                 </p>
                 <div className="text-center mx-auto">
-                  <button className="py-2 px-6 rounded-3xl font-medium bg-gradient-to-b from-[#ff0033] to-[#bd556a63]">
-                    <div className="flex items-center justify-between gap-2">
+                  <button>
+                    <Link
+                      href={"#"}
+                      className="flex items-center justify-between gap-2 py-2 px-6 rounded-3xl font-medium bg-gradient-to-b from-[#ff0033] to-[#bd556a63]"
+                    >
                       <span>Use Today</span> <FaArrowRightLong />
-                    </div>
+                    </Link>
                   </button>
                 </div>
               </div>
