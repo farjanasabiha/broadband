@@ -16,27 +16,29 @@ import Footer from "./Components/Common/Footer/Footer";
 import CTA from "./Components/Common/CTA";
 import FAQ from "./Components/Common/FAQ";
 import SpeedTest from "./Components/Home/SpeedTest";
-import Testimonial from "./Components/Home/Testimonial/Testimonial";
+import Testimonial from "./Components/Common/Testimonial/Testimonial";
 export default function Home() {
   return (
-    <ReactLenis root data-theme="none">
-      <main className="space-y-24 font-sf">
+    <ReactLenis root data-theme="dark">
+      <main className="font-sf bg-black">
         <TopBar />
         <Navbar />
-        <HomeHeader />
-        <HomeSlider />
-        <SpeedTest />
-        <Network />
-        <Services />
-        <VideoAndServicesOne />
-        <VideoAndServicesTwo />
-        <SpeedLanding />
-        <PricingCard />
-        <HappyClientsSection />
-        <Testimonial />
-        <CTA />
-        <FAQ />
-        <Footer />
+        <div className="space-y-24">
+          <HomeHeader />
+          <HomeSlider />
+          <SpeedTest />
+          <Network />
+          <Services />
+          <VideoAndServicesOne />
+          <VideoAndServicesTwo />
+          <SpeedLanding />
+          <PricingCard />
+          <HappyClientsSection />
+          <Testimonial />
+          <CTA />
+          <FAQ />
+          <Footer />
+        </div>
       </main>
     </ReactLenis>
   );

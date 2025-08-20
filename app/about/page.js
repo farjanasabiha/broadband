@@ -1,15 +1,19 @@
 import React from "react";
-import Header from "../Components/Header";
 import TopBar from "../Components/Common/Navbar/TopBar";
 import Navbar from "../Components/Common/Navbar/Navbar";
+import AboutHeader from "../Components/SpeedChallange/SpeedHeader";
+import OurMission from "../Components/About/OurMission";
+import Timeline from "../Components/About/Timeline";
+import AboutTab from "../Components/About/AboutTab";
+import Testimonial from "../Components/Common/Testimonial/Testimonial";
+import CTA from "../Components/Common/CTA";
+import FAQ from "../Components/Common/FAQ";
 import Footer from "../Components/Common/Footer/Footer";
-import AboutHeader from "./AboutHeader";
-import OurMission from "./OurMission";
-import Timeline from "./TimeLine";
+
 
 const page = () => {
   return (
-    <div>
+    <div className='space-y-20'>
       <TopBar />
       <Navbar />
       <AboutHeader />
@@ -40,6 +44,10 @@ const page = () => {
         }
       />
       <Timeline />
+      <AboutTab />
+      <Testimonial/>
+      <CTA/>
+      <FAQ/>
       <Footer />
     </div>
   );
