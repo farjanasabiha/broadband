@@ -44,7 +44,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex gap-6 text-sm items-center">
+        <ul className="hidden lg:flex gap-6 text-sm items-center">
           {navLinks.map((link, idx) => (
             <li key={idx}>
               <a
@@ -60,7 +60,7 @@ const Navbar = () => {
         </ul>
 
         {/* Mobile Hamburger */}
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="text-white focus:outline-none"
@@ -76,7 +76,7 @@ const Navbar = () => {
 
       {/* Animated Mobile Menu */}
       <div
-        className={`md:hidden bg-black/90 text-center backdrop-blur-md text-white transform transition-all duration-300 ease-in-out origin-top overflow-hidden ${
+        className={`lg:hidden bg-black/90 text-center backdrop-blur-md text-white transform transition-all duration-300 ease-in-out origin-top overflow-hidden ${
           menuOpen ? "scale-y-100 max-h-screen py-4" : "scale-y-0 max-h-0 py-0"
         }`}
       >

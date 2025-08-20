@@ -63,11 +63,11 @@ const Testimonial = () => {
           </h1>
         </div>
 
-        <div className="relative max-w-4xl mx-auto">
+        <div className="relative max-w-3xl mx-auto">
           {/* Left Arrow */}
-          <div className="swiper-button-prev text-lg !text-white !left-0 !top-1/2 -translate-y-1/2"></div>
+          <div className="swiper-button-prev text-lg !text-white !left-0 !top-1/2 "></div>
           {/* Right Arrow */}
-          <div className="swiper-button-next text-lg !text-white !right-0 !top-1/2 -translate-y-1/2"></div>
+          <div className="swiper-button-next text-lg !text-white !right-0 !top-1/2 "></div>
           <Swiper
             slidesPerView={1}
             spaceBetween={30}
@@ -76,7 +76,7 @@ const Testimonial = () => {
               prevEl: ".swiper-button-prev",
             }}
             modules={[Navigation]}
-            className="mySwiper"
+            className="mySwiper  rounded-3xl"
           >
             {blogPosts.map((post) => (
               <SwiperSlide key={post.id}>

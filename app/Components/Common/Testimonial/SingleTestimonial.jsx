@@ -22,6 +22,7 @@ const SingleTestimonial = ({
                 priority
                 alt={title}
                 className="object-cover group-hover:scale-105 transition-transform duration-500 rounded-full"
+                sizes="80px"
               />
             </div>
             <p className="text-gray-300 text-center italic font-normal text-lg">

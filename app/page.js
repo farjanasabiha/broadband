@@ -2,7 +2,7 @@
 import { ReactLenis } from "lenis/react";
 import HomeHeader from "./Components/Home/HomeHeader";
 import HomeSlider from "./Components/Home/Slider/HomeSlider";
-import Network  from "./Components/Home/Network";
+import Network from "./Components/Home/Network";
 import Services from "./Components/Home/Services";
 import VideoAndServicesOne from "./Components/Home/VideoAndServicesOne";
 import VideoAndServicesTwo from "./Components/Home/VideoAndServicesTwo";
@@ -12,7 +12,6 @@ import PricingCard from "./Components/Home/PricingCard";
 import TopBar from "./Components/Common/Navbar/TopBar";
 import Navbar from "./Components/Common/Navbar/Navbar";
 import Footer from "./Components/Common/Footer/Footer";
-
 import CTA from "./Components/Common/CTA";
 import FAQ from "./Components/Common/FAQ";
 import SpeedTest from "./Components/Home/SpeedTest";

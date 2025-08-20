@@ -2,7 +2,7 @@ import React from "react";
 import TopBar from "../Components/Common/Navbar/TopBar";
 import Navbar from "../Components/Common/Navbar/Navbar";
 import SpeedHeader from "../Components/SpeedChallange/SpeedHeader";
-import SpeedTab from "../Components/SpeedChallange/SpeedTab";
+// import SpeedTab from "../Components/SpeedChallange/SpeedTab";
 import Testimonial from "../Components/Common/Testimonial/Testimonial";
 import CTA from "../Components/Common/CTA";
 import FAQ from "../Components/Common/FAQ";
@@ -15,7 +15,7 @@ const page = () => {
       <TopBar />
       <Navbar />
       <SpeedHeader />
-      <SpeedTab/>
+      {/* <SpeedTab/> */}
       <Testimonial/>
       <CTA/>
       <FAQ/>

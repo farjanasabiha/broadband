@@ -2,6 +2,7 @@ import React from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { BsBoxArrowInRight } from "react-icons/bs";
+import Link from "next/link";
 
 const CTA = () => {
   return (
@@ -23,11 +24,14 @@ const CTA = () => {
               <FaLongArrowAltRight className="text-2xl" />
             </div>
             <div className="">
-              <button className="py-3 px-6 rounded-3xl font-medium bg-gradient-to-b from-[#ff0033] to-[#bd556a63]">
-                <div className="flex items-center justify-between gap-2">
+              <button>
+                <Link
+                  href={""}
+                  className="flex items-center justify-between gap-2 py-3 px-6 rounded-3xl font-medium bg-gradient-to-b from-[#ff0033] to-[#bd556a63]"
+                >
                   <p className="text-lg font-semibold">Get Started</p>{" "}
                   <FaArrowRightLong />
-                </div>
+                </Link>
               </button>
             </div>
           </div>

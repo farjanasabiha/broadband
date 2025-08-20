@@ -20,7 +20,7 @@ const HappyClientsSection = () => {
 
   return (
     <div className="bg-black container max-w-6xl mx-auto px-5">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto">
         {/* Header Section */}
         <div className="text-left">
           <h1 className="text-3xl md:text-4xl leading-snug font-medium mb-6">

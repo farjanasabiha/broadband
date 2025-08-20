@@ -1,6 +1,7 @@
 import React from "react";
 import { MdSocialDistance } from "react-icons/md";
 import { FaArrowRightLong } from "react-icons/fa6";
+import Link from "next/link";
 const VideoAndServicesTwo = () => {
   return (
     <div>
@@ -87,10 +88,13 @@ const VideoAndServicesTwo = () => {
                         <br />
                         Movies, Tutorials, Games, etc.
                       </p>
-                      <button className="py-2 px-6 rounded-3xl font-medium bg-gradient-to-b from-[#ff0033] to-[#bd556a63]">
-                        <div className="flex items-center justify-center gap-2">
+                      <button>
+                        <Link
+                          href={"#"}
+                          className="flex items-center justify-center gap-2 py-2 px-6 rounded-3xl font-medium bg-gradient-to-b from-[#ff0033] to-[#bd556a63]"
+                        >
                           <span>Use Today</span> <FaArrowRightLong />
-                        </div>
+                        </Link>
                       </button>
                     </div>
 

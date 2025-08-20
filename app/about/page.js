@@ -13,7 +13,7 @@ import Footer from "../Components/Common/Footer/Footer";
 
 const page = () => {
   return (
-    <div className='space-y-20'>
+    <div>
       <TopBar />
       <Navbar />
       <AboutHeader />
