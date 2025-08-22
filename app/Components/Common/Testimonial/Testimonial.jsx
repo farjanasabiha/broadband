@@ -52,7 +52,7 @@ const blogPosts = [
 const Testimonial = () => {
   return (
     <div className="">
-      <div className="container max-w-6xl mx-auto px-5 pb-24">
+      <div className="container max-w-6xl mx-auto px-5">
         <div className="text-left mb-12">
           <h1 className="text-3xl md:text-4xl leading-snug font-medium mb-6">
             Some of our

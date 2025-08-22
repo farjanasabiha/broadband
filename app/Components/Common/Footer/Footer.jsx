@@ -53,17 +53,17 @@ const Footer = () => {
               </h2>
               <ul className="text-sm text-[#b2b2b2] space-y-1 sm:space-y-2">
                 <li>
-                  <a href="#" className="hover:text-lime-400 transition-colors">
+                  <a href="/blog" className="hover:text-lime-400 transition-colors">
                     Blog
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-lime-400 transition-colors">
+                  <a href="/privacy-policy" className="hover:text-lime-400 transition-colors">
                     Privacy Policy
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-lime-400 transition-colors">
+                  <a href="/terms-and-conditions" className="hover:text-lime-400 transition-colors">
                     Terms & Conditions
                   </a>
                 </li>
@@ -82,7 +82,7 @@ const Footer = () => {
               </h2>
               <ul className="text-sm text-[#b2b2b2] space-y-1 sm:space-y-2">
                 <li>
-                  <a href="#" className="hover:text-lime-400 transition-colors">
+                  <a href="/" className="hover:text-lime-400 transition-colors">
                     Packages
                   </a>
                 </li>
