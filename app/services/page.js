@@ -6,7 +6,7 @@ import Footer from "../Components/Common/Footer/Footer";
 import Testimonial from "../Components/Common/Testimonial/Testimonial";
 import CTA from "../Components/Common/CTA";
 import FAQSection from "../Components/Common/FAQ";
-import ContactForm from "../Components/Contact/ContactForm";
+import AllServices from "../Components/Services/AllServices";
 
 const page = () => {
   return (
@@ -14,14 +14,12 @@ const page = () => {
       <TopBar />
       <Navbar />
       <CommonHeader
-        title={"Hey! Share Your Opinion"}
-        header={"Contact Us"}
-        desc={
-          "If you have any concerns or questions, please feel free to reach us."
-        }
+        title={"High Speed Internet Services"}
+        header={"Services"}
+        desc={"You can find here all in one solution for your company."}
       />
       <div className="space-y-24">
-        <ContactForm />
+        <AllServices />
         <Testimonial />
         <CTA />
         <FAQSection />

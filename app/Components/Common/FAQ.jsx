@@ -53,13 +53,13 @@ export default function FAQSection() {
               {faqs.map((faq, index) => (
                 <div
                   key={index}
-                  className="border border-gray-700 rounded-lg overflow-hidden transition-all duration-300 ease-in-out hover:border-green-400"
+                  className="border border-gray-700  overflow-hidden transition-all duration-300 ease-in-out "
                 >
                   <button
                     onClick={() => FAQ(index)}
-                    className="w-full px-6 py-4 text-left flex items-center justify-between bg-gray-900 hover:bg-gray-800 transition-colors duration-200"
+                    className="w-full px-6 py-3 text-left flex items-center justify-between cursor-pointer  duration-200"
                   >
-                    <span className="text-white font-medium text-sm sm:text-base">
+                    <span className="text-white  font-bold sm:text-base lg:text-lg">
                       {faq.question}
                     </span>
                     <div className="ml-4 flex-shrink-0">
@@ -78,8 +78,8 @@ export default function FAQSection() {
                         : "max-h-0 opacity-0"
                     }`}
                   >
-                    <div className="px-6 py-4 bg-gray-800 border-t border-gray-700">
-                      <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
+                    <div className="px-6 py-4  border-t border-gray-700">
+                      <p className="text-[#b2b5af] text-lg  leading-8">
                         {faq.answer}
                       </p>
                     </div>

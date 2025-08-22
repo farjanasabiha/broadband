@@ -3,10 +3,10 @@ import TopBar from "../Components/Common/Navbar/TopBar";
 import Navbar from "../Components/Common/Navbar/Navbar";
 import CommonHeader from "../Components/Common/CommonHeader";
 import Footer from "../Components/Common/Footer/Footer";
-import Testimonial from "../Components/Common/Testimonial/Testimonial";
-import CTA from "../Components/Common/CTA";
 import FAQSection from "../Components/Common/FAQ";
-import ContactForm from "../Components/Contact/ContactForm";
+import CTA from "../Components/Common/CTA";
+import Testimonial from "../Components/Common/Testimonial/Testimonial";
+import RefferalDetails from "../Components/Refferal/RefferalDetails";
 
 const page = () => {
   return (
@@ -14,14 +14,11 @@ const page = () => {
       <TopBar />
       <Navbar />
       <CommonHeader
-        title={"Hey! Share Your Opinion"}
-        header={"Contact Us"}
-        desc={
-          "If you have any concerns or questions, please feel free to reach us."
-        }
+        header={"রেফার করুন, পুরষ্কার জিতুন"}
+        desc={"রেফার করেই জিতে নিন ক্যাশব্যাক সহ আকর্ষনীয় সব পুরষ্কার"}
       />
       <div className="space-y-24">
-        <ContactForm />
+        <RefferalDetails />
         <Testimonial />
         <CTA />
         <FAQSection />
