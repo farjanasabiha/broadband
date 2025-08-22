@@ -6,7 +6,7 @@ import Footer from "../Components/Common/Footer/Footer";
 import Testimonial from "../Components/Common/Testimonial/Testimonial";
 import CTA from "../Components/Common/CTA";
 import FAQSection from "../Components/Common/FAQ";
-import ContactForm from "../Components/Contact/ContactForm";
+import PayBills from "../Components/PayBills/PayBills";
 
 const page = () => {
   return (
@@ -14,14 +14,14 @@ const page = () => {
       <TopBar />
       <Navbar />
       <CommonHeader
-        title={"Hey! Share Your Opinion"}
-        header={"Contact Us"}
+        title={"Pay Your Internet Bill"}
+        header={"Pay Bills"}
         desc={
-          "If you have any concerns or questions, please feel free to reach us."
+          "You can pay your internet bill through Bkash, Nagad, Rocket MFS, or Bank Transfer. Also, you can pay via the Asian Network App or QR code scan."
         }
       />
       <div className="space-y-24">
-        <ContactForm />
+        <PayBills />
         <Testimonial />
         <CTA />
         <FAQSection />

@@ -37,10 +37,10 @@ const HappyClientsSection = () => {
 
         {/* Tab Navigation */}
         <div className="flex justify-center mb-4">
-          <div className="flex space-x-2 bg-gray-800/50 backdrop-blur-sm rounded-full p-2 border border-gray-700/50">
+          <div className="lg:flex space-x-4 space-y-4 lg:space-y-0 lg:space-x-2 backdrop-blur-sm rounded-full p-2">
             <button
               onClick={() => setActiveTab("all")}
-              className={`px-7 py-2 rounded-full font-medium transition-all duration-300 ${
+              className={`px-10 py-3  w-full md:w-auto text-lg cursor-pointer font-medium rounded-full  transition-all duration-300 ${
                 activeTab === "all"
                   ? "bg-gradient-to-b from-[#ff0033] to-[#bd556a63] text-white shadow-lg border border-black"
                   : "text-gray-400 hover:text-white border border-gray-100/40 hover:bg-gray-700/50"
@@ -50,7 +50,7 @@ const HappyClientsSection = () => {
             </button>
             <button
               onClick={() => setActiveTab("corporate")}
-              className={`px-7 py-2 rounded-full font-medium transition-all duration-300 ${
+              className={`px-7 py-2 rounded-full font-medium text-lg cursor-pointer transition-all duration-300 ${
                 activeTab === "corporate"
                   ? "bg-gradient-to-b from-[#ff0033] to-[#bd556a63] text-white shadow-lg border border-black"
                   : "text-gray-400 hover:text-white border border-gray-100/40 hover:bg-gray-700/50"

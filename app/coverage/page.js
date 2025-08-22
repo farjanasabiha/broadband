@@ -6,7 +6,7 @@ import Footer from "../Components/Common/Footer/Footer";
 import Testimonial from "../Components/Common/Testimonial/Testimonial";
 import CTA from "../Components/Common/CTA";
 import FAQSection from "../Components/Common/FAQ";
-import ContactForm from "../Components/Contact/ContactForm";
+import NetworkCoverage from "../Components/Coverage/NetworkCoverage";
 
 const page = () => {
   return (
@@ -14,14 +14,14 @@ const page = () => {
       <TopBar />
       <Navbar />
       <CommonHeader
-        title={"Hey! Share Your Opinion"}
-        header={"Contact Us"}
+        title={"Check Our Internet Availability on Your Location"}
+        header={"Coverage"}
         desc={
-          "If you have any concerns or questions, please feel free to reach us."
+          "You can see our high speed internet connectivity network coverage zone. Don’t find! Contact Us."
         }
       />
       <div className="space-y-24">
-        <ContactForm />
+        <NetworkCoverage />
         <Testimonial />
         <CTA />
         <FAQSection />

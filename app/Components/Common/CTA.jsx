@@ -16,7 +16,7 @@ const CTA = () => {
               High-Speed Internet
             </h1>
           </div>
-          <div className="flex flex-col md:flex-row items-center justify-between gap-10">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-10">
             <div className="flex items-center justify-start gap-5">
               <h3 className="text-[#b2b2b2] text-2xl">
                 Select packages as you need
@@ -27,10 +27,9 @@ const CTA = () => {
               <button>
                 <Link
                   href={""}
-                  className="flex items-center justify-between gap-2 py-3 px-6 rounded-3xl font-medium bg-gradient-to-b from-[#ff0033] to-[#bd556a63]"
+                  className="flex items-center justify-between gap-2 py-4 px-10 rounded-full font-medium bg-gradient-to-b from-[#ff0033] to-[#bd556a63]"
                 >
-                  <p className="text-lg font-semibold">Get Started</p>{" "}
-                  <FaArrowRightLong />
+                  <p className="text-2xl">Choose Package</p>{" "}
                 </Link>
               </button>
             </div>
@@ -42,7 +41,7 @@ const CTA = () => {
             <br />
             Internet Packages For You
           </h1>
-          <div className="text-red-600 text-lg font-medium flex items-center justify-start gap-3">
+          <div className=" text-primaryColor text-lg font-medium flex items-center justify-start gap-3">
             {" "}
             <BsBoxArrowInRight />
             <p>High Speed Home Internet Package in Gazipur Dhaka Bangladesh</p>

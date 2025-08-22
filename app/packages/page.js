@@ -1,12 +1,12 @@
 import React from "react";
+import CommonHeader from "../Components/Common/CommonHeader";
 import TopBar from "../Components/Common/Navbar/TopBar";
 import Navbar from "../Components/Common/Navbar/Navbar";
-import CommonHeader from "../Components/Common/CommonHeader";
 import Footer from "../Components/Common/Footer/Footer";
 import Testimonial from "../Components/Common/Testimonial/Testimonial";
 import CTA from "../Components/Common/CTA";
-import FAQSection from "../Components/Common/FAQ";
-import ContactForm from "../Components/Contact/ContactForm";
+import HomeInternet from "../Components/Packages/HomeInternet";
+import AllPackages from "../Components/Packages/AllPackages";
 
 const page = () => {
   return (
@@ -14,17 +14,20 @@ const page = () => {
       <TopBar />
       <Navbar />
       <CommonHeader
-        title={"Hey! Share Your Opinion"}
-        header={"Contact Us"}
+        title={"High Speed Internet Packages"}
+        header={
+          <>
+            Choose the Perfect Plan <br /> for Your Needs
+          </>
+        }
         desc={
-          "If you have any concerns or questions, please feel free to reach us."
+          "Confusion! Contact Us – Super Fast Optical Fiber Internet Connectivity is Now on Your Hands. At least try once, you have never experienced it before."
         }
       />
       <div className="space-y-24">
-        <ContactForm />
+        <AllPackages />
         <Testimonial />
         <CTA />
-        <FAQSection />
         <Footer />
       </div>
     </div>

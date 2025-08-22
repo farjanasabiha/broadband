@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React, { useState } from "react";
 import Image from "next/image";
 
@@ -6,22 +6,18 @@ const AboutTab = () => {
   const [activeTab, setActiveTab] = useState("IIG/Upstreme");
 
   const clientLogos = {
-    'IIG/Upstreme': [
+    "IIG/Upstreme": [
       { id: 1, logo: "/unnamed-1.webp", type: "government" },
       { id: 2, logo: "/unnamed-1.webp", type: "corporate" },
       { id: 3, logo: "/unnamed-1.webp", type: "corporate" },
       { id: 4, logo: "/unnamed-1.webp", type: "corporate" },
     ],
-    'Peering': [
+    Peering: [
       { id: 1, logo: "/unnamed-1.webp", type: "corporate" },
       { id: 2, logo: "/unnamed-1.webp", type: "corporate" },
     ],
-    'Techonology': [
-      { id: 1, logo: "/unnamed-1.webp", type: "corporate" },
-    ],
-    'NTTN': [
-            { id: 1, logo: "/unnamed-1.webp", type: "government" },
-    ]
+    Techonology: [{ id: 1, logo: "/unnamed-1.webp", type: "corporate" }],
+    NTTN: [{ id: 1, logo: "/unnamed-1.webp", type: "government" }],
   };
 
   return (
@@ -37,16 +33,18 @@ const AboutTab = () => {
             </span>
           </h1>
           <p className="text-[#b2b5af] w-full lg:w-2/4 text-sm lg:text-lg mb-8 leading-relaxed">
-            Through our partners’ best in technology, we solve your unique, global business needs whether you’re a small to medium or enterprise business.
+            Through our partners’ best in technology, we solve your unique,
+            global business needs whether you’re a small to medium or enterprise
+            business.
           </p>
         </div>
 
         {/* Tab Navigation */}
-        <div className="flex justify-center mb-4">
-          <div className="flex space-x-2 bg-gray-800/50 backdrop-blur-sm rounded-full p-2 border border-gray-700/50">
+        <div className="flex justify-center mb-10">
+          <div className="lg:flex space-x-4 space-y-4 lg:space-y-0 lg:space-x-2 backdrop-blur-sm rounded-full p-2">
             <button
               onClick={() => setActiveTab("IIG/Upstreme")}
-              className={`px-7 py-2 rounded-full font-medium transition-all duration-300 ${
+              className={`px-10 py-3  w-full md:w-auto text-lg cursor-pointer font-medium rounded-full  transition-all duration-300 ${
                 activeTab === "IIG/Upstreme"
                   ? "bg-gradient-to-b from-[#ff0033] to-[#bd556a63] text-white shadow-lg border border-black"
                   : "text-gray-400 hover:text-white border border-gray-100/40 hover:bg-gray-700/50"
@@ -56,7 +54,7 @@ const AboutTab = () => {
             </button>
             <button
               onClick={() => setActiveTab("Peering")}
-              className={`px-7 py-2 rounded-full font-medium transition-all duration-300 ${
+              className={`px-10 py-3  w-full md:w-auto text-lg cursor-pointer font-medium rounded-full  transition-all duration-300 ${
                 activeTab === "Peering"
                   ? "bg-gradient-to-b from-[#ff0033] to-[#bd556a63] text-white shadow-lg border border-black"
                   : "text-gray-400 hover:text-white border border-gray-100/40 hover:bg-gray-700/50"
@@ -64,9 +62,9 @@ const AboutTab = () => {
             >
               Peering
             </button>
-                        <button
+            <button
               onClick={() => setActiveTab("Techonology")}
-              className={`px-7 py-2 rounded-full font-medium transition-all duration-300 ${
+              className={`px-10 py-3  w-full md:w-auto text-lg cursor-pointer font-medium rounded-full  transition-all duration-300 ${
                 activeTab === "Techonology"
                   ? "bg-gradient-to-b from-[#ff0033] to-[#bd556a63] text-white shadow-lg border border-black"
                   : "text-gray-400 hover:text-white border border-gray-100/40 hover:bg-gray-700/50"
@@ -74,14 +72,15 @@ const AboutTab = () => {
             >
               Techonology
             </button>
-                                    <button
+            <button
               onClick={() => setActiveTab("NTTN")}
-              className={`px-7 py-2 rounded-full font-medium transition-all duration-300 ${
+              className={`px-10 py-3  w-full md:w-auto text-lg cursor-pointer font-medium rounded-full  transition-all duration-300 ${
                 activeTab === "NTTN"
                   ? "bg-gradient-to-b from-[#ff0033] to-[#bd556a63] text-white shadow-lg border border-black"
                   : "text-gray-400 hover:text-white border border-gray-100/40 hover:bg-gray-700/50"
               }`}
-            >NTTN
+            >
+              NTTN
             </button>
           </div>
         </div>
