@@ -38,7 +38,7 @@ const Blog = () => {
       date: "October 8, 2024",
       comments: "No Comments",
     },
-        {
+    {
       id: 4,
       title:
         "Best Home Internet Packages in Bangladesh: A Comprehensive Guide for 2025",
@@ -49,7 +49,7 @@ const Blog = () => {
       date: "October 8, 2024",
       comments: "No Comments",
     },
-        {
+    {
       id: 5,
       title:
         "Best Home Internet Packages in Bangladesh: A Comprehensive Guide for 2025",
@@ -60,7 +60,7 @@ const Blog = () => {
       date: "October 8, 2024",
       comments: "No Comments",
     },
-        {
+    {
       id: 6,
       title:
         "Best Home Internet Packages in Bangladesh: A Comprehensive Guide for 2025",
@@ -71,7 +71,7 @@ const Blog = () => {
       date: "October 8, 2024",
       comments: "No Comments",
     },
-            {
+    {
       id: 7,
       title:
         "Best Home Internet Packages in Bangladesh: A Comprehensive Guide for 2025",
@@ -85,8 +85,8 @@ const Blog = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+    <div className="min-h-screen py-5">
+      <div className="container mx-auto max-w-6xl px-5">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {packages.map((pkg, index) => (
             <div

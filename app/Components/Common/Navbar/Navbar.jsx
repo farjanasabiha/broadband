@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { HiMenu, HiX } from "react-icons/hi";
 import Image from "next/image";
+
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -32,18 +33,12 @@ const Navbar = () => {
   return (
     <div
       className={`sticky top-0 z-50 transition-all duration-300 ${
-        scrolled ? "backdrop-blur-md bg-black/40 shadow-md" : "bg-black"
+        scrolled ? "backdrop-blur-md bg-black/40 shadow-md z-[999]" : "bg-black"
       }`}
     >
       <div className="navbar container max-w-6xl mx-auto px-5 text-white flex items-center justify-between py-2">
         <div className="flex items-center gap-2">
-          <Image
-            src="/sycncitlogo-01.png"
-            alt="Logo"
-            height={80}
-            width={80}
-            className=""
-          />
+          <Image src="/sycncitlogo-01.png" alt="Logo" height={80} width={80} />
         </div>
 
         {/* Desktop Menu */}
@@ -63,7 +58,7 @@ const Navbar = () => {
         </ul>
 
         {/* Mobile Hamburger */}
-        <div className="lg:hidden">
+        <div className="lg:hidden z-50">
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="text-white focus:outline-none"
@@ -77,9 +72,17 @@ const Navbar = () => {
         </div>
       </div>
 
+      {/* Overlay (behind sidebar) */}
+      {menuOpen && (
+        <div
+          className="fixed inset-0 bg-black/60 backdrop-blur-sm z-20"
+          onClick={() => setMenuOpen(false)}
+        ></div>
+      )}
+
       {/* Mobile Sidebar Menu */}
       <div
-        className={`fixed top-0 left-0 h-full w-64 bg-black text-white transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 left-0 h-full w-64 bg-black text-white z-30 transform transition-transform duration-300 ease-in-out ${
           menuOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >

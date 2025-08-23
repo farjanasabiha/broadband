@@ -10,21 +10,23 @@ import TermsAndConditions from "../Components/TermsAndConditions/TermsAndConditi
 
 const page = () => {
   return (
-    <div className="space-y-24">
+    <div className="bg-black">
       <TopBar />
       <Navbar />
       <CommonHeader
         title={"Asian Network"}
-        header={"Privacy Policy"}
+        header={"Terms & Conditions"}
         desc={
           "Please read our terms and conditions. If you have queries? Contact Us."
         }
       />
-      <TermsAndConditions />
-      <Testimonial />
-      <CTA />
-      <FAQ />
-      <Footer />
+      <div className="space-y-24">
+        <TermsAndConditions />
+        <Testimonial />
+        <CTA />
+        <FAQ />
+        <Footer />
+      </div>
     </div>
   );
 };
