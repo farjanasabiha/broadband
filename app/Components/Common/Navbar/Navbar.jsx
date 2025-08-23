@@ -1,30 +1,32 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { HiMenu, HiX } from "react-icons/hi";
-
+import Image from "next/image";
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const navLinks = [
-    { name: "Home", active: true },
-    { name: "Speed Challenge" },
-    { name: "About Us" },
-    { name: "Packages" },
-    { name: "Coverage" },
-    { name: "Services" },
-    { name: "Referral Offer" },
-    { name: "Pay Bills" },
-    { name: "Contact" },
+    { name: "Home", href: "/" },
+    { name: "Speed Challenge", href: "/speedChallange" },
+    { name: "About Us", href: "/about" },
+    { name: "Packages", href: "/packages" },
+    { name: "Coverage", href: "/coverage" },
+    { name: "Services", href: "/services" },
+    { name: "Referral Offer", href: "/refferal" },
+    { name: "Pay Bills", href: "/paybills" },
+    { name: "Contact", href: "/contact" },
   ];
 
   return (
@@ -34,12 +36,13 @@ const Navbar = () => {
       }`}
     >
       <div className="navbar container max-w-6xl mx-auto px-5 text-white flex items-center justify-between py-2">
-        {/* Logo */}
         <div className="flex items-center gap-2">
-          <img
-            src="https://asiannetworkbd.net/wp-content/uploads/2024/09/for-white-bg-logo-1024x801.png"
+          <Image
+            src="/sycncitlogo-01.png"
             alt="Logo"
-            className="h-24 py-2 w-auto"
+            height={80}
+            width={80}
+            className=""
           />
         </div>
 
@@ -47,14 +50,14 @@ const Navbar = () => {
         <ul className="hidden lg:flex gap-6 text-sm items-center">
           {navLinks.map((link, idx) => (
             <li key={idx}>
-              <a
-                href="#"
-                className={`hover:text-secondary ${
-                  link.active ? "text-lime-400 font-semibold" : ""
+              <Link
+                href={link.href}
+                className={`transition-colors font-bold duration-200 hover:text-secondary ${
+                  pathname === link.href ? "text-secondary font-semibold" : ""
                 }`}
               >
                 {link.name}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -66,32 +69,39 @@ const Navbar = () => {
             className="text-white focus:outline-none"
           >
             {menuOpen ? (
-              <HiX className="h-6 w-6" />
+              <HiX className="h-7 w-7" />
             ) : (
-              <HiMenu className="h-6 w-6" />
+              <HiMenu className="h-7 w-7" />
             )}
           </button>
         </div>
       </div>
 
-      {/* Animated Mobile Menu */}
+      {/* Mobile Sidebar Menu */}
       <div
-        className={`lg:hidden bg-black/90 text-center backdrop-blur-md text-white transform transition-all duration-300 ease-in-out origin-top overflow-hidden ${
-          menuOpen ? "scale-y-100 max-h-screen py-4" : "scale-y-0 max-h-0 py-0"
+        className={`fixed top-0 left-0 h-full w-64 bg-black text-white transform transition-transform duration-300 ease-in-out ${
+          menuOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        <ul className="flex flex-col gap-3 text-sm px-4">
+        <div className="flex justify-between items-center px-4 py-3 border-b border-gray-700">
+          <span className="text-lg font-bold">Menu</span>
+          <button onClick={() => setMenuOpen(false)}>
+            <HiX className="h-6 w-6" />
+          </button>
+        </div>
+
+        <ul className="flex flex-col gap-4 mt-6 px-6">
           {navLinks.map((link, idx) => (
             <li key={idx}>
-              <a
-                href="#"
-                className={`block hover:text-lime-400 ${
-                  link.active ? "text-lime-400 font-semibold" : ""
+              <Link
+                href={link.href}
+                className={`block py-2 transition-colors font-bold duration-200 hover:text-secondary ${
+                  pathname === link.href ? "text-secondary font-semibold" : ""
                 }`}
-                onClick={() => setMenuOpen(false)} // Close on click
+                onClick={() => setMenuOpen(false)}
               >
                 {link.name}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

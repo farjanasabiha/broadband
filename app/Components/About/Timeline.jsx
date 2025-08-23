@@ -51,7 +51,7 @@ export default function Timeline() {
             contentStyle={{ background: "#000", color: "#fff" }}
             contentArrowStyle={{ borderRight: "7px solid #111" }}
             date={item.year}
-            iconStyle={{ background: "#c9ff00", color: "#111" }}
+            iconStyle={{ background: "#ae445a", color: "#111" }}
             position={item.side}
           >
             <h3 className="vertical-timeline-element-title text-center text-[24px] text-primaryColor font-bold">

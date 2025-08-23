@@ -8,7 +8,7 @@ const CTA = () => {
   return (
     <div>
       <div className="bg-black container max-w-6xl mx-auto px-5 ">
-        <div className="pb-10">
+        <div className="pb-16">
           <div className="text-left mb-8">
             <h1 className="text-3xl lg:text-[35px] font-medium leading-relaxed mb-3 text-white">
               To get this

@@ -21,14 +21,14 @@ const NetworkCoverage = () => {
             <div className="flex items-center justify-center lg:justify-start">
               <Image src={"/cube.webp"} alt="cube" height={50} width={50} />
               <div className="ml-5 text-center">
-                <h4 className="text-5xl text-lime-300 mb-2">30+</h4>
+                <h4 className="text-5xl text-secondary mb-2">30+</h4>
                 <span className="text-[19px] text-[#b2b5af]">POP UP</span>
               </div>
             </div>
             <div className="flex items-center justify-center lg:justify-start">
               <Image src={"/network.webp"} alt="cube" height={50} width={50} />
               <div className="ml-5 text-center">
-                <h4 className="text-5xl text-lime-300 mb-2">5000+</h4>
+                <h4 className="text-5xl text-secondary mb-2">5000+</h4>
                 <span className="text-[19px] text-[#b2b5af]">
                   Total Customer
                 </span>
@@ -39,7 +39,7 @@ const NetworkCoverage = () => {
             <div className="flex items-center justify-center lg:justify-start">
               <Image src={"/usb.webp"} alt="cube" height={50} width={50} />
               <div className="ml-5 text-center">
-                <h4 className="text-5xl text-lime-300 mb-2">5</h4>
+                <h4 className="text-5xl text-secondary mb-2">5</h4>
                 <span className="text-[19px] text-[#b2b5af]">
                   Regional Hubs
                 </span>
@@ -48,7 +48,7 @@ const NetworkCoverage = () => {
             <div className="flex items-center justify-center lg:justify-start">
               <Image src={"/location.webp"} alt="cube" height={50} width={50} />
               <div className="ml-5 text-center">
-                <h4 className="text-5xl text-lime-300 mb-2">1</h4>
+                <h4 className="text-5xl text-secondary mb-2">1</h4>
                 <span className="text-[19px] text-[#b2b5af]">Districts</span>
               </div>
             </div>
@@ -57,7 +57,7 @@ const NetworkCoverage = () => {
             <div className="flex items-center justify-center lg:justify-start lg:justify-start">
               <Image src={"/location.webp"} alt="cube" height={50} width={50} />
               <div className="ml-5 text-center">
-                <h4 className="text-5xl text-lime-300 mb-2">5</h4>
+                <h4 className="text-5xl text-secondary mb-2">5</h4>
                 <span className="text-[19px] text-[#b2b5af]">
                   Number of Upazilas
                 </span>

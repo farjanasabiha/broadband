@@ -1,6 +1,8 @@
 "use client";
 import React, { useState } from "react";
-
+import { MdEmail } from "react-icons/md";
+import { FaPhoneAlt } from "react-icons/fa";
+import Image from "next/image";
 const TopBar = () => {
   const [language, setLanguage] = useState("en");
 
@@ -9,28 +11,20 @@ const TopBar = () => {
   };
 
   return (
-    <div className="bg-[#5e731f] text-black text-sm py-2 px-4 mb-0">
+    <div className="bg-white text-black text-sm py-2 px-4 mb-0">
       <div className="container max-w-6xl mx-auto flex justify-end md:justify-between items-center">
-        {/* Left Side: Contact Info */}
+        {/* Left Side: */}
         <div className="hidden md:block ">
           <div className="flex items-center space-x-6 ">
             {/* Phone */}
             <div className="flex items-center gap-1">
-              <img
-                src="https://asiannetworkbd.net/wp-content/uploads/2024/06/Group-20.png"
-                alt="Phone"
-                className="w-6 h-6"
-              />
+              <FaPhoneAlt className="text-lg" />
               <span className="font-semibold">09638233323</span>
             </div>
 
             {/* Email */}
             <div className="flex items-center gap-1">
-              <img
-                src="https://asiannetworkbd.net/wp-content/uploads/2024/06/Group-21-1.png"
-                alt="Email"
-                className="w-6 h-6"
-              />
+              <MdEmail className="text-lg" />
               <span className="font-semibold">support@asiannetworkbd.net</span>
             </div>
           </div>
@@ -40,16 +34,14 @@ const TopBar = () => {
           <div
             tabIndex={0}
             role="button"
-            className="flex items-center bg-black text-lime-400 px-3 py-1 rounded cursor-pointer"
+            className="flex items-center bg-black text-secondary px-3 py-1 rounded cursor-pointer"
           >
-            <img
-              src={
-                language === "en"
-                  ? "https://asiannetworkbd.net/wp-content/plugins/gtranslate/flags/16/en.png"
-                  : "https://asiannetworkbd.net/wp-content/plugins/gtranslate/flags/16/bn.png"
-              }
+            <Image
+              src={language === "en" ? "/en.png" : "/bn.png"}
               alt="Flag"
-              className="w-5 h-4 mr-2"
+              width={20}
+              height={20}
+              className=" mr-2"
             />
             {language === "en" ? "English" : "বাংলা"}
             <svg
@@ -66,26 +58,27 @@ const TopBar = () => {
           >
             <li>
               <button
-                className="flex items-center gap-2 hover:text-lime-400"
+                className="flex items-center gap-2 hover:text-secondary"
                 onClick={() => handleLanguageChange("en")}
               >
-                <img
-                  src="https://asiannetworkbd.net/wp-content/plugins/gtranslate/flags/16/en.png"
-                  alt="English"
-                  className="w-5 h-4"
-                />
+                <Image src="/en.png"
+                  alt="English"               
+                width={20}
+                height={20} />
                 English
               </button>
             </li>
             <li>
               <button
-                className="flex items-center gap-2 hover:text-lime-400"
+                className="flex items-center gap-2 hover:text-secondary"
                 onClick={() => handleLanguageChange("bd")}
               >
-                <img
-                  src="https://asiannetworkbd.net/wp-content/plugins/gtranslate/flags/16/bn.png"
+                <Image
+                  src="/bn.png"
                   alt="Bangla"
-                  className="w-5 h-4"
+                  width={20}
+                  height={20}
+                  className=""
                 />
                 বাংলা
               </button>

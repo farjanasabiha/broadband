@@ -1,5 +1,4 @@
 "use client";
-import { ReactLenis } from "lenis/react";
 import HomeHeader from "./Components/Home/HomeHeader";
 import HomeSlider from "./Components/Home/Slider/HomeSlider";
 import Network from "./Components/Home/Network";
@@ -18,7 +17,6 @@ import SpeedTest from "./Components/Home/SpeedTest";
 import Testimonial from "./Components/Common/Testimonial/Testimonial";
 export default function Home() {
   return (
-    <ReactLenis root data-theme="dark">
       <main className="font-sf bg-black">
         <TopBar />
         <Navbar />
@@ -39,6 +37,5 @@ export default function Home() {
           <Footer />
         </div>
       </main>
-    </ReactLenis>
   );
 }

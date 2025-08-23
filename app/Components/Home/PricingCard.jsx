@@ -182,7 +182,7 @@ const PricingCard = () => {
                       </div>
                     </div>
                     <div>
-                      <div className="inline-block px-3 sm:px-4 py-2 sm:py-3 text-white rounded-full bg-red-700 font-extrabold text-lg sm:text-xl md:text-2xl lg:text-[28px]">
+                      <div className="inline-block px-3 sm:px-4 py-2 sm:py-3 text-white rounded-full bg-secondary font-extrabold text-lg sm:text-xl md:text-2xl lg:text-[28px]">
                         {plan.speed}
                       </div>
                     </div>
@@ -190,7 +190,7 @@ const PricingCard = () => {
                       {plan.price}
                     </div>
                     <div>
-                      <GrSchedulePlay className="h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 lg:h-17 lg:w-17 md:mx-auto text-red-700" />
+                      <GrSchedulePlay className="h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 lg:h-17 lg:w-17 md:mx-auto text-secondary" />
                     </div>
                   </div>
 
