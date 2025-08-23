@@ -4,7 +4,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 const HomeHeader = () => {
   return (
     <div className="container mx-auto px-5 lg:pb-10 2xl:pb-0">
-      <div className="text-center space-y-5 lg:space-y-10">
+      <div className="text-center space-y-5 lg:space-y-10 pt-10 md:pt-14 lg:pt-20">
         <h1 className="font-medium text-4xl md:text-5xl lg:text-8xl text-white leading-16 lg:leading-30">
           Upgrade Your <br /> Internet Experience
         </h1>

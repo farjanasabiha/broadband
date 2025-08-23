@@ -3,6 +3,11 @@ import React from "react";
 const SpeedTest = () => {
   return (
     <div className="text-right container max-w-6xl mx-auto px-5">
+      {/* Title */}
+      <h2 className="text-3xl md:text-4xl font-medium text-left leading-snug mb-12">
+        Test Your Present <br />{" "}
+        <span className="text-white">Internet Speed</span>
+      </h2>
       <div style={{ minHeight: "360px" }}>
         <div
           style={{
