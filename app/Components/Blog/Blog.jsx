@@ -100,7 +100,7 @@ const Blog = () => {
               >
                 {/* Category Badge */}
                 <div className="absolute top-4 right-4 z-10">
-                  <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-secondary text-white shadow-lg animate-pulse">
+                  <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primaryColor text-white shadow-lg animate-pulse">
                     INTERNET
                   </span>
                 </div>
