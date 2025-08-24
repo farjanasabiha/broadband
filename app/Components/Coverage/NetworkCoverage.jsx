@@ -1,5 +1,11 @@
+"use client";
 import Image from "next/image";
 import React from "react";
+import CountUp from "react-countup";
+import { FiBox } from "react-icons/fi";
+import { IoIosPeople } from "react-icons/io";
+import { SiHubspot } from "react-icons/si";
+import { TbMapPinDown } from "react-icons/tb";
 
 const NetworkCoverage = () => {
   return (
@@ -17,53 +23,45 @@ const NetworkCoverage = () => {
           />
         </div>
         <div className="lg:space-y-26">
-          <div className="grid grid-cols-1 md:grid-cols-2 space-y-10 md:space-y-0 lg:gap-30">
-            <div className="flex items-center justify-center lg:justify-start">
-              <Image src={"/cube.webp"} alt="cube" height={50} width={50} />
-              <div className="ml-5 text-center">
-                <h4 className="text-5xl text-secondary mb-2">30+</h4>
-                <span className="text-[19px] text-[#b2b5af]">POP UP</span>
+          <div className="grid grid-cols-1 md:grid-cols-2 space-y-20 md:space-y-14 lg:gap-10">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:justify-start">
+              <FiBox className="text-6xl text-secondary" />
+              <div className="">
+                  <CountUp end={30}  suffix="+" className='text-5xl text-secondary'/>
+                  <p className="text-[19px] text-[#b2b5af] pt-3">POP UP</p>
               </div>
             </div>
-            <div className="flex items-center justify-center lg:justify-start">
-              <Image src={"/network.webp"} alt="cube" height={50} width={50} />
-              <div className="ml-5 text-center">
-                <h4 className="text-5xl text-secondary mb-2">5000+</h4>
-                <span className="text-[19px] text-[#b2b5af]">
-                  Total Customer
-                </span>
+                        <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:justify-start">
+              <IoIosPeople className="text-6xl text-secondary" />
+              <div className="">
+                  <CountUp end={5000}  suffix="+" className='text-5xl text-secondary'/>
+                  <p className="text-[19px] text-[#b2b5af] pt-3">Total Customer</p>
               </div>
             </div>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 mt-10 lg:mt-0 space-y-10 md:space-y-0 lg:gap-30">
-            <div className="flex items-center justify-center lg:justify-start">
-              <Image src={"/usb.webp"} alt="cube" height={50} width={50} />
-              <div className="ml-5 text-center">
-                <h4 className="text-5xl text-secondary mb-2">5</h4>
-                <span className="text-[19px] text-[#b2b5af]">
-                  Regional Hubs
-                </span>
+
+            <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:justify-start">
+              <SiHubspot  className="text-6xl text-secondary" />
+              <div className="text-center md:text-left">
+                <CountUp end={5} className='text-5xl text-center md:text-left text-secondary'/>
+                <p className="text-[19px] text-[#b2b5af] pt-3">Regional Hubs</p>
               </div>
             </div>
-            <div className="flex items-center justify-center lg:justify-start">
-              <Image src={"/location.webp"} alt="cube" height={50} width={50} />
-              <div className="ml-5 text-center">
-                <h4 className="text-5xl text-secondary mb-2">1</h4>
-                <span className="text-[19px] text-[#b2b5af]">Districts</span>
+            <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:justify-start">
+              <TbMapPinDown  className="text-6xl text-secondary" />
+              <div className="text-center md:text-left">
+                <CountUp end={1} className='text-5xl text-secondary'/>
+                <p className="text-[19px] text-[#b2b5af] pt-3">Districts</p>
               </div>
             </div>
-          </div>
-          <div className="grid grid-cols-1 mt-10 lg:mt-0 lg:gap-30">
-            <div className="flex items-center justify-center lg:justify-start lg:justify-start">
-              <Image src={"/location.webp"} alt="cube" height={50} width={50} />
-              <div className="ml-5 text-center">
-                <h4 className="text-5xl text-secondary mb-2">5</h4>
-                <span className="text-[19px] text-[#b2b5af]">
-                  Number of Upazilas
-                </span>
+
+                        <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:justify-start">
+              <TbMapPinDown className="text-6xl text-secondary" />
+              <div className="text-center md:text-left">
+                  <CountUp end={5}   className='text-5xl text-secondary'/>
+                  <p className="text-[19px] text-[#b2b5af] pt-3">Number of Upazilas</p>
               </div>
             </div>
-          </div>
+           </div>
         </div>
       </div>
     </div>

@@ -213,11 +213,11 @@ const PricingCard = () => {
                   <div className="text-left md:text-center md:mx-auto col-span-12 lg:col-span-3">
                     <button>
                       <Link
-                        href={""}
+                        href='/new-connection'
                         className="flex items-center justify-center md:justify-between gap-1 sm:gap-2 py-2 sm:py-3 px-4 sm:px-6 rounded-2xl sm:rounded-3xl font-medium bg-gradient-to-b from-[#ff0033] to-[#bd556a63]"
                       >
                         <p className="text-sm sm:text-base md:text-lg font-semibold">
-                          Get Started
+                          Get Today
                         </p>
                         <FaArrowRightLong className="text-sm sm:text-base" />
                       </Link>

@@ -5,7 +5,7 @@ const HomeHeader = () => {
   return (
     <div className="container mx-auto px-5 lg:pb-10 2xl:pb-0">
       <div className="text-center space-y-5 lg:space-y-10 pt-10 md:pt-14 lg:pt-20">
-        <h1 className="font-medium text-4xl md:text-5xl lg:text-8xl text-white leading-16 lg:leading-30">
+        <h1 className="font-medium text-4xl md:text-5xl lg:text-[100px] text-white leading-16 lg:leading-30">
           Upgrade Your <br /> Internet Experience
         </h1>
         <p className="text-lg font-normal text-[#b2b5af]">
@@ -14,11 +14,11 @@ const HomeHeader = () => {
         <div className="text-center mx-auto">
           <button>
             <Link
-              className="flex items-center text-medium justify-between gap-2 py-3 px-8 rounded-3xl font-medium bg-gradient-to-b from-[#ff0033] to-[#bd556a63]"
+              className="flex items-center font-semibold justify-between gap-2 py-3 px-8 rounded-3xl font-medium bg-gradient-to-b from-[#ff0033] to-[#bd556a63]"
               target="_blank"
-              href={"#"}
+              href='/new-connection'
             >
-              <span>Check Experience</span> <FaArrowRightLong />
+              <span className=''>Check Experience</span> <FaArrowRightLong />
             </Link>
           </button>
         </div>

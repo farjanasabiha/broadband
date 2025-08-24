@@ -26,10 +26,10 @@ const CTA = () => {
             <div className="">
               <button>
                 <Link
-                  href={""}
+                  href='/packages'
                   className="flex items-center justify-between gap-2 py-4 px-10 rounded-full font-medium bg-gradient-to-b from-[#ff0033] to-[#bd556a63]"
                 >
-                  <p className="text-2xl">Choose Package</p>{" "}
+                  <p className="text-2xl">Choose Package</p>
                 </Link>
               </button>
             </div>

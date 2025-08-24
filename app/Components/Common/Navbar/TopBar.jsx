@@ -11,7 +11,7 @@ const TopBar = () => {
   };
 
   return (
-    <div className="bg-white text-black text-sm py-2 px-4 mb-0">
+    <div className="bg-primaryColor text-black text-sm py-2 px-4 mb-0">
       <div className="container max-w-6xl mx-auto flex justify-end md:justify-between items-center">
         {/* Left Side: */}
         <div className="hidden md:block ">

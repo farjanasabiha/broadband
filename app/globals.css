@@ -2,9 +2,9 @@
 @plugin "daisyui";
 
 @theme {
-  --color-primaryColor: #fd6244;
-  --color-secondary: #ae445a;
-  --color-tertiary: #f39f5a;
+  --color-primaryColor: #f39f5a;
+  --color-secondary: #f39f5a;
+  --color-tertiary: #451952;
   --color-dark: #1d1a39;
   --font-sf: "SF Pro", sans-serif;
 }

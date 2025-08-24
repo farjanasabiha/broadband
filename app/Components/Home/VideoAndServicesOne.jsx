@@ -90,7 +90,7 @@ const VideoAndServicesOne = () => {
                       </p>
                       <button>
                         <Link
-                          href={"#"}
+                          href='/new-connection'
                           className="flex items-center justify-center gap-2 py-2 px-6 rounded-3xl font-medium bg-gradient-to-b from-[#ff0033] to-[#bd556a63]"
                         >
                           <span>Test Now</span> <FaArrowRightLong />

@@ -72,7 +72,7 @@ const Services = () => {
                 <div className="text-center mx-auto">
                   <button>
                     <Link
-                      href={"#"}
+                      href='/new-connection'
                       className="flex items-center justify-between gap-2 py-2 px-6 rounded-3xl font-medium bg-gradient-to-b from-[#ff0033] to-[#bd556a63]"
                     >
                       <span>Use Today</span> <FaArrowRightLong />
