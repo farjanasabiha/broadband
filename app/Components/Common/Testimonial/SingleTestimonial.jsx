@@ -2,12 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { FaStar } from "react-icons/fa6";
-const SingleTestimonial = ({
-  image,
-  title,
-  author,
-  description,
-}) => {
+const SingleTestimonial = ({ image, title, author, description }) => {
   return (
     <div className="">
       <div className="px-5 md:px-10 lg:px-20">
@@ -28,7 +23,7 @@ const SingleTestimonial = ({
             <p className="text-gray-300 text-center italic font-normal text-lg">
               {author}
             </p>
-            <h3 className="text-sm  italic text-center font-normal text-gray-300 mb-3 line-clamp-2 group-hover:text-secondary transition-colors duration-300">
+            <h3 className="text-sm  italic text-center font-normal text-gray-300 mb-3 line-clamp-2 group-hover:text-primaryColor transition-colors duration-300">
               {title}
             </h3>
             <div className="text-[#e4b915] text-center font-medium text-lg flex items-center justify-center gap-2">

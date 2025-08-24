@@ -190,7 +190,7 @@ const PricingCard = () => {
                       {plan.price}
                     </div>
                     <div>
-                      <GrSchedulePlay className="h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 lg:h-17 lg:w-17 md:mx-auto text-secondary" />
+                      <GrSchedulePlay className="h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 lg:h-17 lg:w-17 md:mx-auto text-primaryColor" />
                     </div>
                   </div>
 
@@ -213,7 +213,7 @@ const PricingCard = () => {
                   <div className="text-left md:text-center md:mx-auto col-span-12 lg:col-span-3">
                     <button>
                       <Link
-                        href='/new-connection'
+                        href="/new-connection"
                         className="flex items-center justify-center md:justify-between gap-1 sm:gap-2 py-2 sm:py-3 px-4 sm:px-6 rounded-2xl sm:rounded-3xl font-medium bg-gradient-to-b from-[#ff0033] to-[#bd556a63]"
                       >
                         <p className="text-sm sm:text-base md:text-lg font-semibold">

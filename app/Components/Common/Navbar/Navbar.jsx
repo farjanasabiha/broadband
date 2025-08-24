@@ -47,8 +47,10 @@ const Navbar = () => {
             <li key={idx}>
               <Link
                 href={link.href}
-                className={`transition-colors font-bold duration-200 hover:text-secondary ${
-                  pathname === link.href ? "text-secondary font-semibold" : ""
+                className={`transition-colors font-bold duration-200 hover:text-primaryColor ${
+                  pathname === link.href
+                    ? "text-primaryColor font-semibold"
+                    : ""
                 }`}
               >
                 {link.name}
@@ -98,8 +100,10 @@ const Navbar = () => {
             <li key={idx}>
               <Link
                 href={link.href}
-                className={`block py-2 transition-colors font-bold duration-200 hover:text-secondary ${
-                  pathname === link.href ? "text-secondary font-semibold" : ""
+                className={`block py-2 transition-colors font-bold duration-200 hover:text-primaryColor ${
+                  pathname === link.href
+                    ? "text-primaryColor font-semibold"
+                    : ""
                 }`}
                 onClick={() => setMenuOpen(false)}
               >

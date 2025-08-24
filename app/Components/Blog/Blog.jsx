@@ -121,7 +121,7 @@ const Blog = () => {
               {/* Content */}
               <div className="px-6 sm:px-8 py-10">
                 {/* Title */}
-                <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-secondary transition-colors duration-300">
+                <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-primaryColor transition-colors duration-300">
                   {pkg.title}
                 </h3>
 
@@ -132,7 +132,7 @@ const Blog = () => {
 
                 {/* Read More Button */}
                 <div className="mb-6">
-                  <button className="inline-flex items-center text-secondary  font-medium text-sm group-hover:translate-x-2 transition-all duration-300">
+                  <button className="inline-flex items-center text-primaryColor  font-medium text-sm group-hover:translate-x-2 transition-all duration-300">
                     READ MORE
                     <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
                   </button>

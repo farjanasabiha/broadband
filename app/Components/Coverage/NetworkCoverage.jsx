@@ -25,43 +25,58 @@ const NetworkCoverage = () => {
         <div className="lg:space-y-26">
           <div className="grid grid-cols-1 md:grid-cols-2 space-y-20 md:space-y-14 lg:gap-10">
             <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:justify-start">
-              <FiBox className="text-6xl text-secondary" />
+              <FiBox className="text-6xl text-primaryColor" />
               <div className="">
-                  <CountUp end={30}  suffix="+" className='text-5xl text-secondary'/>
-                  <p className="text-[19px] text-[#b2b5af] pt-3">POP UP</p>
+                <CountUp
+                  end={30}
+                  suffix="+"
+                  className="text-5xl text-primaryColor"
+                />
+                <p className="text-[19px] text-[#b2b5af] pt-3">POP UP</p>
               </div>
             </div>
-                        <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:justify-start">
-              <IoIosPeople className="text-6xl text-secondary" />
+            <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:justify-start">
+              <IoIosPeople className="text-6xl text-primaryColor" />
               <div className="">
-                  <CountUp end={5000}  suffix="+" className='text-5xl text-secondary'/>
-                  <p className="text-[19px] text-[#b2b5af] pt-3">Total Customer</p>
+                <CountUp
+                  end={5000}
+                  suffix="+"
+                  className="text-5xl text-primaryColor"
+                />
+                <p className="text-[19px] text-[#b2b5af] pt-3">
+                  Total Customer
+                </p>
               </div>
             </div>
 
             <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:justify-start">
-              <SiHubspot  className="text-6xl text-secondary" />
+              <SiHubspot className="text-6xl text-primaryColor" />
               <div className="text-center md:text-left">
-                <CountUp end={5} className='text-5xl text-center md:text-left text-secondary'/>
+                <CountUp
+                  end={5}
+                  className="text-5xl text-center md:text-left text-primaryColor"
+                />
                 <p className="text-[19px] text-[#b2b5af] pt-3">Regional Hubs</p>
               </div>
             </div>
             <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:justify-start">
-              <TbMapPinDown  className="text-6xl text-secondary" />
+              <TbMapPinDown className="text-6xl text-primaryColor" />
               <div className="text-center md:text-left">
-                <CountUp end={1} className='text-5xl text-secondary'/>
+                <CountUp end={1} className="text-5xl text-primaryColor" />
                 <p className="text-[19px] text-[#b2b5af] pt-3">Districts</p>
               </div>
             </div>
 
-                        <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:justify-start">
-              <TbMapPinDown className="text-6xl text-secondary" />
+            <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:justify-start">
+              <TbMapPinDown className="text-6xl text-primaryColor" />
               <div className="text-center md:text-left">
-                  <CountUp end={5}   className='text-5xl text-secondary'/>
-                  <p className="text-[19px] text-[#b2b5af] pt-3">Number of Upazilas</p>
+                <CountUp end={5} className="text-5xl text-primaryColor" />
+                <p className="text-[19px] text-[#b2b5af] pt-3">
+                  Number of Upazilas
+                </p>
               </div>
             </div>
-           </div>
+          </div>
         </div>
       </div>
     </div>

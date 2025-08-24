@@ -31,7 +31,7 @@ const SpeedLanding = () => {
     },
     security: {
       title: "Highly Secured",
-      icon: <Shield className="w-5 h-5 text-secondary" />,
+      icon: <Shield className="w-5 h-5 text-primaryColor" />,
       videoId: "L_jWHffIx5E", // Sample YouTube video ID
       description:
         "Advanced security protocols protect your data and privacy while maintaining lightning-fast speeds.",

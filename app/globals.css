@@ -3,9 +3,9 @@
 
 @theme {
   --color-primaryColor: #f39f5a;
-  --color-secondary: #f39f5a;
-  --color-tertiary: #451952;
-  --color-dark: #1d1a39;
+  --color-secondaryColor: #ae445a;
+  --color-tertiaryColor: #451952;
+  --color-darkColor: #1d1a39;
   --font-sf: "SF Pro", sans-serif;
 }
 

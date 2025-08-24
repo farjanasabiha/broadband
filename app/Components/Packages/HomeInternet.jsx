@@ -163,7 +163,7 @@ const HomeInternet = () => {
                     {plan.price}
                   </div>
                   <div>
-                    <GrSchedulePlay className="h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 lg:h-17 lg:w-17 md:mx-auto text-secondary" />
+                    <GrSchedulePlay className="h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 lg:h-17 lg:w-17 md:mx-auto text-primaryColor" />
                   </div>
                 </div>
 

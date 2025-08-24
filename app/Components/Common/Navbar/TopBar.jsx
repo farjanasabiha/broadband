@@ -34,7 +34,7 @@ const TopBar = () => {
           <div
             tabIndex={0}
             role="button"
-            className="flex items-center bg-black text-secondary px-3 py-1 rounded cursor-pointer"
+            className="flex items-center bg-black text-primaryColor px-3 py-1 rounded cursor-pointer"
           >
             <Image
               src={language === "en" ? "/en.png" : "/bn.png"}
@@ -58,19 +58,16 @@ const TopBar = () => {
           >
             <li>
               <button
-                className="flex items-center gap-2 hover:text-secondary"
+                className="flex items-center gap-2 hover:text-primaryColor"
                 onClick={() => handleLanguageChange("en")}
               >
-                <Image src="/en.png"
-                  alt="English"               
-                width={20}
-                height={20} />
+                <Image src="/en.png" alt="English" width={20} height={20} />
                 English
               </button>
             </li>
             <li>
               <button
-                className="flex items-center gap-2 hover:text-secondary"
+                className="flex items-center gap-2 hover:text-primaryColor"
                 onClick={() => handleLanguageChange("bd")}
               >
                 <Image

@@ -19,7 +19,7 @@ const Footer = () => {
             <div className="lg:pr-8">
               <div className="flex items-center space-x-3 mb-4">
                 <div>
-                  <h1 className="text-secondary font-bold text-lg sm:text-xl leading-tight">
+                  <h1 className="text-primaryColor font-bold text-lg sm:text-xl leading-tight">
                     ASIAN NETWORK
                   </h1>
                   <p className="text-xs sm:text-sm text-white">
@@ -37,10 +37,10 @@ const Footer = () => {
               </p>
               <div className="flex space-x-4 mt-4">
                 <Link href="#" className="hover:text-white transition-colors">
-                  <FaFacebookF className="text-secondary text-lg hover:text-white transition-colors" />
+                  <FaFacebookF className="text-primaryColor text-lg hover:text-white transition-colors" />
                 </Link>
                 <Link href="#" className="hover:text-white transition-colors">
-                  <FaYoutube className="text-secondary text-lg hover:text-white transition-colors" />
+                  <FaYoutube className="text-primaryColor text-lg hover:text-white transition-colors" />
                 </Link>
               </div>
             </div>
@@ -58,7 +58,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/blog"
-                      className="hover:text-secondary transition-colors"
+                      className="hover:text-primaryColor transition-colors"
                     >
                       Blog
                     </Link>
@@ -66,7 +66,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/privacy-policy"
-                      className="hover:text-secondary transition-colors"
+                      className="hover:text-primaryColor transition-colors"
                     >
                       Privacy Policy
                     </Link>
@@ -74,7 +74,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/terms-and-conditions"
-                      className="hover:text-secondary transition-colors"
+                      className="hover:text-primaryColor transition-colors"
                     >
                       Terms & Conditions
                     </Link>
@@ -82,7 +82,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="#"
-                      className="hover:text-secondary transition-colors"
+                      className="hover:text-primaryColor transition-colors"
                     >
                       Career
                     </Link>
@@ -99,7 +99,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/packages"
-                      className="hover:text-secondary transition-colors"
+                      className="hover:text-primaryColor transition-colors"
                     >
                       Packages
                     </Link>
@@ -107,7 +107,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/coverage"
-                      className="hover:text-secondary transition-colors"
+                      className="hover:text-primaryColor transition-colors"
                     >
                       Coverage Area
                     </Link>
@@ -115,7 +115,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/contact"
-                      className="hover:text-secondary transition-colors"
+                      className="hover:text-primaryColor transition-colors"
                     >
                       Support
                     </Link>
@@ -130,23 +130,23 @@ const Footer = () => {
                 </h2>
                 <ul className="text-sm text-[#b2b2b2] space-y-2">
                   <li className="flex items-start">
-                    <FaPhoneAlt className="text-secondary mt-1 mr-2 flex-shrink-0" />
-                    <span className="hover:text-secondary transition-colors">
+                    <FaPhoneAlt className="text-primaryColor mt-1 mr-2 flex-shrink-0" />
+                    <span className="hover:text-primaryColor transition-colors">
                       09638233233
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <FaEnvelope className="text-secondary mt-1 mr-2 flex-shrink-0" />
+                    <FaEnvelope className="text-primaryColor mt-1 mr-2 flex-shrink-0" />
                     <Link
                       href="mailto:support@asiannetworkbd.net"
-                      className="hover:text-secondary transition-colors"
+                      className="hover:text-primaryColor transition-colors"
                     >
                       support@asiannetworkbd.net
                     </Link>
                   </li>
                   <li className="flex items-start">
-                    <FaMapMarkerAlt className="text-secondary mt-1 mr-2 flex-shrink-0" />
-                    <span className="hover:text-secondary transition-colors">
+                    <FaMapMarkerAlt className="text-primaryColor mt-1 mr-2 flex-shrink-0" />
+                    <span className="hover:text-primaryColor transition-colors">
                       08, Eidgha Road, Pagar, <br /> Tongi, Gazipur-1710
                     </span>
                   </li>
@@ -204,7 +204,7 @@ const Footer = () => {
                   Developed by{" "}
                   <Link
                     href="#"
-                    className="text-secondary font-medium hover:underline"
+                    className="text-primaryColor font-medium hover:underline"
                   >
                     Boyshero
                   </Link>
