@@ -77,25 +77,30 @@ const Navbar = () => {
       {/* Overlay (behind sidebar) */}
       {menuOpen && (
         <div
-          className="fixed inset-0 bg-black/60 backdrop-blur-sm z-20"
+          className="fixed z-40"
           onClick={() => setMenuOpen(false)}
         ></div>
       )}
 
-      {/* Mobile Sidebar Menu */}
+      {/* Mobile Sidebar Menu*/}
       <div
-        className={`fixed top-0 left-0 h-full w-64 bg-black text-white z-30 transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 left-0 h-screen w-64 bg-black text-white z-50 transform transition-transform duration-300 ease-in-out ${
           menuOpen ? "translate-x-0" : "-translate-x-full"
         }`}
+        style={{ 
+          backgroundColor: '#000',
+          height: '100vh', // Force full viewport height
+          overflowY: 'auto' // Allow scrolling if content exceeds screen height
+        }}
       >
-        <div className="flex justify-between items-center px-4 py-3 border-b border-gray-700">
-          <span className="text-lg font-bold">Menu</span>
+        <div className="flex justify-between items-center px-4 py-3 border-b border-gray-700 bg-black sticky top-0">
+          <Image src="/sycncitlogo-01.png" alt="Logo" height={80} width={80} />
           <button onClick={() => setMenuOpen(false)}>
             <HiX className="h-6 w-6" />
           </button>
         </div>
 
-        <ul className="flex flex-col gap-4 mt-6 px-6">
+        <ul className="flex flex-col gap-4 mt-6 px-6 pb-6 bg-black">
           {navLinks.map((link, idx) => (
             <li key={idx}>
               <Link

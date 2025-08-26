@@ -8,6 +8,11 @@ import CTA from "../Components/Common/CTA";
 import FAQSection from "../Components/Common/FAQ";
 import ContactForm from "../Components/Contact/ContactForm";
 
+export const metadata = {
+  title: "Contact SyncIT - Best Broadband Internet & WiFi Service in Sylhet",
+  description: "Discover why SyncIT offers the best internet service in Sylhet. Trusted since 2014. High speed, 24/7 support, and reliable fiber internet for all.",
+};
+
 const page = () => {
   return (
     <div className="bg-black">
