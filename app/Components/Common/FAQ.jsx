@@ -64,7 +64,7 @@ export default function FAQSection() {
                     </span>
                     <div className="ml-4 flex-shrink-0">
                       {openIndex === index ? (
-                        <Minus className="h-5 w-5 text-green-400 transition-transform duration-300" />
+                        <Minus className="h-5 w-5 text-primaryColor transition-transform duration-300" />
                       ) : (
                         <ChevronDown className="h-5 w-5 text-gray-400 transition-transform duration-300" />
                       )}
