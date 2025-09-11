@@ -28,7 +28,6 @@ export default function ContactTeam() {
 
         <Link
           href="tel:01965300500"
-          target="_blanck"
           className="flex items-center justify-center gap-2 px-4 py-2 border rounded-md  cursor-pointer bg-gradient-to-b from-[#ff0033] to-[#bd556a63]"
         >
           <FaPhone className="text-black" size={20} />
@@ -48,7 +47,6 @@ export default function ContactTeam() {
 
         <Link
           href="mailto:support@syncit.com.bd"
-          target="_blank"
           className="flex items-center justify-center gap-2 px-4 py-2 border rounded-md  cursor-pointer bg-gradient-to-b from-[#ff0033] to-[#bd556a63]"
         >
           <HiOutlineMail className="text-red-600" size={22} />
@@ -65,12 +63,6 @@ export default function ContactTeam() {
           <span className="font-semibold">instagram.com/syncit</span>
           <span className="ml-auto">→</span>
         </Link>
-
-        <button className="flex items-center justify-center gap-2 px-4 py-2 border rounded-md  cursor-pointer bg-gradient-to-b from-[#ff0033] to-[#bd556a63]">
-          <MdOutlineThumbUp className="text-cyan-400" size={20} />
-          <span className="font-semibold">Hotline 09638233233</span>
-          <span className="ml-auto">→</span>
-        </button>
       </div>
     </section>
   );
