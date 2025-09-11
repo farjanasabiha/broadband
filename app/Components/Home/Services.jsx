@@ -10,8 +10,9 @@ const Services = () => {
       <div className="bg-black text-white">
         {/* Title */}
         <h2 className="text-3xl md:text-4xl font-medium text-left leading-snug mb-12">
-          It’s a Beast for <br />{" "}
-          <span className="text-white">Day to Day Heavy Use</span>
+          <span className="text-white">
+            Reliable for Streaming, Gaming, and Business — Every Day.
+          </span>
         </h2>
 
         <div className="flex flex-col md:flex-row items-center justify-center gap-14">
@@ -21,7 +22,7 @@ const Services = () => {
               Powerful
             </h3>
             <p className="text-[#b2b5af] text-[17px] font-normal mb-4">
-              Local CDN & IPv4/IPv6 gives fast internet experience.
+              Fast & stable internet with Local CDN + IPv6.”
             </p>
             <div className="text-center mx-auto">
               <MdSocialDistance className="text-5xl  mx-auto text-center text-[#ff0033]" />
@@ -47,7 +48,7 @@ const Services = () => {
                 Buffer-less
               </h3>
               <p className="text-[#b2b5af] text-[17px] font-normal mb-4">
-                No loading on any social media, video streaming, etc.
+                Zero-buffering on YouTube, Facebook & Netflix.
               </p>
               <div className="text-center mx-auto">
                 <MdSocialDistance className="text-5xl  mx-auto text-center text-[#ff0033]" />
@@ -65,14 +66,12 @@ const Services = () => {
                   BDIX FTP Servers
                 </h3>
                 <p className="text-[#b2b5af] text-[17px] font-normal mb-4">
-                  So many FTP server helps you <br /> to entertain & educate
-                  yourself. <br />
-                  Movies, Tutorials, Games, etc.
+                  Movies, games & tutorials from BDIX FTP — superfast.
                 </p>
                 <div className="text-center mx-auto">
                   <button>
                     <Link
-                      href='/new-connection'
+                      href="/new-connection"
                       className="flex items-center justify-between gap-2 py-2 px-6 rounded-3xl font-medium bg-gradient-to-b from-[#ff0033] to-[#bd556a63]"
                     >
                       <span>Use Today</span> <FaArrowRightLong />

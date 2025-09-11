@@ -11,22 +11,23 @@ const CTA = () => {
         <div className="pb-16">
           <div className="text-left mb-8">
             <h1 className="text-3xl lg:text-[35px] font-medium leading-relaxed mb-3 text-white">
-              To get this
+              Choose Your SyncIT
               <br />
-              High-Speed Internet
+              High-Speed Fiber Internet Package in Sylhet
             </h1>
           </div>
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-10">
             <div className="flex items-center justify-start gap-5">
               <h3 className="text-[#b2b2b2] text-2xl">
-                Select packages as you need
+                <span className="font-bold">Get My Package</span> Choose the
+                broadband package that fits your needs
               </h3>
               <FaLongArrowAltRight className="text-2xl" />
             </div>
             <div className="">
               <button>
                 <Link
-                  href='/packages'
+                  href="/packages"
                   className="flex items-center justify-between gap-2 py-4 px-10 rounded-full font-medium bg-gradient-to-b from-[#ff0033] to-[#bd556a63]"
                 >
                   <p className="text-2xl">Choose Package</p>
@@ -37,14 +38,17 @@ const CTA = () => {
         </div>
         <div className="text-left mb-6">
           <h1 className="text-3xl lg:text-[35px] font-medium leading-relaxed mb-3 text-white">
-            Best Broadband WIFI
+            Best Broadband WIFI Internet Packages For You
             <br />
-            Internet Packages For You
+            Best Fiber Broadband Internet Packages in Sylhet – SyncIT
           </h1>
           <div className=" text-primaryColor text-lg font-medium flex items-center justify-start gap-3">
             {" "}
             <BsBoxArrowInRight />
-            <p>High Speed Home Internet Package in Gazipur Dhaka Bangladesh</p>
+            <p>
+              SyncIT High-Speed Fiber Internet Packages in Sylhet – Fast &
+              Reliable
+            </p>
           </div>
         </div>
       </div>

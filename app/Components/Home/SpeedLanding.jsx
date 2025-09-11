@@ -68,15 +68,16 @@ const SpeedLanding = () => {
         {/* Header Section */}
         <div className="text-left">
           <h1 className="text-3xl md:text-4xl leading-snug font-medium mb-6 lg:mb-8">
-            Get in the Era of
+            Experience Lightning-Fast Fiber Internet in Sylhet
             <br />
             <span className="bg-gradient-to-r from-[#ff0033] to-[#f39f5a] bg-clip-text text-transparent">
-              Lightning Speed
+              – Powered by SyncIT
             </span>
           </h1>
           <p className="text-[#b2b5af] w-full lg:w-2/4 text-sm lg:text-lg mb-8 leading-relaxed">
-            All the functions that your favorite is now in one place. Once you
-            get into the speed galaxy, start & enjoy your action.
+            All in one: bufferless browsing, gaming, streaming, 99.99% uptime &
+            24/7 support. Enter SyncIT’s speed galaxy for a smarter Sylhet
+            internet.
           </p>
         </div>
 
@@ -129,14 +130,15 @@ const SpeedLanding = () => {
           {/* Description */}
           <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-16">
             <p className="text-[#b2b5af] leading-relaxed">
-              Whatever you are doing, it will give you the best feeling that
-              solves your tasks and gives you nothing less online experience
-              solves your tasks and gives you nothing less online experience
+              Whatever you do — work, gaming, or streaming — SyncIT keeps you
+              connected with faster speeds, seamless performance, and the best
+              online experience in Sylhet.
             </p>
             <p className="text-[#b2b5af] leading-relaxed">
-              It’s a fair network for personal tasks, professional tasks, heavy
-              gaming & streaming. The main focus is on giving you a smooth
-              experience by maintaining security and reliability.
+              From personal tasks to professional projects, heavy gaming to
+              streaming — SyncIT ensures a smooth internet experience. With BDIX
+              connectivity and advanced security, we maintain reliability and
+              consistency for every Sylhet user.
             </p>
           </div>
         </div>

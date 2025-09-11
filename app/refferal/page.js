@@ -9,8 +9,10 @@ import Testimonial from "../Components/Common/Testimonial/Testimonial";
 import RefferalDetails from "../Components/Refferal/RefferalDetails";
 
 export const metadata = {
-  title: "Referral Offer SyncIT - Best Broadband Internet & WiFi Service in Sylhet",
-  description: "Discover why SyncIT offers the best internet service in Sylhet. Trusted since 2014. High speed, 24/7 support, and reliable fiber internet for all.",
+  title:
+    "Referral Offer SyncIT - Best Broadband Internet & WiFi Service in Sylhet",
+  description:
+    "Discover why SyncIT offers the best internet service in Sylhet. Trusted since 2014. High speed, 24/7 support, and reliable fiber internet for all.",
 };
 
 const page = () => {
@@ -19,8 +21,10 @@ const page = () => {
       <TopBar />
       <Navbar />
       <CommonHeader
-        header={"রেফার করুন, পুরষ্কার জিতুন"}
-        desc={"রেফার করেই জিতে নিন ক্যাশব্যাক সহ আকর্ষনীয় সব পুরষ্কার"}
+        header={"রেফার করুন, ডিস্কাউন্ট পান"}
+        desc={
+          "এখন SyncIT এর সংযোগ রেফার করলেই মাসিক বিল এ পাবেন ৫০০ টাকা ডিসকাউন্ট।"
+        }
       />
       <div className="space-y-24">
         <RefferalDetails />

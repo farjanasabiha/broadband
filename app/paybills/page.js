@@ -10,7 +10,8 @@ import PayBills from "../Components/PayBills/PayBills";
 
 export const metadata = {
   title: "Paybills SyncIT - Best Broadband Internet & WiFi Service in Sylhet",
-  description: "Discover why SyncIT offers the best internet service in Sylhet. Trusted since 2014. High speed, 24/7 support, and reliable fiber internet for all.",
+  description:
+    "Discover why SyncIT offers the best internet service in Sylhet. Trusted since 2014. High speed, 24/7 support, and reliable fiber internet for all.",
 };
 
 const page = () => {
@@ -20,9 +21,9 @@ const page = () => {
       <Navbar />
       <CommonHeader
         title={"Pay Your Internet Bill"}
-        header={"Pay Bills"}
+        header={"Pay Your SyncIT Internet Bill – Fast, Easy & Secure"}
         desc={
-          "You can pay your internet bill through Bkash, Nagad, Rocket MFS, or Bank Transfer. Also, you can pay via the Asian Network App or QR code scan."
+          "Pay online anytime through bKash, Nagad, Rocket, Bank Transfer, or QR Code. Hassle-free billing for all SyncIT customers in Sylhet."
         }
       />
       <div className="space-y-24">

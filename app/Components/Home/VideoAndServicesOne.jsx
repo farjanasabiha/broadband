@@ -9,8 +9,8 @@ const VideoAndServicesOne = () => {
         <div className="">
           {/* Title */}
           <h2 className="text-3xl md:text-4xl font-medium text-left leading-snug mb-12">
-            It’s a Beast for <br />{" "}
-            <span className="text-white">Day to Day Heavy Use</span>
+            Built for heavy use — gaming, streaming, work, and family internet
+            with SyncIT Sylhet
           </h2>
           <div className="w-full aspect-video mb-10">
             <iframe
@@ -21,31 +21,32 @@ const VideoAndServicesOne = () => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
+            <div>
+              <p className="text-[18px] mt-4">
+                Watch how SyncIT delivers bufferless streaming, Upto 1Gbps BDIX
+                speed, and 99.99% uptime — trusted by thousands of Sylhet users
+                every day.”
+              </p>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start justify-between mt-10 lg:mt-24">
             {/* Left Content */}
             <div className="col-span-12 lg:col-span-5 lg:pr-10">
               <p className="text-base md:text-[18px] font-normal text-[#b2b5af] pb-5 leading-relaxed">
-                Asian Network is designed to solve gamer’s{" "}
+                SyncIT delivers low-latency fiber internet built for gamers in
+                Sylhet. With reduced lag, higher FPS, and{" "}
                 <span className="font-medium bg-gradient-to-r from-[#ff0033] to-[#f39f5a] bg-clip-text text-transparent">
-                  subconscious pain
+                  ultra-fast BDIX speeds,
                 </span>{" "}
-                by reducing lags & Increasing FPS and other game-related stuff.
+                you’ll enjoy realistic graphics and smooth gameplay.
               </p>
               <p className="text-base md:text-[18px] font-normal text-[#b2b5af] pb-5 leading-relaxed">
-                That makes gaming more detailed graphic performance{" "}
-                <span className="font-medium bg-gradient-to-r from-[#ff0033] to-[#f39f5a] bg-clip-text text-transparent">
-                  realistic characters
-                </span>{" "}
-                and with industry-leading internet speed.
+                Game faster, game smarter — SyncIT is made for champions.
               </p>
-              <p className="text-base md:text-[18px] font-normal text-[#b2b5af] leading-relaxed">
-                Asian Network is designed to solve gamer’s subconscious pain by
-                reducing lags & Increasing FPS and other game-related stuff.
-              </p>
-              <p className="text-base md:text-[18px] font-bold mt-5 text-[#b2b5af]">
-                Be Smart, Be Champion
+
+              <p className="text-base md:text-[18px] italic mt-5 text-[#b2b5af]">
+                ⚡Be Smart, Be Champion — Game with SyncIT.
               </p>
             </div>
 
@@ -55,10 +56,10 @@ const VideoAndServicesOne = () => {
                 {/* Card 1 */}
                 <div className="bg-gradient-to-t from-[#ff00333a] to-[#bd556a1f] rounded-2xl p-8 text-center w-full">
                   <h3 className="bg-gradient-to-r from-[#ff0033] to-[#f39f5a] bg-clip-text text-transparent text-xl md:text-[28px] lg:text-[32px] font-normal mb-3">
-                    Powerful 1
+                    Powerful Performance
                   </h3>
                   <p className="text-[#b2b5af] text-sm md:text-[17px] font-normal mb-4">
-                    Local CDN & IPv4/IPv6 gives fast internet experience.
+                    Low latency + CDN/IPv6 = smooth online gaming.
                   </p>
                   <MdSocialDistance className="text-4xl md:text-5xl mx-auto text-[#ff0033]" />
                 </div>
@@ -66,10 +67,10 @@ const VideoAndServicesOne = () => {
                 {/* Card 2 */}
                 <div className="bg-gradient-to-t from-[#ff00333a] to-[#bd556a1f] rounded-2xl p-8 text-center w-full">
                   <h3 className="bg-gradient-to-r from-[#ff0033] to-[#f39f5a] bg-clip-text text-transparent text-xl md:text-[28px] lg:text-[32px] font-normal mb-3">
-                    Buffer-less
+                    Bufferless Play
                   </h3>
                   <p className="text-[#b2b5af] text-sm md:text-[17px] font-normal mb-4">
-                    No loading on any social media, video streaming, etc.
+                    No lag in live streams, eSports, or online battles.
                   </p>
                   <MdSocialDistance className="text-4xl md:text-5xl mx-auto text-[#ff0033]" />
                 </div>
@@ -80,17 +81,15 @@ const VideoAndServicesOne = () => {
                     {/* Left Content */}
                     <div className="space-y-5 max-w-lg">
                       <h3 className="bg-gradient-to-r from-[#ff0033] to-[#f39f5a] bg-clip-text text-transparent text-xl md:text-[28px] lg:text-[32px] font-normal mb-3">
-                        BDIX FTP Servers
+                        BDIX Advantage
                       </h3>
                       <p className="text-[#b2b5af] text-sm md:text-[17px] font-normal mb-4">
-                        So many FTP server helps you <br /> to entertain &
-                        educate yourself.
-                        <br />
-                        Movies, Tutorials, Games, etc.
+                        Download games, mods & tutorials from BDIX — lightning
+                        fast.
                       </p>
                       <button>
                         <Link
-                          href='/new-connection'
+                          href="/new-connection"
                           className="flex items-center justify-center gap-2 py-2 px-6 rounded-3xl font-medium bg-gradient-to-b from-[#ff0033] to-[#bd556a63]"
                         >
                           <span>Test Now</span> <FaArrowRightLong />

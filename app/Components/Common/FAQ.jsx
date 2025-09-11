@@ -9,23 +9,23 @@ export default function FAQSection() {
     {
       question: "How can I contact customer support ?",
       answer:
-        "We are just a call away!! We are determined to provide fast and maximum service, we are always at your side for any problem or complication, our support team are active 24/7, contact us for any problem. Our skilled and strong technician team is committed to your service.",
+        "SyncIT support is available 24/7. Call our hotline 01965300500 / 09638559900, or message us on WhatsApp at wa.me/8801978169689. Our expert technicians are always ready to solve your issues quickly.",
     },
     {
       question: "How can I pay bill ?",
       answer:
-        "You can pay your bill through multiple convenient methods including online payment, mobile banking, credit/debit cards, or visit our nearest office. We also offer auto-pay options for hassle-free monthly payments.",
+        "You can pay your SyncIT bill easily via bKash, Nagad, Rocket, credit/debit card, or online through our customer panel. You can also visit our nearest office for in-person payments.",
     },
     {
       question: "How to get a new internet connection ?",
       answer:
-        "Getting a new internet connection is simple! Contact our sales team, choose your preferred package, schedule an installation appointment, and our technicians will set up your connection within 24-48 hours.",
+        "Choose your package, call our team, and we’ll install your SyncIT fiber internet in Sylhet within 24–48 hours.",
     },
     {
       question:
         "What is the line charge of the new or line transferred charge?",
       answer:
-        "Line charges vary based on your location and connection type. New connection charges start from $50, while line transfer charges are typically $25. Contact us for exact pricing based on your specific requirements.",
+        "A standard line charge applies for new or transferred SyncIT connections. The amount may vary depending on your location in Sylhet. Please contact our support team for exact details.",
     },
   ];
 

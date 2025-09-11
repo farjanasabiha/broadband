@@ -10,7 +10,8 @@ import ContactForm from "../Components/Contact/ContactForm";
 
 export const metadata = {
   title: "Contact SyncIT - Best Broadband Internet & WiFi Service in Sylhet",
-  description: "Discover why SyncIT offers the best internet service in Sylhet. Trusted since 2014. High speed, 24/7 support, and reliable fiber internet for all.",
+  description:
+    "Call, WhatsApp, or email SyncIT – Sylhet’s most reliable internet provider, available 24/7.”",
 };
 
 const page = () => {

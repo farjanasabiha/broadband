@@ -7,17 +7,25 @@ const AboutTab = () => {
 
   const clientLogos = {
     "IIG/Upstreme": [
-      { id: 1, logo: "/unnamed-1.webp", type: "government" },
-      { id: 2, logo: "/unnamed-1.webp", type: "corporate" },
-      { id: 3, logo: "/unnamed-1.webp", type: "corporate" },
-      { id: 4, logo: "/unnamed-1.webp", type: "corporate" },
+      { id: 1, logo: "/summitLogo.png", type: "corporate" },
+      { id: 2, logo: "/BTCLLogo.png", type: "government" },
     ],
     Peering: [
-      { id: 1, logo: "/unnamed-1.webp", type: "corporate" },
-      { id: 2, logo: "/unnamed-1.webp", type: "corporate" },
+      { id: 1, logo: "/GoogleLogo.png", type: "corporate" },
+      { id: 2, logo: "/facebookLogo.jpg", type: "corporate" },
+      { id: 3, logo: "/akmaiLogo.png", type: "corporate" },
+      { id: 4, logo: "/cloudflareLogo.jpeg", type: "corporate" },
+      { id: 5, logo: "/awsLogo.jpg", type: "corporate" },
     ],
-    Techonology: [{ id: 1, logo: "/unnamed-1.webp", type: "corporate" }],
-    NTTN: [{ id: 1, logo: "/unnamed-1.webp", type: "government" }],
+    Techonology: [
+      { id: 1, logo: "/ciscoLogo.png", type: "corporate" },
+      { id: 2, logo: "/juniperLogo.png", type: "corporate" },
+    ],
+    NTTN: [
+      { id: 1, logo: "/summitLogo.png", type: "corporate" },
+      { id: 2, logo: "/fiber@homeLogo.png", type: "corporate" },
+      { id: 3, logo: "/bahonLogo.png", type: "corporate" },
+    ],
   };
 
   return (
@@ -32,10 +40,15 @@ const AboutTab = () => {
               Our Success
             </span>
           </h1>
-          <p className="text-[#b2b5af] w-full lg:w-2/4 text-sm lg:text-lg mb-8 leading-relaxed">
-            Through our partners’ best in technology, we solve your unique,
-            global business needs whether you’re a small to medium or enterprise
-            business.
+          <p className="text-[#b2b5af] w-full lg:w-2/4 text-sm lg:text-lg mb-2 leading-relaxed">
+            We work with Tier-1 upstreams, IX peering and leading technology
+            providers to deliver BDIX-powered, fiber-fast internet across Sylhet
+          </p>
+          <p className="text-[#b2b5af] w-full lg:w-2/4 text-sm lg:text-lg mb-4 leading-relaxed">
+            Our network combines international upstreams, local IX peering
+            (BDIX), and carrier-grade NTTN/backbone with IPv6, CDN and
+            enterprise hardware to keep Sylhet customers online, fast and
+            secure.
           </p>
         </div>
 

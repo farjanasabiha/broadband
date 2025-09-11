@@ -5,20 +5,22 @@ const HomeHeader = () => {
   return (
     <div className="container mx-auto px-5 lg:pb-10 2xl:pb-0">
       <div className="text-center space-y-5 lg:space-y-10 pt-10 md:pt-14 lg:pt-20">
-        <h1 className="font-medium text-4xl md:text-5xl lg:text-[100px] text-white leading-16 lg:leading-30">
-          Upgrade Your <br /> Internet Experience
+        <h1 className="font-medium text-4xl lg:w-5xl mx-auto md:text-5xl lg:text-[80px] text-white leading-16 lg:leading-24">
+          SyncIT – Sylhet’s Fastest & Most Reliable Fiber Internet
         </h1>
-        <p className="text-lg font-normal text-[#b2b5af]">
-          You have never experienced internet speed like this before.
+        <p className="text-lg font-normal lg:w-4xl mx-auto text-[#b2b5af]">
+          Experience lightning-fast speeds, premium fiber connection, and 24/7
+          local support – Internet built for Sylhet homes, gamers, and
+          businesses.
         </p>
         <div className="text-center mx-auto">
           <button>
             <Link
-              className="flex items-center font-semibold justify-between gap-2 py-3 px-8 rounded-3xl font-medium bg-gradient-to-b from-[#ff0033] to-[#bd556a63]"
+              className="flex items-center  justify-between gap-2 py-3 px-8 rounded-3xl font-medium bg-gradient-to-b from-[#ff0033] to-[#bd556a63]"
               target="_blank"
-              href='/new-connection'
+              href="/new-connection"
             >
-              <span className=''>Check Experience</span> <FaArrowRightLong />
+              <span className="">Get New Connection</span> <FaArrowRightLong />
             </Link>
           </button>
         </div>

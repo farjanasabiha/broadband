@@ -1,6 +1,7 @@
 import React from "react";
 import { PhoneCall, Smartphone, Mail, MapPinHouse } from "lucide-react";
 import Image from "next/image";
+import ContactTeam from "./ContactTeam";
 const ContactForm = () => {
   return (
     <div>
@@ -13,34 +14,34 @@ const ContactForm = () => {
             className="col-span-12  rounded-full px-6 py-3 bg-[#1f1f1f] border border-gray-600 focus:outline-none placeholder-primaryColor text-white"
           />
 
-            <input
-              type="text"
-              placeholder="Phone"
-              className="col-span-12 md:col-span-6 rounded-full px-6 py-3 bg-[#1f1f1f] border border-gray-600 focus:outline-none placeholder-primaryColor text-white"
-            />
-            <input
-              type="email"
-              placeholder="Email"
-              className="col-span-12 md:col-span-6 rounded-full px-6 py-3 bg-[#1f1f1f] border border-gray-600 focus:outline-none placeholder-primaryColor text-white"
-            />
+          <input
+            type="text"
+            placeholder="Phone"
+            className="col-span-12 md:col-span-6 rounded-full px-6 py-3 bg-[#1f1f1f] border border-gray-600 focus:outline-none placeholder-primaryColor text-white"
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            className="col-span-12 md:col-span-6 rounded-full px-6 py-3 bg-[#1f1f1f] border border-gray-600 focus:outline-none placeholder-primaryColor text-white"
+          />
 
-            <input
-              type="text"
-              placeholder="Address"
-              className="col-span-12 md:col-span-6  rounded-full px-6 py-3 bg-[#1f1f1f] border border-gray-600 focus:outline-none placeholder-primaryColor text-white"
-            />
-            <div className="relative col-span-12 md:col-span-6 ">
-              <select className="w-full rounded-full px-6 py-3 bg-[#1f1f1f] border border-gray-600 focus:outline-none text-primaryColor appearance-none pr-10">
-                <option>Service Related</option>
-                <option>Support</option>
-                <option>Sales</option>
-                <option>Other</option>
-              </select>
-              {/* Dropdown Arrow */}
-              <div className="pointer-events-none absolute inset-y-0 right-4 flex items-center text-primaryColor">
-                ▼
-              </div>
+          <input
+            type="text"
+            placeholder="Address"
+            className="col-span-12 md:col-span-6  rounded-full px-6 py-3 bg-[#1f1f1f] border border-gray-600 focus:outline-none placeholder-primaryColor text-white"
+          />
+          <div className="relative col-span-12 md:col-span-6 ">
+            <select className="w-full rounded-full px-6 py-3 bg-[#1f1f1f] border border-gray-600 focus:outline-none text-primaryColor appearance-none pr-10">
+              <option>Service Related</option>
+              <option>Support</option>
+              <option>Sales</option>
+              <option>Other</option>
+            </select>
+            {/* Dropdown Arrow */}
+            <div className="pointer-events-none absolute inset-y-0 right-4 flex items-center text-primaryColor">
+              ▼
             </div>
+          </div>
 
           {/* Message */}
           <textarea
@@ -62,31 +63,10 @@ const ContactForm = () => {
       <div className="container max-w-6xl mx-auto px-5">
         <div className="text-center text-lg space-y-2 mt-5">
           <p>OR</p>
-          <h3>Direct Contact to Asian Network</h3>
+          <h3>Direct Contact to SyncIT Network</h3>
         </div>
         <div>
-          <div className=" mx-auto max-w-xl text-[#b2b5af] text-lg mt-4 bg-gradient-to-t from-[#ff00333a] to-[#bd556a1f] rounded-2xl p-5 md:py-10 md:px-20 w-full ">
-            <div className="space-y-4">
-              <p className="flex items-center ">
-                {" "}
-                <PhoneCall className="text-primaryColor mr-2" /> Hot-Line:
-                09638233233
-              </p>
-
-              <p className="flex items-center">
-                <Smartphone className="text-primaryColor mr-2" />
-                Phone: 01676-241922
-              </p>
-              <p className="flex items-center">
-                <Mail className="text-primaryColor mr-2" /> Email:
-                support@asiannetworkbd.net
-              </p>
-              <p className="flex items-center">
-                <MapPinHouse className="text-primaryColor mr-2" /> Address:
-                Eid-Gha Road,Pager, Tongi
-              </p>
-            </div>
-          </div>
+          <ContactTeam />
         </div>
       </div>
       {/* map */}
@@ -95,7 +75,7 @@ const ContactForm = () => {
         style={{ width: "100%", height: "300px" }}
       >
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9663095343008!2d90.00425878428698!3d24.041728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2s08%2C%20Eidgah%20Road%2C%20Pagar%2C%20Tongi%2C%20Gazipur-1710!5e0!3m2!1sen!2sbd!4v1633029667412!5m2!1sen!2sbd"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.156708963897!2d91.86975851543107!3d24.89492968404138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375055496b93d3c3%3A0x9c97a16bb99451b!2sSylhet!5e0!3m2!1sen!2sbd!4v1633030000000!5m2!1sen!2sbd"
           width="100%"
           height="100%"
           style={{ border: 0 }}
@@ -105,7 +85,7 @@ const ContactForm = () => {
           aria-hidden="false"
           tabIndex="0"
           className="rounded-xl"
-        ></iframe>
+        />
       </div>
       {/* Appoinment */}
       <div className="mt-24">

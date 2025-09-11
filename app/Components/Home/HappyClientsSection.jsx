@@ -31,7 +31,14 @@ const HappyClientsSection = () => {
             </span>
           </h1>
           <p className="text-[#b2b5af] w-full lg:w-2/4 text-sm lg:text-lg mb-8 leading-relaxed">
-            We have 3000+ happy clients, here are some of our happy clients.
+            Trusted by 3000+ Users & Leading Businesses in Sylhet.
+            <br /> <br />
+            From thousands of families to leading businesses in Sylhet, SyncIT
+            is trusted by 3000+ happy clients. Here are some of our valued
+            clients and corporate partners.
+            <br /> <br />
+            Corporate Tab Subtext For our corporate clients, we provide
+            dedicated fiber, low-latency connections, and 24/7 business support.
           </p>
         </div>
 

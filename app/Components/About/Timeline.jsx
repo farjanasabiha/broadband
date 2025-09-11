@@ -9,40 +9,39 @@ import "react-vertical-timeline-component/style.min.css";
 export default function Timeline() {
   const items = [
     {
-      year: "2015",
-      title: "The Spark of Innovation",
-      desc: "Currently, we are serving high-speed internet solutions to over 5000+ active users.",
+      title: "⦁ ⚡ Ultra-fast Fiber Speeds ",
+      desc: "up to 500 Mbps.",
       side: "right",
     },
     {
-      year: "2018",
-      title: "Navigating Challenges , Embracing Growth",
-      desc: "Currently, we are serving high-speed internet solutions to over 3000+ active users.",
+      title: "⦁	🎮 BDIX Boosted Performance ",
+      desc: "YouTube & Facebook up to 200 Mbps.",
       side: "left",
     },
     {
-      year: "2020",
-      title: "A Milestone Moment",
-      desc: "Currently, we are serving high-speed internet solutions to over 3000+ active users.",
+      title: "⦁	🔒 Secure & Stable Connection ",
+      desc: "99.99% uptime guaranteed.",
       side: "right",
     },
     {
-      year: "2022",
-      title: "Explore Our Range of",
-      desc: "Currently, we are serving high-speed internet solutions to over 3000+ active users.",
+      title: "⦁	🤝 Customer-First Care ",
+      desc: "24/7 support and free installation.",
       side: "left",
     },
     {
-      year: "2024",
-      title: "Looking Ahead",
-      desc: "Currently, we are serving high-speed internet solutions to over 3000+ active users.",
+      title: "We don’t just provide internet ",
+      desc: "we promise an experience that makes life smarter, faster, and more connected.",
       side: "right",
     },
   ];
 
   return (
     <section className="container max-w-6xl mx-auto px-5  relative min-h-screen border-none">
-      <h2 className=" text-4xl font-semibold mb-5">Our Story</h2>
+      <h2 className=" text-4xl font-semibold mb-5">Our Promise</h2>
+      <p className="text-[18px]">
+        At SyncIT, we promise to deliver more than just internet — we deliver
+        peace of mind, speed, and reliability. Every customer receives:
+      </p>
       <VerticalTimeline>
         {items.map((item, index) => (
           <VerticalTimelineElement

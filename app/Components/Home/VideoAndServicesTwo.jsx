@@ -9,8 +9,8 @@ const VideoAndServicesTwo = () => {
         <div className="">
           {/* Title */}
           <h2 className="text-3xl md:text-4xl font-medium text-left leading-snug mb-12">
-            It’s a Beast for <br />{" "}
-            <span className="text-white">Day to Day Heavy Use</span>
+            Built for heavy use — gaming, streaming, work, and family internet
+            with SyncIT Sylhet
           </h2>
           <div className="w-full aspect-video mb-10">
             <iframe
@@ -21,6 +21,13 @@ const VideoAndServicesTwo = () => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
+            <div>
+              <p className="text-[18px] mt-4">
+                Watch how SyncIT delivers bufferless streaming, Upto 1Gbps BDIX
+                speed, and 99.99% uptime — trusted by thousands of Sylhet users
+                every day.”
+              </p>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start justify-between mt-10 lg:mt-24">
@@ -90,7 +97,7 @@ const VideoAndServicesTwo = () => {
                       </p>
                       <button>
                         <Link
-                          href='/new-connection'
+                          href="/new-connection"
                           className="flex items-center justify-center gap-2 py-2 px-6 rounded-3xl font-medium bg-gradient-to-b from-[#ff0033] to-[#bd556a63]"
                         >
                           <span>Use Today</span> <FaArrowRightLong />

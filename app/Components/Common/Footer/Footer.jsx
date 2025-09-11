@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { BsWhatsapp } from "react-icons/bs";
 import {
   FaFacebookF,
   FaYoutube,
@@ -20,20 +21,19 @@ const Footer = () => {
               <div className="flex items-center space-x-3 mb-4">
                 <div>
                   <h1 className="text-primaryColor font-bold text-lg sm:text-xl leading-tight">
-                    ASIAN NETWORK
+                    SYNCIT BANGLADESH
                   </h1>
-                  <p className="text-xs sm:text-sm text-white">
-                    CONNECT TO HAPPINESS
+                  <p className="text-xs sm:text-sm italic text-white">
+                    Smart Life’s Internet Partner
                   </p>
                 </div>
               </div>
               <p className="text-sm sm:text-[15px] text-[#b2b2b2] leading-relaxed mb-4">
-                Asian Network is the largest ISP service provider in Gazipur,
-                Dhaka, Bangladesh. Home Internet, Corporate Internet, Gaming &
-                Streaming Internet is the most popular package of this ISP.
-                Super speed, highly secured, easily scalable, priority fast
-                support makes people champ. Already over 5000 active users are
-                enjoying buffer-less internet galaxy.
+                SyncIT is Sylhet’s most trusted fiber broadband provider —
+                serving homes, businesses, and gamers with ultra-fast BDIX
+                speed, 99.99% uptime, and 24/7 support. Over 5000+ happy
+                customers already enjoy our bufferless, high-speed internet
+                experience.
               </p>
               <div className="flex space-x-4 mt-4">
                 <Link href="#" className="hover:text-white transition-colors">
@@ -139,23 +139,37 @@ const Footer = () => {
                 <ul className="text-sm text-[#b2b2b2] space-y-2">
                   <li className="flex items-start">
                     <FaPhoneAlt className="text-primaryColor mt-1 mr-2 flex-shrink-0" />
-                    <span className="hover:text-primaryColor transition-colors">
-                      09638233233
-                    </span>
+                    <Link
+                      href="tel:01965300500"
+                      className="hover:text-primaryColor transition-colors"
+                    >
+                      01965300500 / 09638559900
+                    </Link>
                   </li>
                   <li className="flex items-start">
                     <FaEnvelope className="text-primaryColor mt-1 mr-2 flex-shrink-0" />
                     <Link
-                      href="mailto:support@asiannetworkbd.net"
+                      href="mailto:support@syncit.com.bd"
                       className="hover:text-primaryColor transition-colors"
                     >
-                      support@asiannetworkbd.net
+                      support@syncit.com.bd
+                    </Link>
+                  </li>
+                  <li className="flex items-start">
+                    <BsWhatsapp className="text-primaryColor mt-1 mr-2 flex-shrink-0" />
+                    <Link
+                      href="https://wa.me/8801978169689?text=Hello%20I%20am%20interested%20in%20your%20services"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-primaryColor transition-colors"
+                    >
+                      wa.me/8801978169689
                     </Link>
                   </li>
                   <li className="flex items-start">
                     <FaMapMarkerAlt className="text-primaryColor mt-1 mr-2 flex-shrink-0" />
                     <span className="hover:text-primaryColor transition-colors">
-                      08, Eidgha Road, Pagar, <br /> Tongi, Gazipur-1710
+                      Sylhet, Bangladesh
                     </span>
                   </li>
                 </ul>
@@ -181,7 +195,7 @@ const Footer = () => {
                     className="hover:opacity-90 transition-opacity"
                   >
                     <Image
-                      src="https://asiannetworkbd.net/wp-content/uploads/2024/06/google-play.svg"
+                      src="/googlePlay.png"
                       alt="Google Play"
                       height={150}
                       width={150}
@@ -193,7 +207,7 @@ const Footer = () => {
                     className="hover:opacity-90 transition-opacity"
                   >
                     <Image
-                      src="https://asiannetworkbd.net/wp-content/uploads/2024/06/app-store.svg"
+                      src="/appStore.png"
                       height={150}
                       width={150}
                       alt="App Store"
@@ -205,16 +219,14 @@ const Footer = () => {
 
               {/* Right - Copyright */}
               <div className="flex flex-col md:items-end text-xs sm:text-sm text-gray-400 text-center md:text-right mt-4 md:mt-0">
-                <p className="mb-1 md:mb-2">
-                  © All Rights Reserved – Asian Network
-                </p>
+                <p className="mb-1 md:mb-2">All rights — SyncIT</p>
                 <p>
-                  Developed by{" "}
+                  Developed By:
                   <Link
                     href="#"
                     className="text-primaryColor font-medium hover:underline"
                   >
-                    Boyshero
+                    SyncIT Team
                   </Link>
                 </p>
               </div>

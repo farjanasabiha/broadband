@@ -22,12 +22,12 @@ const PricingCard = () => {
     {
       id: 1,
       name: "Basic",
-      speed: "20 Mbps",
-      price: "850 Tk",
+      speed: "36 Mbps",
+      price: "840 Tk",
       popular: false,
       features: [
         {
-          text: "Up to 20 Mbps Internet (1:10 Ratio)",
+          text: "Up to 36Mbps  (1:8 Ratio)",
         },
         { text: "IPv4 Public IP" },
         {
@@ -144,7 +144,7 @@ const PricingCard = () => {
         {/* Header */}
         <div className="text-center mb-6 lg:mb-9">
           <h2 className="text-3xl md:text-4xl leading-snug font-medium mb-8">
-            Most Popular Package
+            Sylhet’s Most Popular Broadband Package – SyncIT
           </h2>
 
           <div className="flex items-center justify-center">
