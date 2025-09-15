@@ -9,10 +9,15 @@ import Footer from "../Components/Common/Footer/Footer";
 import CommonHeader from "../Components/Common/CommonHeader";
 
 export const metadata = {
-  title:
-    "Speed Challenge SyncIT - Best Broadband Internet & WiFi Service in Sylhet",
+  title: "Speed Test Sylhet – SyncIT Internet Speed Challenge",
   description:
-    "Discover why SyncIT offers the best internet service in Sylhet. Trusted since 2014. High speed, 24/7 support, and reliable fiber internet for all.",
+    "Test your internet speed online with SyncIT. Compare Sylhet’s fastest BDIX fiber broadband and see why we are the #1 ISP.",
+  keywords: [
+    "internet speed test Sylhet",
+    "speed challenge Sylhet",
+    "BDIX speed test Sylhet",
+    "fastest WiFi Sylhet",
+  ],
 };
 
 const page = () => {
@@ -21,8 +26,8 @@ const page = () => {
       <TopBar />
       <Navbar />
       <CommonHeader
-        title={"Test Your Desire Internet Speed"}
-        header={"SyncIT Speed Challenge – Test Your Internet Speed in Sylhet"}
+        title={"SyncIT Speed Challenge "}
+        header={"Test Your Internet Speed in Sylhet"}
         desc={
           "Join Sylhet’s best fiber internet speed challenge with SyncIT. Test your speed using Ookla, Fast.com, or other tools and see why SyncIT always leads."
         }

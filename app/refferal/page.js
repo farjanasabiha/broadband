@@ -9,10 +9,15 @@ import Testimonial from "../Components/Common/Testimonial/Testimonial";
 import RefferalDetails from "../Components/Refferal/RefferalDetails";
 
 export const metadata = {
-  title:
-    "Referral Offer SyncIT - Best Broadband Internet & WiFi Service in Sylhet",
+  title: "Refer & Earn Internet Discount – SyncIT Sylhet",
   description:
-    "Discover why SyncIT offers the best internet service in Sylhet. Trusted since 2014. High speed, 24/7 support, and reliable fiber internet for all.",
+    "Refer SyncIT to friends and earn 500 Taka monthly bill discount. Join Sylhet’s best internet referral program today.",
+  keywords: [
+    "refer WiFi Sylhet",
+    "internet referral Sylhet",
+    "SyncIT referral offer",
+    "broadband discount Sylhet",
+  ],
 };
 
 const page = () => {

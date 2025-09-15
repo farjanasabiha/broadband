@@ -9,8 +9,17 @@ import HomeInternet from "../Components/Packages/HomeInternet";
 import AllPackages from "../Components/Packages/AllPackages";
 
 export const metadata = {
-  title: "Packages SyncIT - Best Broadband Internet & WiFi Service in Sylhet",
-  description: "Discover why SyncIT offers the best internet service in Sylhet. Trusted since 2014. High speed, 24/7 support, and reliable fiber internet for all.",
+  title: "Internet Packages in Sylhet – SyncIT Fiber & WiFi Plans",
+  description:
+    "Affordable WiFi & broadband packages in Sylhet. SyncIT offers 15 Mbps to 500 Mbps fiber internet with BDIX, free installation & best customer support.",
+  keywords: [
+    "internet packages Sylhet",
+    "WiFi plans Sylhet",
+    "broadband price Sylhet",
+    "best WiFi Sylhet",
+    "SyncIT packages",
+    "home internet Sylhet",
+  ],
 };
 
 

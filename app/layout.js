@@ -13,11 +13,22 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Best Broadband Internet & WiFi Service in Sylhet - SyncIT",
-  description: "SyncIT offers Sylhet's best broadband and WiFi service. Free connection, dual-band router-ready, 24/7 support, low latency, and plans for home & business.",
+  title:
+    "SyncIT – Best Internet & WiFi Service Provider in Sylhet | Fiber Broadband",
+  description:
+    "Looking for the best internet in Sylhet? SyncIT offers ultra-fast fiber broadband, BDIX speeds, WiFi connections, and 24/7 support. Trusted by 5000+ happy users.",
   icons: {
     icon: "/favicon.png",
   },
+  keywords: [
+    "internet Sylhet",
+    "WiFi Sylhet",
+    "best ISP in Sylhet",
+    "broadband internet Sylhet",
+    "high-speed internet Sylhet",
+    "SyncIT Sylhet",
+    "Sylhet WiFi provider",
+  ],
 };
 
 export default function RootLayout({ children }) {

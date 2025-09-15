@@ -5,7 +5,7 @@ const Network = () => {
   return (
     <div className="container max-w-6xl mx-auto px-5">
       <h1 className="text-[40px] font-semibold text-center  bg-gradient-to-r from-[#ff0033] to-[#f39f5a] bg-clip-text text-transparent pb-8">
-        Asian Network
+        SyncIT 
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center justify-between">
         <div className="space-y-10">

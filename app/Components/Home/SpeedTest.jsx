@@ -7,8 +7,7 @@ const SpeedTest = () => {
     <div className=" container max-w-6xl mx-auto px-5">
       {/* Title */}
       <h2 className="text-3xl md:text-4xl font-medium text-left leading-snug mb-12">
-        Sylhet Internet Speed Test <br />{" "}
-        <span className="text-white">– Powered by SyncIT</span>
+        Sylhet Internet Speed Test – Powered by SyncIT
       </h2>
       <div style={{ minHeight: "360px" }}>
         <div
@@ -37,11 +36,14 @@ const SpeedTest = () => {
         </div>
       </div>
       <div className="text-center">
-        <p className="text-[18px] my-4">
+        <p className="text-[18px] mb-5">
           Check your internet speed anytime from mobile or laptop. SyncIT
           customers in Sylhet enjoy ultra-fast BDIX speeds (YouTube & Facebook
           up to 200 Mbps) and 99.99% uptime — the most reliable fiber connection
           in the city. “Not happy with your current speed? Upgrade to SyncIT
+          today”
+        </p>
+                <p className="text-[26px] mb-5">“Not happy with your current speed? Upgrade to SyncIT
           today”
         </p>
         <button>

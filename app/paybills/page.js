@@ -9,10 +9,17 @@ import FAQSection from "../Components/Common/FAQ";
 import PayBills from "../Components/PayBills/PayBills";
 
 export const metadata = {
-  title: "Paybills SyncIT - Best Broadband Internet & WiFi Service in Sylhet",
+  title: "Pay Internet Bill Online – SyncIT Sylhet",
   description:
-    "Discover why SyncIT offers the best internet service in Sylhet. Trusted since 2014. High speed, 24/7 support, and reliable fiber internet for all.",
+    "Pay your SyncIT internet bill via bKash, Nagad, Rocket, or bank transfer. Fast, easy & secure online payments for Sylhet broadband users.",
+  keywords: [
+    "pay bill Sylhet",
+    "internet bill online Sylhet",
+    "WiFi bill payment Sylhet",
+    "SyncIT bill pay",
+  ],
 };
+
 
 const page = () => {
   return (

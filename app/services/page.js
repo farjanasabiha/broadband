@@ -9,9 +9,18 @@ import FAQSection from "../Components/Common/FAQ";
 import AllServices from "../Components/Services/AllServices";
 
 export const metadata = {
-  title: "Services SyncIT - Best Broadband Internet & WiFi Service in Sylhet",
-  description: "Discover why SyncIT offers the best internet service in Sylhet. Trusted since 2014. High speed, 24/7 support, and reliable fiber internet for all.",
+  title: "SyncIT Services – Internet, WiFi, CCTV & Cloud Solutions in Sylhet",
+  description:
+    "Explore SyncIT’s services: internet & WiFi, CCTV solutions, cloud storage, network security, and IoT for homes & businesses in Sylhet.",
+  keywords: [
+    "internet services Sylhet",
+    "WiFi service provider Sylhet",
+    "CCTV Sylhet",
+    "cloud solutions Sylhet",
+    "ISP Sylhet",
+  ],
 };
+
 
 const page = () => {
   return (

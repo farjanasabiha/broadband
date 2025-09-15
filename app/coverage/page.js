@@ -10,9 +10,16 @@ import NetworkCoverage from "../Components/Coverage/NetworkCoverage";
 import AllCoverage from "../Components/Coverage/AllCoverage";
 
 export const metadata = {
-  title: "Coverage SyncIT - Best Broadband Internet & WiFi Service in Sylhet",
+  title: "Internet Coverage in Sylhet – SyncIT Fiber Broadband Zones",
   description:
-    "Discover why SyncIT offers the best internet service in Sylhet. Trusted since 2014. High speed, 24/7 support, and reliable fiber internet for all.",
+    "Check if SyncIT is available in your area. We cover Ambarkhana, Subhanighat, Naiorpul, Shibganj, Uposhohor, Zindabazar & more Sylhet zones.",
+  keywords: [
+    "internet coverage Sylhet",
+    "WiFi Sylhet areas",
+    "broadband availability Sylhet",
+    "SyncIT coverage Sylhet",
+    "internet connection Sylhet",
+  ],
 };
 
 const page = () => {

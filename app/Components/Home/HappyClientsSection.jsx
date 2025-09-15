@@ -23,20 +23,19 @@ const HappyClientsSection = () => {
       <div className="container mx-auto">
         {/* Header Section */}
         <div className="text-left">
-          <h1 className="text-3xl md:text-4xl leading-snug font-medium mb-6">
-            Some of our
+          <h1 className="text-3xl md:text-4xl leading-snug font-medium mb-3">
+            Trusted by 3000+
             <br />
             <span className="bg-gradient-to-r from-[#ff0033] to-[#f39f5a] bg-clip-text text-transparent">
-              Happy Clients
+              Users & Leading Businesses in Sylhet
             </span>
           </h1>
-          <p className="text-[#b2b5af] w-full lg:w-2/4 text-sm lg:text-lg mb-8 leading-relaxed">
-            Trusted by 3000+ Users & Leading Businesses in Sylhet.
-            <br /> <br />
+          <p className="text-[#b2b5af] w-full text-sm lg:text-lg mb-3 leading-relaxed">
             From thousands of families to leading businesses in Sylhet, SyncIT
             is trusted by 3000+ happy clients. Here are some of our valued
             clients and corporate partners.
-            <br /> <br />
+          </p>
+          <p className="text-[#b2b5af] w-full text-sm lg:text-lg mb-3 leading-relaxed">
             Corporate Tab Subtext For our corporate clients, we provide
             dedicated fiber, low-latency connections, and 24/7 business support.
           </p>

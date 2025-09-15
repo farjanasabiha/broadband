@@ -11,9 +11,16 @@ import Footer from "../Components/Common/Footer/Footer";
 import CommonHeader from "../Components/Common/CommonHeader";
 
 export const metadata = {
-  title: "About SyncIT – Best Broadband Internet & WiFi Service in Sylhet",
+  title: "About SyncIT – Sylhet’s Trusted ISP & Fiber Broadband Provider",
   description:
-    "Discover why SyncIT offers the best internet service in Sylhet. Trusted since 2014. High speed, 24/7 support, and reliable fiber internet for all.",
+    "SyncIT is Sylhet’s top internet provider with fiber broadband, BDIX, and reliable WiFi. Serving 5000+ homes, businesses & gamers with 99.99% uptime.",
+  keywords: [
+    "about SyncIT",
+    "best ISP Sylhet",
+    "WiFi company Sylhet",
+    "broadband Sylhet",
+    "SyncIT Bangladesh",
+  ],
 };
 
 const page = () => {

@@ -9,9 +9,15 @@ import FAQSection from "../Components/Common/FAQ";
 import ContactForm from "../Components/Contact/ContactForm";
 
 export const metadata = {
-  title: "Contact SyncIT - Best Broadband Internet & WiFi Service in Sylhet",
+  title: "Contact SyncIT – Best Internet Service Provider in Sylhet",
   description:
-    "Call, WhatsApp, or email SyncIT – Sylhet’s most reliable internet provider, available 24/7.”",
+    "Need support? Call SyncIT Sylhet at 01965300500 / 09638559900 or WhatsApp wa.me/8801978169689. Your trusted Sylhet internet provider, 24/7 support.",
+  keywords: [
+    "contact SyncIT Sylhet",
+    "ISP support Sylhet",
+    "WiFi help Sylhet",
+    "broadband customer care Sylhet",
+  ],
 };
 
 const page = () => {
