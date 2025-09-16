@@ -2,19 +2,7 @@ import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { GrSchedulePlay } from "react-icons/gr";
 
-import {
-  CheckCircle,
-  Globe,
-  MapPin,
-  Zap,
-  Server,
-  Video,
-  Youtube,
-  Facebook,
-  Wifi,
-  Shield,
-  Clock,
-} from "lucide-react";
+import { CheckCircle } from "lucide-react";
 import Link from "next/link";
 
 const PricingCard = () => {
@@ -23,7 +11,7 @@ const PricingCard = () => {
       id: 1,
       name: "Basic",
       speed: "36 Mbps",
-      price: "840 Tk",
+      price: "800 Tk",
       popular: false,
       features: [
         {
@@ -41,99 +29,96 @@ const PricingCard = () => {
         {
           text: "Standard Youtube & Facebook",
         },
+        {
+          text: "5% Vat Applicable",
+        },
       ],
     },
     {
       id: 2,
       name: "Premium",
-      speed: "50 Mbps",
-      price: "1,260 Tk",
+      speed: "70 Mbps",
+      price: "1,000 Tk",
       popular: true,
       features: [
         {
-          icon: <Globe className="w-4 h-4" />,
-          text: "Up to 50 Mbps Internet (1:8 Ratio)",
+          text: "Up to 70 Mbps Internet (1:8 Ratio)",
         },
         {
-          icon: <MapPin className="w-4 h-4" />,
           text: "IP Addresses: Both IPv4 & IPv6 Public IP",
         },
-        { icon: <Zap className="w-4 h-4" />, text: "Extra Speed on VAS" },
+        { text: "Extra Speed on VAS" },
         {
-          icon: <Server className="w-4 h-4" />,
           text: "Enrich BDIX FTP Servers",
         },
         {
-          icon: <Zap className="w-4 h-4" />,
           text: "Uncapped Speed in IX and Gaming servers",
         },
         {
-          icon: <Video className="w-4 h-4" />,
           text: "Smooth 4k Video Calling",
         },
         {
-          icon: <Youtube className="w-4 h-4" />,
           text: "Bufferless Youtube & Facebook",
+        },
+        {
+          text: "5% Vat Applicable",
         },
       ],
     },
     {
       id: 3,
       name: "Business",
-      speed: "100 Mbps",
-      price: "2,100 Tk",
+      speed: "80 Mbps",
+      price: "1,200 Tk",
       popular: false,
       features: [
         {
-          icon: <Globe className="w-4 h-4" />,
-          text: "Up to 100 Mbps Internet (1:6 Ratio)",
+          text: "Up to 80 Mbps Internet (1:6 Ratio)",
         },
         {
-          icon: <MapPin className="w-4 h-4" />,
           text: "Multiple IPv4 & IPv6 Public IP",
         },
-        { icon: <Zap className="w-4 h-4" />, text: "Priority Speed on VAS" },
+        { text: "Priority Speed on VAS" },
         {
-          icon: <Server className="w-4 h-4" />,
           text: "Premium BDIX FTP Servers",
         },
         {
-          icon: <Shield className="w-4 h-4" />,
           text: "Advanced Security Features",
         },
-        { icon: <Video className="w-4 h-4" />, text: "Ultra HD Video Calling" },
-        { icon: <Wifi className="w-4 h-4" />, text: "Business Grade Support" },
+        { text: "Ultra HD Video Calling" },
+        { text: "Business Grade Support" },
+        {
+          text: "5% Vat Applicable",
+        },
       ],
     },
     {
       id: 4,
       name: "Enterprise",
-      speed: "200 Mbps",
-      price: "3,800 Tk",
+      speed: "90 Mbps",
+      price: "1,500 Tk",
       popular: false,
       features: [
         {
-          icon: <Globe className="w-4 h-4" />,
-          text: "Up to 200 Mbps Internet (1:4 Ratio)",
+          text: "Up to 90 Mbps Internet (1:4 Ratio)",
         },
         {
-          icon: <MapPin className="w-4 h-4" />,
           text: "Dedicated IPv4 & IPv6 Block",
         },
         {
-          icon: <Zap className="w-4 h-4" />,
           text: "Maximum Speed on All Services",
         },
         {
-          icon: <Server className="w-4 h-4" />,
           text: "Dedicated BDIX FTP Servers",
         },
         {
-          icon: <Shield className="w-4 h-4" />,
           text: "Enterprise Security Suite",
         },
-        { icon: <Clock className="w-4 h-4" />, text: "24/7 Dedicated Support" },
-        { icon: <Wifi className="w-4 h-4" />, text: "SLA Guaranteed Uptime" },
+        { text: "24/7 Dedicated Support" },
+        { text: "SLA Guaranteed Uptime" },
+        {
+          text: "5% Vat Applicable",
+        },
       ],
     },
   ];

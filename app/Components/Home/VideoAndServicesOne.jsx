@@ -30,9 +30,9 @@ const VideoAndServicesOne = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start justify-between mt-10 lg:mt-24">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start justify-between mt-10 lg:mt-24">
             {/* Left Content */}
-            <div className="col-span-12 lg:col-span-5 lg:pr-10">
+            <div className="col-span-12 lg:col-span-5">
               <p className="text-base md:text-[18px] font-normal text-[#b2b5af] pb-5 leading-relaxed">
                 SyncIT delivers low-latency fiber internet built for gamers in
                 Sylhet. With reduced lag, higher FPS, and{" "}
@@ -45,7 +45,7 @@ const VideoAndServicesOne = () => {
                 Game faster, game smarter — SyncIT is made for champions.
               </p>
 
-              <p className="text-base md:text-[18px] italic mt-5 text-[#b2b5af]">
+              <p className="text-base font-bold md:text-[18px] italic mt-5 text-[#b2b5af]">
                 ⚡Be Smart, Be Champion — Game with SyncIT.
               </p>
             </div>

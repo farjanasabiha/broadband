@@ -1,20 +1,29 @@
 "use client";
 import React, { useState } from "react";
-import MFSBills from "./MFSBills";
+import Bkash from "./Bkash";
+import Nagad from "./Nagad";
+import Rocket from "./Rocket";
+// import MFSBills from "./MFSBills";
 import BankBills from "./BankBills";
 import QrCode from "./QrCode";
 
 const PayBills = () => {
-  const [activeTab, setActiveTab] = useState("MFS");
+  const [activeTab, setActiveTab] = useState("Bkash");
 
   const AllBills = {
-    MFS: <MFSBills />,
+    Bkash: <Bkash />,
+    Nagad: <Nagad />,
+    Rocket: <Rocket />,
+    // MFS: <MFSBills />,
     BankTransfer: <BankBills />,
     QrCode: <QrCode />,
   };
 
   const tabs = [
-    { label: "MFS", value: "MFS" },
+    { label: "Bkash", value: "Bkash" },
+    { label: "Nagad", value: "Nagad" },
+    { label: "Rocket", value: "Rocket" },
+    // { label: "MFS", value: "MFS" },
     { label: "Bank Transfer", value: "BankTransfer" },
     { label: "Qr Code", value: "QrCode" },
   ];

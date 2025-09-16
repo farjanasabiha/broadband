@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-const ServiceCard = ({ title, icon }) => {
+const ServiceCard = ({ title, icon, des }) => {
   return (
     <div>
       <div className="text-center py-10 flex gap-6 justify-center items-center flex-col bg-gradient-to-t from-[#ff00333a] to-[#bd556a1f] rounded-2xl p-8 w-full">
@@ -9,6 +9,9 @@ const ServiceCard = ({ title, icon }) => {
           {title}
         </p>
         <div>{icon}</div>
+        <p className="text-lg font-normal text-gray-400">
+          {des}
+        </p>
       </div>
     </div>
   );

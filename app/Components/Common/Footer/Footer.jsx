@@ -36,10 +36,10 @@ const Footer = () => {
                 experience.
               </p>
               <div className="flex space-x-4 mt-4">
-                <Link href="#" className="hover:text-white transition-colors">
+                <Link href="https://www.facebook.com/syncitbd" className="hover:text-white transition-colors">
                   <FaFacebookF className="text-primaryColor text-lg hover:text-white transition-colors" />
                 </Link>
-                <Link href="#" className="hover:text-white transition-colors">
+                <Link href="https://www.facebook.com/syncitbd" className="hover:text-white transition-colors">
                   <FaYoutube className="text-primaryColor text-lg hover:text-white transition-colors" />
                 </Link>
               </div>
@@ -191,7 +191,7 @@ const Footer = () => {
                 </p>
                 <div className="flex flex-wrap gap-2 sm:gap-3">
                   <Link
-                    href="#"
+                    href="https://www.facebook.com/syncitbd"
                     className="hover:opacity-90 transition-opacity"
                   >
                     <Image
@@ -203,7 +203,7 @@ const Footer = () => {
                     />
                   </Link>
                   <Link
-                    href="#"
+                    href="https://www.facebook.com/syncitbd"
                     className="hover:opacity-90 transition-opacity"
                   >
                     <Image

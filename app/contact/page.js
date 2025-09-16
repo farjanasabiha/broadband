@@ -27,9 +27,9 @@ const page = () => {
       <Navbar />
       <CommonHeader
         title={"Hey! Share Your Opinion"}
-        header={"Contact Us"}
+        header={"Contact SyncIT – Sylhet’s #1 Reliable Fiber Internet Provider "}
         desc={
-          "If you have any concerns or questions, please feel free to reach us."
+          "“Call, WhatsApp, or email SyncIT – Sylhet’s most reliable internet provider, available 24/7.”"
         }
       />
       <div className="space-y-24">

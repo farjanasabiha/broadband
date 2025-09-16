@@ -40,10 +40,9 @@ const SpeedTest = () => {
           Check your internet speed anytime from mobile or laptop. SyncIT
           customers in Sylhet enjoy ultra-fast BDIX speeds (YouTube & Facebook
           up to 200 Mbps) and 99.99% uptime — the most reliable fiber connection
-          in the city. “Not happy with your current speed? Upgrade to SyncIT
-          today”
+          in the city.
         </p>
-                <p className="text-[26px] mb-5">“Not happy with your current speed? Upgrade to SyncIT
+          <p className="text-[26px] mb-5">“Not happy with your current speed? Upgrade to SyncIT
           today”
         </p>
         <button>

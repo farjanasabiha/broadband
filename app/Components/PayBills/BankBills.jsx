@@ -3,7 +3,7 @@ import React from "react";
 const BankBills = () => {
   return (
     <div>
-      <h1 className="text-3xl mb-5">
+      <h1 className="text-3xl text-center mx-auto mb-5">
         Pay your internet bill with easy bank transfer
       </h1>
       {/* bank methode */}

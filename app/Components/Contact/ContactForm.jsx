@@ -61,13 +61,7 @@ const ContactForm = () => {
       </div>
       {/* Address */}
       <div className="container max-w-6xl mx-auto px-5">
-        <div className="text-center text-lg space-y-2 mt-5">
-          <p>OR</p>
-          <h3>Direct Contact to SyncIT Network</h3>
-        </div>
-        <div>
           <ContactTeam />
-        </div>
       </div>
       {/* map */}
       <div
@@ -88,11 +82,7 @@ const ContactForm = () => {
         />
       </div>
       {/* Appoinment */}
-      <div className="mt-24">
-        <div className="text-center text-lg space-y-2 mt-5">
-          <p>OR</p>
-          <h3>Book an Appointment</h3>
-        </div>
+      {/* <div className="mt-24">
         <div className="mx-auto max-w-xl mt-6 ">
           <Image
             src={"/appointment-booking.webp"}
@@ -101,7 +91,7 @@ const ContactForm = () => {
             alt="appoinment"
           />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

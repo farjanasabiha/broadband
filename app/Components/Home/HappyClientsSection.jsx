@@ -24,7 +24,7 @@ const HappyClientsSection = () => {
         {/* Header Section */}
         <div className="text-left">
           <h1 className="text-3xl md:text-4xl leading-snug font-medium mb-3">
-            Trusted by 3000+
+            Trusted by 100's+
             <br />
             <span className="bg-gradient-to-r from-[#ff0033] to-[#f39f5a] bg-clip-text text-transparent">
               Users & Leading Businesses in Sylhet
@@ -32,7 +32,7 @@ const HappyClientsSection = () => {
           </h1>
           <p className="text-[#b2b5af] w-full text-sm lg:text-lg mb-3 leading-relaxed">
             From thousands of families to leading businesses in Sylhet, SyncIT
-            is trusted by 3000+ happy clients. Here are some of our valued
+            is trusted by 100's+ happy clients. Here are some of our valued
             clients and corporate partners.
           </p>
           <p className="text-[#b2b5af] w-full text-sm lg:text-lg mb-3 leading-relaxed">
@@ -42,7 +42,7 @@ const HappyClientsSection = () => {
         </div>
 
         {/* Tab Navigation */}
-        <div className="flex justify-center mb-4">
+        <div className="flex justify-center mt-4 mb-8">
           <div className="lg:flex space-x-4 space-y-4 lg:space-y-0 lg:space-x-2 backdrop-blur-sm rounded-full p-2">
             <button
               onClick={() => setActiveTab("all")}
@@ -68,10 +68,10 @@ const HappyClientsSection = () => {
         </div>
 
         {/* Client Logos Grid */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 max-w-4xl mx-auto">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-10 max-w-4xl mx-auto">
           {clientLogos[activeTab].map((client) => (
             <div key={client.id} className="group cursor-pointer">
-              <div className="bg-gray-800/30 backdrop-blur-sm rounded-2xl p-6 lg:p-8 border border-gray-700/30 hover:border-gray-600/50 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-white/10">
+              <div className="bg-gray-800/30 backdrop-blur-sm rounded-2xl border border-gray-700/30 hover:border-gray-600/50 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-white/10">
                 <Image
                   src={client.logo}
                   alt={`Client ${client.id}`}

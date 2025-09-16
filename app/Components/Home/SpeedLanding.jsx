@@ -129,12 +129,12 @@ const SpeedLanding = () => {
         <div className=" mb-10">
           {/* Description */}
           <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-16">
-            <p className="text-[#b2b5af] leading-relaxed">
+            <p className="text-[#b2b5af] leading-relaxed  text-base">
               Whatever you do — work, gaming, or streaming — SyncIT keeps you
               connected with faster speeds, seamless performance, and the best
               online experience in Sylhet.
             </p>
-            <p className="text-[#b2b5af] leading-relaxed">
+            <p className="text-[#b2b5af] leading-relaxed  text-base">
               From personal tasks to professional projects, heavy gaming to
               streaming — SyncIT ensures a smooth internet experience. With BDIX
               connectivity and advanced security, we maintain reliability and
@@ -144,7 +144,7 @@ const SpeedLanding = () => {
         </div>
 
         {/* Stats Section */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 pt-10 lg:pt-20">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 pt-10 lg:pt-20">
           {/* Stat 1 */}
           <div className="text-center group">
             <div className=" flex items-center justify-center mb-5">
@@ -157,7 +157,7 @@ const SpeedLanding = () => {
               />
             </div>
             <div className="text-2xl lg:text-3xl font-bold text-white mb-2">
-              5000+
+              100's
             </div>
             <div className="text-gray-400 text-sm lg:text-base">Users</div>
           </div>
@@ -197,7 +197,7 @@ const SpeedLanding = () => {
           </div>
 
           {/* Stat 4 */}
-          <div className="text-center group">
+          {/* <div className="text-center group">
             <div className=" flex items-center justify-center mb-5">
               <Image
                 src="/team.webp"
@@ -211,7 +211,7 @@ const SpeedLanding = () => {
               130
             </div>
             <div className="text-gray-400 text-sm lg:text-base">Countries</div>
-          </div>
+          </div> */}
         </div>
       </div>
 

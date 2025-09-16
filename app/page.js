@@ -4,7 +4,7 @@ import HomeSlider from "./Components/Home/Slider/HomeSlider";
 import Network from "./Components/Home/Network";
 import Services from "./Components/Home/Services";
 import VideoAndServicesOne from "./Components/Home/VideoAndServicesOne";
-import VideoAndServicesTwo from "./Components/Home/VideoAndServicesTwo";
+// import VideoAndServicesTwo from "./Components/Home/VideoAndServicesTwo";
 import SpeedLanding from "./Components/Home/SpeedLanding";
 import HappyClientsSection from "./Components/Home/HappyClientsSection";
 import PricingCard from "./Components/Home/PricingCard";
@@ -27,7 +27,7 @@ export default function Home() {
           <Network />
           <Services />
           <VideoAndServicesOne />
-          <VideoAndServicesTwo />
+          {/* <VideoAndServicesTwo /> */}
           <SpeedLanding />
           <PricingCard />
           <HappyClientsSection />
