@@ -1,0 +1,34 @@
+import React from "react";
+import TopBar from "../Components/Common/Navbar/TopBar";
+import Navbar from "../Components/Common/Navbar/Navbar";
+import CommonHeader from "../Components/Common/CommonHeader";
+import OffersArea from "../Components/Offers/OffersArea";
+import Testimonial from "../Components/Common/Testimonial/Testimonial";
+import CTA from "../Components/Common/CTA";
+import FAQSection from "../Components/Common/FAQ";
+import Footer from "../Components/Common/Footer/Footer";
+import MarketingSection from "../Components/Marketing/MarketingSection";
+import Steps from "../Components/Marketing/Steps";
+
+const page = () => {
+  return (
+    <div className="bg-black">
+      <TopBar />
+      <Navbar />
+      <CommonHeader
+        header={"Social Media Marketing Strategy"}
+        desc={"Eight easy steps to develop your social media presence"}
+      />
+      <div className="space-y-24">
+        <MarketingSection />
+        <Steps />
+        <Testimonial />
+        <CTA />
+        <FAQSection />
+        <Footer />
+      </div>
+    </div>
+  );
+};
+
+export default page;

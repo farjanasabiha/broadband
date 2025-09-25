@@ -36,10 +36,16 @@ const Footer = () => {
                 experience.
               </p>
               <div className="flex space-x-4 mt-4">
-                <Link href="https://www.facebook.com/syncitbd" className="hover:text-white transition-colors">
+                <Link
+                  href="https://www.facebook.com/syncitbd"
+                  className="hover:text-white transition-colors"
+                >
                   <FaFacebookF className="text-primaryColor text-lg hover:text-white transition-colors" />
                 </Link>
-                <Link href="https://www.facebook.com/syncitbd" className="hover:text-white transition-colors">
+                <Link
+                  href="https://www.facebook.com/syncitbd"
+                  className="hover:text-white transition-colors"
+                >
                   <FaYoutube className="text-primaryColor text-lg hover:text-white transition-colors" />
                 </Link>
               </div>
@@ -118,6 +124,22 @@ const Footer = () => {
                       className="hover:text-primaryColor transition-colors"
                     >
                       Coverage Area
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/offers"
+                      className="hover:text-primaryColor transition-colors"
+                    >
+                      Offers
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/marketing"
+                      className="hover:text-primaryColor transition-colors"
+                    >
+                      Social Media Marketing Strategy
                     </Link>
                   </li>
                   <li>

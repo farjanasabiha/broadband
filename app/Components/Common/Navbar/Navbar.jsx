@@ -76,10 +76,7 @@ const Navbar = () => {
 
       {/* Overlay (behind sidebar) */}
       {menuOpen && (
-        <div
-          className="fixed z-40"
-          onClick={() => setMenuOpen(false)}
-        ></div>
+        <div className="fixed z-40" onClick={() => setMenuOpen(false)}></div>
       )}
 
       {/* Mobile Sidebar Menu*/}
@@ -87,10 +84,10 @@ const Navbar = () => {
         className={`fixed top-0 left-0 h-screen w-64 bg-black text-white z-50 transform transition-transform duration-300 ease-in-out ${
           menuOpen ? "translate-x-0" : "-translate-x-full"
         }`}
-        style={{ 
-          backgroundColor: '#000',
-          height: '100vh', // Force full viewport height
-          overflowY: 'auto' // Allow scrolling if content exceeds screen height
+        style={{
+          backgroundColor: "#000",
+          height: "100vh", // Force full viewport height
+          overflowY: "auto", // Allow scrolling if content exceeds screen height
         }}
       >
         <div className="flex justify-between items-center px-4 py-3 border-b border-gray-700 bg-black sticky top-0">
