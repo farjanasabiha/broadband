@@ -5,7 +5,7 @@ const Steps = () => {
     <div className="container max-w-4xl mx-auto px-5" id="steps">
       <div>
         <div>
-          <h2 className="text-4xl font-bold">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-medium">
             Step 1: Set social media marketing goals that align to business
             objectives
           </h2>
@@ -16,7 +16,7 @@ const Steps = () => {
           </p>
         </div>
         <div className="mt-5">
-          <h2 className="text-4xl font-bold">Set SMART goals</h2>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-medium">Set SMART goals</h2>
           <p className="text-[18px] mt-5">
             The first step to creating a social media marketing strategy is to
             establish your objectives and goals. Without goals, you have no way
@@ -38,7 +38,7 @@ const Steps = () => {
           </p>
         </div>
         <div className="mt-5">
-          <h2 className="text-4xl font-bold">Track meaningful metrics</h2>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-medium">Track meaningful metrics</h2>
           <p className="mt-5">
             While vanity metrics like retweets and likes can be fun to share and
             easy to track, it’s hard to prove their real value for your

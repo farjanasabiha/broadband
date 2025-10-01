@@ -7,9 +7,9 @@ const MarketingSection = () => {
         <div>
           <img src="/marketing.webp" alt="" />
         </div>
-        <div className="flex justify-center items-center h-full text-center md:text-left">
+        <div className="flex justify-center items-center h-full text-left">
           <div>
-            <h2 className="text-5xl font-bold">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-medium">
               Social Media Marketing Strategy
             </h2>
             <p className="text-[18px] mt-5">

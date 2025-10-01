@@ -24,7 +24,7 @@ const RelatedResource = () => {
           >
             <div>
               <p className="text-[18px] uppercase">{item.description}</p>
-              <h2 className="text-4xl font-bold  my-5">{item.title}</h2>
+              <h2 className="text-2xl md:text-3xl lg:text-4xl  font-medium  my-5">{item.title}</h2>
               <Link href='/' className='bg-white font-medium text-black px-5 py-2 rounded-lg'>Read Now</Link>
             </div>
             <div className="w-full max-w-[500px]">

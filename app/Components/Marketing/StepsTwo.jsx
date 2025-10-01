@@ -5,7 +5,7 @@ const StepsTwo = () => {
     <div className="container max-w-4xl mx-auto px-5">
       <div>
         <div>
-          <h2 className="text-4xl font-bold">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-medium">
             Step 2: Learn everything you can about your audience
           </h2>
           <p className="text-[18px] mt-5">
@@ -20,7 +20,7 @@ const StepsTwo = () => {
           </p>
         </div>
         <div className="mt-5">
-          <h2 className="text-4xl font-bold">Create audience personas</h2>
+          <h2 className="text-4xl font-medium">Create audience personas</h2>
           <p className="text-[18px] mt-5">
             Knowing who your audience is and what they want to see on social is
             key to creating content that they will like, comment on, and share.
@@ -43,7 +43,7 @@ const StepsTwo = () => {
           </p>
         </div>
         <div className="mt-5">
-          <h2 className="text-4xl font-bold">Gather real-world data</h2>
+          <h2 className="text-4xl font-medium">Gather real-world data</h2>
           <p className="mt-5">
             Don’t make assumptions. Social media analytics can also provide a
             ton of valuable information about who your followers are, where they

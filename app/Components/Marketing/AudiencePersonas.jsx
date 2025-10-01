@@ -26,11 +26,11 @@ const AudiencePersonas = () => {
         {resources.map((item, index) => (
           <div
             key={index}
-            className="grid grid-cols-1 md:grid-cols-2  items-center justify-between gap-3"
+            className="grid grid-cols-1 xl:grid-cols-2  items-center justify-between gap-8 lg:gap-3"
           >
             <div>
               <p className="text-[18px] uppercase">{item.description}</p>
-              <h2 className="text-4xl font-bold  my-5">{item.title}</h2>
+              <h2 className="text-2xl md:text-3xl  font-medium  my-5">{item.title}</h2>
               <Link
                 href="/"
                 className="bg-white font-medium text-black px-5 py-2 rounded-lg"
