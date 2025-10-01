@@ -160,7 +160,7 @@ const PricingCard = () => {
               <div className="relative bg-gradient-to-t from-[#ff00333a] to-[#bd556a1f] rounded-xl md:rounded-2xl lg:rounded-4xl p-4 sm:p-6 lg:px-12 lg:py-20 shadow-xl md:shadow-2xl h-full flex flex-col">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 md:gap-10 lg:gap-16 text-left md:text-center items-center md:mx-auto">
                   {/* Plan Badge */}
-                  <div className="space-y-3 sm:space-y-4 md:space-y-5 col-span-12 lg:col-span-3">
+                  <div className="space-y-3 sm:space-y-4 md:space-y-5 col-span-12 lg:col-span-3  text-left lg:text-center lg:mx-auto">
                     <div>
                       <div className="inline-block px-2 sm:px-3 text-gray-200/70 py-1 rounded-full text-xs font-medium border-gray-100/50 border self-start">
                         {plan.name}
@@ -175,7 +175,7 @@ const PricingCard = () => {
                       {plan.price}
                     </div>
                     <div>
-                      <GrSchedulePlay className="h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 lg:h-17 lg:w-17 md:mx-auto text-primaryColor" />
+                      <GrSchedulePlay className="h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 lg:h-17 lg:w-17 lg:mx-auto text-primaryColor" />
                     </div>
                   </div>
 
@@ -195,7 +195,7 @@ const PricingCard = () => {
                   </div>
 
                   {/* CTA Button */}
-                  <div className="text-left md:text-center md:mx-auto col-span-12 lg:col-span-3">
+                  <div className="text-left  text-left lg:text-center lg:mx-auto col-span-12 lg:col-span-3">
                     <button>
                       <Link
                         href="/new-connection"

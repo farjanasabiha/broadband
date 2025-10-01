@@ -42,8 +42,8 @@ const HappyClientsSection = () => {
         </div>
 
         {/* Tab Navigation */}
-        <div className="flex justify-center mt-4 mb-8">
-          <div className="lg:flex space-x-4 space-y-4 lg:space-y-0 lg:space-x-2 backdrop-blur-sm rounded-full p-2">
+        <div className="flex items-center justify-center text-center mx-auto mt-4 mb-8">
+          <div className="lg:flex items-center  justify-center space-x-4 space-y-4 lg:space-y-0 lg:space-x-2 backdrop-blur-sm rounded-full p-2">
             <button
               onClick={() => setActiveTab("all")}
               className={`px-10 py-3  w-full md:w-auto text-lg cursor-pointer font-medium rounded-full  transition-all duration-300 ${

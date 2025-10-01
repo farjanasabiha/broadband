@@ -35,7 +35,7 @@ const SpeedTest = () => {
           />
         </div>
       </div>
-      <div className="text-center">
+      <div className="text-center pt-6">
         <p className="text-[18px] mb-5">
           Check your internet speed anytime from mobile or laptop. SyncIT
           customers in Sylhet enjoy ultra-fast BDIX speeds (YouTube & Facebook

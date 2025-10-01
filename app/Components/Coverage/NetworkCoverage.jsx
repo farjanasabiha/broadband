@@ -13,14 +13,23 @@ const NetworkCoverage = () => {
       <h1 className="text-3xl md:text-4xl leading-snug font-medium mb-6">
         Network Coverage
       </h1>
-      <div className="grid grid-cols-1 lg:grid-cols-2 mx-auto">
-        <div className="mb-10 lg:mb-0 flex justify-center lg:justify-start">
-          <Image
-            src="/bangladesh-mapGazipur-01-1.svg"
-            width={450}
-            height={450}
-            alt="map"
-          />
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mx-auto">
+        <div className=" w-full h-[500px] lg:h-full">
+<iframe
+  data-lazyloaded="1"
+  src="https://www.google.com/maps/d/u/0/embed?mid=1zkz5CREGywlw-kfm6xih3zR0PLYmHWEr&amp;ehbc=2E312F"
+  data-src="https://www.google.com/maps/d/u/0/embed?mid=1zkz5CREGywlw-kfm6xih3zR0PLYmHWEr&amp;ehbc=2E312F"
+  className="border-none entered litespeed-loaded w-full h-full"
+  data-ll-status="loaded"
+  bis_size='{"x":102,"y":1097,"w":1700,"h":820,"abs_x":102,"abs_y":1097}'
+  bis_id="fr_neszxl9yzqggttpage36ff"
+  bis_depth="0"
+  bis_chainid="1"
+  spellCheck="false"
+  aria-label="To enrich screen reader interactions, please activate Accessibility in Grammarly extension settings"
+/>
+
+
         </div>
         <div className="lg:space-y-26">
           <div className="grid grid-cols-1 md:grid-cols-2 space-y-20 md:space-y-14 lg:gap-10">
