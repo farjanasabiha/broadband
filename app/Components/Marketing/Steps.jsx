@@ -2,7 +2,7 @@ import React from "react";
 
 const Steps = () => {
   return (
-    <div className="container max-w-4xl mx-auto px-5">
+    <div className="container max-w-4xl mx-auto px-5" id="steps">
       <div>
         <div>
           <h2 className="text-4xl font-bold">

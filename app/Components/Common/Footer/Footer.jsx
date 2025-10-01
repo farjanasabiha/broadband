@@ -136,7 +136,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href="/marketing"
+                      href="/social-media-marketing-strategy"
                       className="hover:text-primaryColor transition-colors"
                     >
                       Social Media Marketing Strategy

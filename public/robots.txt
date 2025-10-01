@@ -1,0 +1,25 @@
+User-agent: *
+Disallow: /wp-admin/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /search/
+Disallow: /?s=*
+Disallow: /*?*
+Disallow: /private/
+Disallow: /uploads/
+Allow: /wp-admin/admin-ajax.php
+Allow: /internet/
+Allow: /blog/
+
+# Specify different user-agents for different rules
+User-agent: Googlebot
+Disallow: /some-specific-folder-for-google/
+
+User-agent: Bingbot
+Disallow: /some-other-folder-for-bing/
+
+# Location of your main sitemap
+Sitemap: https://www.syncit.com.bd/sitemap.xml
+
+# Location of your subdomain sitemap
+Sitemap: https://competitor.syncit.com.bd/sitemap.xml

@@ -21,5 +21,4 @@ const MarketingSection = () => {
     </div>
   );
 };
-
 export default MarketingSection;
