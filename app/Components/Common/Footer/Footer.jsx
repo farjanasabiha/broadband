@@ -134,14 +134,14 @@ const Footer = () => {
                       Offers
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link
                       href="/social-media-marketing-strategy"
                       className="hover:text-primaryColor transition-colors"
                     >
                       Social Media Marketing Strategy
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link
                       href="/contact"

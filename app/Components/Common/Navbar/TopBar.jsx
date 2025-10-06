@@ -19,13 +19,14 @@ const TopBar = () => {
             {/* Phone */}
             <div className="flex items-center gap-1">
               <FaPhoneAlt className="text-lg" />
-              <span className="font-semibold">09638233323</span>
+              <span className="font-semibold">09638559900</span>
             </div>
 
             {/* Email */}
             <div className="flex items-center gap-1">
               <MdEmail className="text-lg" />
-              <span className="font-semibold">support@asiannetworkbd.net</span>
+              <span className="font-semibold">support@syncit.com.bd
+              </span>
             </div>
           </div>
         </div>
