@@ -6,14 +6,13 @@ const ContactForm = () => {
   return (
     <div>
       <div className=" bg-gradient-to-t from-[#ff00333a] to-[#0000004b] flex items-center justify-center py-10">
-        <form className="w-full md:max-w-3xl  text-[16px] grid grid-cols-12 gap-5">
+        <form className="w-full max-w-5xl  text-[16px] grid grid-cols-12 gap-5">
           {/* Name */}
           <input
             type="text"
             placeholder="Name"
             className="col-span-12  rounded-full px-6 py-3 bg-[#1f1f1f] border border-gray-600 focus:outline-none placeholder-primaryColor text-white"
           />
-
           <input
             type="text"
             placeholder="Phone"
@@ -61,11 +60,11 @@ const ContactForm = () => {
       </div>
       {/* Address */}
       <div className="container max-w-6xl mx-auto px-5">
-          <ContactTeam />
+        <ContactTeam />
       </div>
       {/* map */}
       <div
-        className="mx-auto max-w-xl mt-6 "
+        className="mx-auto max-w-5xl mt-6 "
         style={{ width: "100%", height: "300px" }}
       >
         <iframe
@@ -81,17 +80,6 @@ const ContactForm = () => {
           className="rounded-xl"
         />
       </div>
-      {/* Appoinment */}
-      {/* <div className="mt-24">
-        <div className="mx-auto max-w-xl mt-6 ">
-          <Image
-            src={"/appointment-booking.webp"}
-            height={556}
-            width={852}
-            alt="appoinment"
-          />
-        </div>
-      </div> */}
     </div>
   );
 };

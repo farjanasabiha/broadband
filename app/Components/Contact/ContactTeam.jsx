@@ -5,7 +5,7 @@ import { MdOutlineThumbUp } from "react-icons/md";
 
 export default function ContactTeam() {
   return (
-    <section className="max-w-4xl mx-auto p-6 text-center pt-10 lg:pt-24">
+    <section className=" max-w-5xl mx-auto text-center pt-10 lg:py-24">
 <div className='space-y-8 mb-8'>
         <h2 className="text-2xl font-bold">
         Contact SyncIT – Always Here for Sylhet
@@ -16,7 +16,7 @@ export default function ContactTeam() {
       </p>
 </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-xl mx-auto ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mx-auto ">
         <Link
           href="https://wa.me/8801978169689?text=Hello%20I%20am%20interested%20in%20your%20services"
           target="_blank"
@@ -24,7 +24,7 @@ export default function ContactTeam() {
           className="flex items-center justify-center gap-2 px-6 py-4 border border-black rounded-md  cursor-pointer bg-gradient-to-b from-[#ff0033] to-[#bd556a63]"
         >
           <FaWhatsapp className="text-green-600" size={20} />
-          <span className="font-semibold">wa.me/8801978169689 </span>
+          <span className="font-semibold text-lg md:text-xl">wa.me/8801978169689 </span>
           <span className="ml-auto">→</span>
         </Link>
 
@@ -33,7 +33,7 @@ export default function ContactTeam() {
           className="flex items-center justify-center gap-2 px-5 py-4 border border-black rounded-md  cursor-pointer bg-gradient-to-b from-[#ff0033] to-[#bd556a63]"
         >
           <FaPhone className="text-black" size={20} />
-          <span className="font-semibold">01965300500 / 09638559900</span>
+          <span className="font-semibold text-lg md:text-xl">01965300500 / 09638559900</span>
           <span className="ml-auto">→</span>
         </Link>
 
@@ -43,7 +43,7 @@ export default function ContactTeam() {
           className="flex items-center justify-center gap-2 px-6 py-4 border border-black rounded-md  cursor-pointer bg-gradient-to-b from-[#ff0033] to-[#bd556a63]"
         >
           <FaFacebookF className="text-blue-700" size={20} />
-          <span className="font-semibold">Message us in Facebook</span>
+          <span className="font-semibold text-lg md:text-xl">Message us in Facebook</span>
           <span className="ml-auto">→</span>
         </Link>
 
@@ -52,7 +52,7 @@ export default function ContactTeam() {
           className="flex items-center justify-center gap-2 px-6 py-4 border border-black rounded-md  cursor-pointer bg-gradient-to-b from-[#ff0033] to-[#bd556a63]"
         >
           <HiOutlineMail className="text-red-600" size={22} />
-          <span className="font-semibold">support@syncit.com.bd</span>
+          <span className="font-semibold text-lg md:text-xl">support@syncit.com.bd</span>
           <span className="ml-auto">→</span>
         </Link>
 
@@ -62,7 +62,7 @@ export default function ContactTeam() {
           className="flex items-center justify-center gap-2 px-6 py-4 border border-black rounded-md  cursor-pointer bg-gradient-to-b from-[#ff0033] to-[#bd556a63]"
         >
           <FaInstagram className="text-pink-500" size={20} />
-          <span className="font-semibold">instagram.com/syncit</span>
+          <span className="font-semibold text-lg md:text-xl">instagram.com/syncit</span>
           <span className="ml-auto">→</span>
         </Link>
       </div>
