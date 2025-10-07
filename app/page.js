@@ -15,6 +15,7 @@ import CTA from "./Components/Common/CTA";
 import FAQ from "./Components/Common/FAQ";
 import SpeedTest from "./Components/Home/SpeedTest";
 import Testimonial from "./Components/Common/Testimonial/Testimonial";
+
 export default function Home() {
   return (
       <main className="font-sf bg-black">
@@ -35,7 +36,8 @@ export default function Home() {
           <CTA />
           <FAQ />
           <Footer />
-        </div>
+      </div>
+      
       </main>
   );
 }
