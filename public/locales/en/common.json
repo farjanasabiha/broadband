@@ -247,6 +247,11 @@
         "header": "Pay Your SyncIT Internet Bill – Fast, Easy & Secure",
         "desc": "Pay online anytime through bKash, Nagad, Rocket, Bank Transfer, or QR Code. Hassle-free billing for all SyncIT customers in Sylhet."
       },
+      "referDiscount": {
+      "title" : "Referral Offer",
+      "header": "Refer & Get Discount",
+      "desc": "Now, refer a SyncIT connection and get BDT 500 discount on your monthly bill."
+    },
       "offers": {
       "title": "Latest Offers",
       "header": "Don’t Miss Our Special Deals!",

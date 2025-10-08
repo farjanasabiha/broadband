@@ -25,12 +25,7 @@ const page = () => {
     <div className="bg-black">
       <TopBar />
       <Navbar />
-      <CommonHeader
-        header={"রেফার করুন, ডিস্কাউন্ট পান"}
-        desc={
-          "এখন SyncIT এর সংযোগ রেফার করলেই মাসিক বিল এ পাবেন ৫০০ টাকা ডিসকাউন্ট।"
-        }
-      />
+<CommonHeader translationKey="commonHeader.referDiscount" />
       <div className="space-y-24">
         <RefferalDetails />
         <Testimonial />
