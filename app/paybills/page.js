@@ -26,13 +26,7 @@ const page = () => {
     <div className="bg-black">
       <TopBar />
       <Navbar />
-      <CommonHeader
-        title={"Pay Your Internet Bill"}
-        header={"Pay Your SyncIT Internet Bill – Fast, Easy & Secure"}
-        desc={
-          "Pay online anytime through bKash, Nagad, Rocket, Bank Transfer, or QR Code. Hassle-free billing for all SyncIT customers in Sylhet."
-        }
-      />
+      <CommonHeader translationKey="commonHeader.payBill" />
       <div className="space-y-24">
         <PayBills />
         <Testimonial />

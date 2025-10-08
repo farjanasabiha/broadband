@@ -118,32 +118,25 @@
 
   "testimonial_header_line1": "Some of our",
   "testimonial_header_line2": "Happy Clients",
-  "testimonial_post1_title" : "Corporate User",
+  "testimonial_post1_title": "Corporate User",
   "testimonial_post1_author": "Maruf Al Mehrab ",
   "testimonial_post1_desc": "Have been using SyncIT connection for last 1year. Using the connection at home and also in businesses (Sylhet Online Shop and SOSAGE restaurant) . Completely trouble-free. Staff are very friendly and reliable. They are the best wifi in sylhet",
 
-
-  "testimonial_post2_title" : "Corporate User",
+  "testimonial_post2_title": "Corporate User",
   "testimonial_post2_author": "Fahid Musharrof",
   "testimonial_post2_desc": "We been a client of SyncIT for several years now. SyncIT is the best WIFI in Sylhet so far. They provide excellent service at an amazingly great price. I would highly recommend SyncIT. 10/10!",
 
-
-  "testimonial_post3_title" : "Retail User",
+  "testimonial_post3_title": "Retail User",
   "testimonial_post3_author": "Md. Kawsar Jahan",
   "testimonial_post3_desc": "I used to get the internet from a local ISP before. I was very dissatisfied. No response when I called, slow speed, so many problems. After switching to SyncIT, neither I nor my family have looked back. I am very happy with SyncIT’s service and speed.",
 
-
-
-    "cta_header1": "Choose Your SyncIT High-Speed Fiber Internet Package in Sylhet",
+  "cta_header1": "Choose Your SyncIT High-Speed Fiber Internet Package in Sylhet",
   "cta_subheader": "Choose the broadband package that fits your needs",
   "cta_button": "Get My Package",
   "cta_header2": "Best Fiber Broadband Internet Packages in Sylhet – SyncIT",
   "cta_subtext": "SyncIT High-Speed Fiber Internet Packages in Sylhet – Fast & Reliable",
 
-
-
-
-   "faq_header1": "Your Queries",
+  "faq_header1": "Your Queries",
   "faq_header2": "Our Solution",
   "faq_question1": "How can I contact customer support?",
   "faq_answer1": "SyncIT support is available 24/7. Call our hotline 01965300500 / 09638559900, or message us on WhatsApp at wa.me/8801978169689. Our expert technicians are always ready to solve your issues quickly.",
@@ -154,12 +147,7 @@
   "faq_question4": "What is the line charge of the new or line transferred charge?",
   "faq_answer4": "A standard line charge applies for new or transferred SyncIT connections. The amount may vary depending on your location in Sylhet. Please contact our support team for exact details.",
 
-
-
-
-
-
-    "footer_company_name": "SYNCIT BANGLADESH",
+  "footer_company_name": "SYNCIT BANGLADESH",
   "footer_tagline": "Smart Life’s Internet Partner",
   "footer_description": "SyncIT is Sylhet’s most trusted fiber broadband provider — serving homes, businesses, and gamers with ultra-fast BDIX speed, 99.99% uptime, and 24/7 support. Over 5000+ happy customers already enjoy our bufferless, high-speed internet experience.",
   "footer_company_title": "Company",
@@ -182,5 +170,92 @@
   "footer_app_download": "Download Our Mobile App",
   "footer_rights": "All rights — SyncIT",
   "footer_developed_by": "Developed By: ",
-  "footer_team": "SyncIT Team"
+  "footer_team": "SyncIT Team",
+
+  "speedTab": {
+    "ookla": "Ookla Speed Test",
+    "fast": "Fast Speed Test",
+    "speedtest": "Speedtest Test",
+    "singapore": "Speed Test Singapore"
+  },
+
+  "aboutTab": {
+    "title1": "Partner Behind",
+    "title2": "Our Success",
+    "desc1": "We work with Tier-1 upstreams, IX peering and leading technology providers to deliver BDIX-powered, fiber-fast internet across Sylhet",
+    "desc2": "Our network combines international upstreams, local IX peering (BDIX), and carrier-grade NTTN/backbone with IPv6, CDN and enterprise hardware to keep Sylhet customers online, fast and secure.",
+    "iig": "IIG/Upstreme",
+    "peering": "Peering",
+    "tech": "Techonology",
+    "nttn": "NTTN"
+  },
+
+  "timeline": {
+    "heading": "Our Promise",
+    "subheading": "At SyncIT, we promise to deliver more than just internet — we deliver peace of mind, speed, and reliability. Every customer receives:",
+    "ultraFastTitle": "⚡ Ultra-fast Fiber Speeds",
+    "ultraFastDesc": "Up to 500 Mbps.",
+    "bdixBoostTitle": "🎮 BDIX Boosted Performance",
+    "bdixBoostDesc": "YouTube & Facebook up to 200 Mbps.",
+    "secureStableTitle": "🔒 Secure & Stable Connection",
+    "secureStableDesc": "99.99% uptime guaranteed.",
+    "customerCareTitle": "🤝 Customer-First Care",
+    "customerCareDesc": "24/7 support and free installation.",
+    "experienceTitle": "We don’t just provide internet",
+    "experienceDesc": "We promise an experience that makes life smarter, faster, and more connected."
+  },
+
+  "ourMission": {
+    "missionTitle": "Our Mission",
+    "missionDesc": "Our mission is to transform Sylhet’s digital future by delivering the fastest fiber broadband, BDIX-boosted speeds, and 99.99% reliable internet for every home, gamer, freelancer, and business. SyncIT is committed to providing affordable packages, free installation, and 24/7 customer support — ensuring a smarter and more connected lifestyle across Sylhet.",
+
+    "visionTitle": "Our Vision",
+    "visionDesc": "SyncIT’s vision is to make Sylhet the most digitally connected city in Bangladesh by delivering ultra-fast fiber broadband, BDIX-powered performance, and 24/7 reliable support. We aim to bridge the digital divide in Sylhet, empowering families, gamers, freelancers, and businesses with secure, affordable, and world-class internet services that transform how people live, work, and connect.",
+
+    "goalTitle": "Our Goal",
+    "goalDesc": "Our goal is to make high-speed fiber internet in Sylhet affordable, reliable, and accessible to everyone — from families and students to gamers and businesses. SyncIT is committed to supporting Sylhet’s growth by providing BDIX-powered speeds, 99.99% uptime, and customer-first service, making internet access a necessity, not a luxury."
+  },
+
+    "commonHeader": {
+      "syncitAbout": {
+        "title": "SyncIT Bangladesh",
+        "header": "About SyncIT – Sylhet’s Trusted & Reliable Internet Provider",
+        "desc": "SyncIT Bangladesh is Sylhet’s most trusted fiber broadband provider, serving many happy customers with lightning-fast fiber internet, BDIX-boosted speeds, and 24/7 technical support. From homes and gamers to freelancers and businesses, we are redefining what reliable internet means in Sylhet."
+      },
+      "speedChallenge": {
+        "title": "SyncIT Speed Challenge",
+        "header": "Test Your Internet Speed in Sylhet",
+        "desc": "Join Sylhet’s best fiber internet speed challenge with SyncIT. Test your speed using Ookla, Fast.com, or other tools and see why SyncIT always leads."
+      },
+      "packages": {
+        "title": "High Speed Internet Packages",
+        "header": "Choose the Perfect Plan for Your Needs",
+        "desc": "Confusion! Contact Us – Super Fast Optical Fiber Internet Connectivity is Now on Your Hands. At least try once, you have never experienced it before."
+      },
+      "coverage": {
+        "title": "Check Our Internet Availability on Your Location",
+        "header": "Coverage",
+        "desc": "You can see our high speed internet connectivity network coverage zone."
+      },
+      "contact": {
+        "title": "Hey! Share Your Opinion",
+        "header": "Contact SyncIT – Sylhet’s #1 Reliable Fiber Internet Provider",
+        "desc": "“Call, WhatsApp, or email SyncIT – Sylhet’s most reliable internet provider, available 24/7.”"
+      },
+      "payBill": {
+        "title": "Pay Your Internet Bill",
+        "header": "Pay Your SyncIT Internet Bill – Fast, Easy & Secure",
+        "desc": "Pay online anytime through bKash, Nagad, Rocket, Bank Transfer, or QR Code. Hassle-free billing for all SyncIT customers in Sylhet."
+      },
+      "offers": {
+      "title": "Latest Offers",
+      "header": "Don’t Miss Our Special Deals!",
+      "desc": "Explore our newest discounts and promotions. Grab limited-time offers and save big on your favorite products or services."
+      },
+          "services": {
+      "title": "High Speed Internet Services",
+      "header": "Services",
+      "desc": "You can find here all-in-one solutions for your company."
+    }
+    }
 }

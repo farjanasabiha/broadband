@@ -1,8 +1,10 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 const AboutTab = () => {
+  const { t } = useTranslation("common");
   const [activeTab, setActiveTab] = useState("IIG/Upstreme");
 
   const clientLogos = {
@@ -28,73 +30,55 @@ const AboutTab = () => {
     ],
   };
 
+  const tabs = [
+    { label: t("aboutTab.iig", { defaultValue: "IIG/Upstreme" }), value: "IIG/Upstreme" },
+    { label: t("aboutTab.peering", { defaultValue: "Peering" }), value: "Peering" },
+    { label: t("aboutTab.tech", { defaultValue: "Techonology" }), value: "Techonology" },
+    { label: t("aboutTab.nttn", { defaultValue: "NTTN" }), value: "NTTN" },
+  ];
+
   return (
     <div className="bg-black container max-w-6xl mx-auto px-5">
       <div className="container mx-auto px-4">
         {/* Header Section */}
         <div className="text-left">
           <h1 className="text-3xl md:text-4xl leading-snug font-medium mb-6">
-            Partner Behind
+            {t("aboutTab.title1", { defaultValue: "Partner Behind" })}
             <br />
             <span className="bg-gradient-to-r from-[#ff0033] to-[#f39f5a] bg-clip-text text-transparent">
-              Our Success
+              {t("aboutTab.title2", { defaultValue: "Our Success" })}
             </span>
           </h1>
           <p className="text-[#b2b5af] w-full lg:w-2/4 text-sm lg:text-lg mb-2 leading-relaxed">
-            We work with Tier-1 upstreams, IX peering and leading technology
-            providers to deliver BDIX-powered, fiber-fast internet across Sylhet
+            {t("aboutTab.desc1", {
+              defaultValue:
+                "We work with Tier-1 upstreams, IX peering and leading technology providers to deliver BDIX-powered, fiber-fast internet across Sylhet",
+            })}
           </p>
           <p className="text-[#b2b5af] w-full lg:w-2/4 text-sm lg:text-lg mb-4 leading-relaxed">
-            Our network combines international upstreams, local IX peering
-            (BDIX), and carrier-grade NTTN/backbone with IPv6, CDN and
-            enterprise hardware to keep Sylhet customers online, fast and
-            secure.
+            {t("aboutTab.desc2", {
+              defaultValue:
+                "Our network combines international upstreams, local IX peering (BDIX), and carrier-grade NTTN/backbone with IPv6, CDN and enterprise hardware to keep Sylhet customers online, fast and secure.",
+            })}
           </p>
         </div>
 
         {/* Tab Navigation */}
         <div className="flex justify-center mb-10">
           <div className="lg:flex space-x-4 space-y-4 lg:space-y-0 lg:space-x-2 backdrop-blur-sm rounded-full p-2">
-            <button
-              onClick={() => setActiveTab("IIG/Upstreme")}
-              className={`px-10 py-3  w-full md:w-auto text-lg cursor-pointer font-medium rounded-full  transition-all duration-300 ${
-                activeTab === "IIG/Upstreme"
-                  ? "bg-gradient-to-b from-[#ff0033] to-[#bd556a63] text-white shadow-lg border border-black"
-                  : "text-gray-400 hover:text-white border border-gray-100/40 hover:bg-gray-700/50"
-              }`}
-            >
-              IIG/Upstreme
-            </button>
-            <button
-              onClick={() => setActiveTab("Peering")}
-              className={`px-10 py-3  w-full md:w-auto text-lg cursor-pointer font-medium rounded-full  transition-all duration-300 ${
-                activeTab === "Peering"
-                  ? "bg-gradient-to-b from-[#ff0033] to-[#bd556a63] text-white shadow-lg border border-black"
-                  : "text-gray-400 hover:text-white border border-gray-100/40 hover:bg-gray-700/50"
-              }`}
-            >
-              Peering
-            </button>
-            <button
-              onClick={() => setActiveTab("Techonology")}
-              className={`px-10 py-3  w-full md:w-auto text-lg cursor-pointer font-medium rounded-full  transition-all duration-300 ${
-                activeTab === "Techonology"
-                  ? "bg-gradient-to-b from-[#ff0033] to-[#bd556a63] text-white shadow-lg border border-black"
-                  : "text-gray-400 hover:text-white border border-gray-100/40 hover:bg-gray-700/50"
-              }`}
-            >
-              Techonology
-            </button>
-            <button
-              onClick={() => setActiveTab("NTTN")}
-              className={`px-10 py-3  w-full md:w-auto text-lg cursor-pointer font-medium rounded-full  transition-all duration-300 ${
-                activeTab === "NTTN"
-                  ? "bg-gradient-to-b from-[#ff0033] to-[#bd556a63] text-white shadow-lg border border-black"
-                  : "text-gray-400 hover:text-white border border-gray-100/40 hover:bg-gray-700/50"
-              }`}
-            >
-              NTTN
-            </button>
+            {tabs.map((tab) => (
+              <button
+                key={tab.value}
+                onClick={() => setActiveTab(tab.value)}
+                className={`px-10 py-3 w-full md:w-auto text-lg cursor-pointer font-medium rounded-full transition-all duration-300 ${
+                  activeTab === tab.value
+                    ? "bg-gradient-to-b from-[#ff0033] to-[#bd556a63] text-white shadow-lg border border-black"
+                    : "text-gray-400 hover:text-white border border-gray-100/40 hover:bg-gray-700/50"
+                }`}
+              >
+                {tab.label}
+              </button>
+            ))}
           </div>
         </div>
 

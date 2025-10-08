@@ -14,7 +14,7 @@ const page = () => {
     <div className="bg-black">
       <TopBar />
       <Navbar />
-      <CommonHeader header={"Latest Offers"} />
+      <CommonHeader translationKey="commonHeader.offers" />
       <div className="space-y-24">
         <OffersArea />
         <Warning />

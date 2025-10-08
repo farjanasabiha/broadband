@@ -27,13 +27,8 @@ const page = () => {
     <div className="bg-black">
       <TopBar />
       <Navbar />
-      <CommonHeader
-        title={"Check Our Internet Availability on Your Location"}
-        header={"Coverage"}
-        desc={
-          "You can see our high speed internet connectivity network coverage zone."
-        }
-      />
+<CommonHeader translationKey="commonHeader.coverage" />
+
       <div className="space-y-24">
         <AllCoverage />
         <NetworkCoverage />

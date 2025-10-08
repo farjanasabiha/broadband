@@ -27,11 +27,7 @@ const page = () => {
     <div className="bg-black">
       <TopBar />
       <Navbar />
-      <CommonHeader
-        title={"High Speed Internet Services"}
-        header={"Services"}
-        desc={"You can find here all in one solution for your company."}
-      />
+<CommonHeader translationKey="commonHeader.services" />
       <div className="space-y-24">
         <AllServices />
         <Testimonial />

@@ -25,13 +25,7 @@ const page = () => {
     <div className=" bg-black">
       <TopBar />
       <Navbar />
-      <CommonHeader
-        title={"SyncIT Speed Challenge "}
-        header={"Test Your Internet Speed in Sylhet"}
-        desc={
-          "Join Sylhet’s best fiber internet speed challenge with SyncIT. Test your speed using Ookla, Fast.com, or other tools and see why SyncIT always leads."
-        }
-      />
+      <CommonHeader translationKey="commonHeader.speedChallenge" />
       <div className="space-y-24">
         <SpeedTab />
         <Testimonial />

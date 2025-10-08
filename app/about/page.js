@@ -29,31 +29,21 @@ const page = () => {
       <TopBar />
       <Navbar />
       <div className="space-y-24">
-        <CommonHeader
-          title={"SyncIT Bangladesh"}
-          header={
-            "About SyncIT – Sylhet’s Trusted & Reliable Internet Provider"
-          }
-          desc={
-            "SyncIT Bangladesh is Sylhet’s most trusted fiber broadband provider, serving many  happy customers with lightning-fast fiber internet, BDIX-boosted speeds, and 24/7 technical support. From homes and gamers to freelancers and businesses, we are redefining what reliable internet means in Sylhet."
-          }
-          img={"/asian-network-mission-1024x638.webp"}
+        <CommonHeader translationKey="commonHeader.syncitAbout" />
+        <OurMission
+          titleKey="ourMission.missionTitle"
+          descKey="ourMission.missionDesc"
+          img="/asian-network-mission-1024x638.webp"
         />
         <OurMission
-          title={"Our Mission"}
-          desc={
-            "Our mission is to transform Sylhet’s digital future by delivering the fastest fiber broadband, BDIX-boosted speeds, and 99.99% reliable internet for every home, gamer, freelancer, and business. SyncIT is committed to providing affordable packages, free installation, and 24/7 customer support — ensuring a smarter and more connected lifestyle across Sylhet."
-          }
+          titleKey="ourMission.visionTitle"
+          descKey="ourMission.visionDesc"
+          img="/asian-network-mission-1024x638.webp"
         />
         <OurMission
-          title={"Our Vision"}
-          desc={`SyncIT’s vision is to make Sylhet the most digitally connected city in Bangladesh by delivering ultra-fast fiber broadband, BDIX-powered performance, and 24/7 reliable support. We aim to bridge the digital divide in Sylhet, empowering families, gamers, freelancers, and businesses with secure, affordable, and world-class internet services that transform how people live, work, and connect.`}
-          img={"/asian-network-mission-1024x638.webp"}
-        />
-        <OurMission
-          title={"Our Goal"}
-          desc={`Our goal is to make high-speed fiber internet in Sylhet affordable, reliable, and accessible to everyone — from families and students to gamers and businesses. SyncIT is committed to supporting Sylhet’s growth by providing BDIX-powered speeds, 99.99% uptime, and customer-first service, making internet access a necessity, not a luxury.`}
-          img={"/asian-network-mission-1024x638.webp"}
+          titleKey="ourMission.goalTitle"
+          descKey="ourMission.goalDesc"
+          img="/asian-network-mission-1024x638.webp"
         />
         <Timeline />
         <AboutTab />

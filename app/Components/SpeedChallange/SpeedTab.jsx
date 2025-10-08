@@ -1,7 +1,9 @@
 "use client";
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const SpeedTab = () => {
+  const { t } = useTranslation("common");
   const [activeTab, setActiveTab] = useState("OoklaSpeedTest");
 
   const YoutubeVideo = {
@@ -36,10 +38,22 @@ const SpeedTab = () => {
   };
 
   const tabs = [
-    { label: "Ookla Speed Test", value: "OoklaSpeedTest" },
-    { label: "Fast Speed Test", value: "FastSpeedTest" },
-    { label: "Speedtest Test", value: "SpeedtestTest" },
-    { label: "Speed Test Singapore", value: "SpeedTestSingapore" },
+    {
+      label: t("speedTab.ookla", { defaultValue: "Ookla Speed Test" }),
+      value: "OoklaSpeedTest",
+    },
+    {
+      label: t("speedTab.fast", { defaultValue: "Fast Speed Test" }),
+      value: "FastSpeedTest",
+    },
+    {
+      label: t("speedTab.speedtest", { defaultValue: "Speedtest Test" }),
+      value: "SpeedtestTest",
+    },
+    {
+      label: t("speedTab.singapore", { defaultValue: "Speed Test Singapore" }),
+      value: "SpeedTestSingapore",
+    },
   ];
 
   return (
@@ -52,7 +66,7 @@ const SpeedTab = () => {
               <button
                 key={tab.value}
                 onClick={() => setActiveTab(tab.value)}
-                className={`px-10 py-3  w-full md:w-auto text-lg cursor-pointer font-medium rounded-full  transition-all duration-300 ${
+                className={`px-10 py-3 w-full md:w-auto text-lg cursor-pointer font-medium rounded-full transition-all duration-300 ${
                   activeTab === tab.value
                     ? "bg-gradient-to-b from-[#ff0033] to-[#bd556a63] text-white shadow-lg border border-black"
                     : "text-gray-400 hover:text-white border border-gray-100/40 hover:bg-gray-700/50"
@@ -68,7 +82,7 @@ const SpeedTab = () => {
         <div className="grid grid-cols-1 max-w-2xl mx-auto">
           {YoutubeVideo[activeTab]?.map((video) => (
             <div key={video.id} className="group cursor-pointer">
-              <div className="rounded-2xl p-6 ">
+              <div className="rounded-2xl p-6">
                 <div className="w-full h-full aspect-video bg-black rounded-lg overflow-hidden">
                   <iframe
                     key={activeTab}

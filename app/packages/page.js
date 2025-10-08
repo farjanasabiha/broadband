@@ -28,17 +28,7 @@ const page = () => {
     <div className="bg-black">
       <TopBar />
       <Navbar />
-      <CommonHeader
-        title={"High Speed Internet Packages"}
-        header={
-          <>
-            Choose the Perfect Plan <br /> for Your Needs
-          </>
-        }
-        desc={
-          "Confusion! Contact Us – Super Fast Optical Fiber Internet Connectivity is Now on Your Hands. At least try once, you have never experienced it before."
-        }
-      />
+<CommonHeader translationKey="commonHeader.packages" />
       <div className="space-y-24">
         <AllPackages />
         <Testimonial />
