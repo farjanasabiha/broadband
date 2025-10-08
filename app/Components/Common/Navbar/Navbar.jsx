@@ -1,11 +1,14 @@
 "use client";
+
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { HiMenu, HiX } from "react-icons/hi";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
+  const { t } = useTranslation("common"); // ✅ translation hook
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
@@ -19,16 +22,16 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: "Home", href: "/" },
-    { name: "Speed Challenge", href: "/speedChallange" },
-    { name: "About Us", href: "/about" },
-    { name: "Packages", href: "/packages" },
-    { name: "Coverage", href: "/coverage" },
-    { name: "Services", href: "/services" },
-    { name: "Referral Offer", href: "/refferal" },
-    { name: "Pay Bills", href: "/paybills" },
-    { name: "Offers", href: "/offers" },
-    { name: "Contact", href: "/contact" },
+    { key: "nav_home", href: "/" },
+    { key: "nav_speed_challenge", href: "/speedChallange" },
+    { key: "nav_about_us", href: "/about" },
+    { key: "nav_packages", href: "/packages" },
+    { key: "nav_coverage", href: "/coverage" },
+    { key: "nav_services", href: "/services" },
+    { key: "nav_referral_offer", href: "/refferal" },
+    { key: "nav_pay_bills", href: "/paybills" },
+    { key: "nav_offers", href: "/offers" },
+    { key: "nav_contact", href: "/contact" }
   ];
 
   return (
@@ -49,12 +52,10 @@ const Navbar = () => {
               <Link
                 href={link.href}
                 className={`transition-colors font-bold duration-200 hover:text-primaryColor ${
-                  pathname === link.href
-                    ? "text-primaryColor font-semibold"
-                    : ""
+                  pathname === link.href ? "text-primaryColor font-semibold" : ""
                 }`}
               >
-                {link.name}
+                {t(link.key)} {/* ✅ use translation key */}
               </Link>
             </li>
           ))}
@@ -66,30 +67,20 @@ const Navbar = () => {
             onClick={() => setMenuOpen(!menuOpen)}
             className="text-white focus:outline-none"
           >
-            {menuOpen ? (
-              <HiX className="h-7 w-7" />
-            ) : (
-              <HiMenu className="h-7 w-7" />
-            )}
+            {menuOpen ? <HiX className="h-7 w-7" /> : <HiMenu className="h-7 w-7" />}
           </button>
         </div>
       </div>
 
-      {/* Overlay (behind sidebar) */}
-      {menuOpen && (
-        <div className="fixed z-40" onClick={() => setMenuOpen(false)}></div>
-      )}
+      {/* Overlay */}
+      {menuOpen && <div className="fixed z-40" onClick={() => setMenuOpen(false)}></div>}
 
-      {/* Mobile Sidebar Menu*/}
+      {/* Mobile Sidebar */}
       <div
         className={`fixed top-0 left-0 h-screen w-64 bg-black text-white z-50 transform transition-transform duration-300 ease-in-out ${
           menuOpen ? "translate-x-0" : "-translate-x-full"
         }`}
-        style={{
-          backgroundColor: "#000",
-          height: "100vh", // Force full viewport height
-          overflowY: "auto", // Allow scrolling if content exceeds screen height
-        }}
+        style={{ backgroundColor: "#000", height: "100vh", overflowY: "auto" }}
       >
         <div className="flex justify-between items-center px-4 py-3 border-b border-gray-700 bg-black sticky top-0">
           <Image src="/sycncitlogo-01.png" alt="Logo" height={80} width={80} />
@@ -104,13 +95,11 @@ const Navbar = () => {
               <Link
                 href={link.href}
                 className={`block py-2 transition-colors font-bold duration-200 hover:text-primaryColor ${
-                  pathname === link.href
-                    ? "text-primaryColor font-semibold"
-                    : ""
+                  pathname === link.href ? "text-primaryColor font-semibold" : ""
                 }`}
                 onClick={() => setMenuOpen(false)}
               >
-                {link.name}
+                {t(link.key)} {/* ✅ translation key */}
               </Link>
             </li>
           ))}

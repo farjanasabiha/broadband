@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ReactLenis } from "lenis/react";
 import WhatsAppButton from "./Components/WhatsAppButton/WhatsAppButton";
+import TranslationProvider from "./Components/TranslationProvider";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -38,7 +39,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black`}
       >
         <ReactLenis root data-theme="dark">
-          {children}
+          <TranslationProvider>{children}</TranslationProvider>
           <WhatsAppButton />
         </ReactLenis>
       </body>

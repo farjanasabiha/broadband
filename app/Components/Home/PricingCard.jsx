@@ -1,124 +1,76 @@
+"use client";
+
 import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { GrSchedulePlay } from "react-icons/gr";
-
 import { CheckCircle } from "lucide-react";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 const PricingCard = () => {
+  const { t } = useTranslation("common");
+
   const pricingPlans = [
     {
       id: 1,
-      name: "Basic",
-      speed: "36 Mbps",
-      price: "800 Tk",
-      popular: false,
+      name: t("pricing_basic"),
+      speed: '36 Mbps',
+      price: t("pricing_basic_price"),
       features: [
-        {
-          text: "Up to 36Mbps  (1:8 Ratio)",
-        },
-        { text: "IPv4 Public IP" },
-        {
-          text: "Basic BDIX FTP Servers",
-        },
-        { text: "HD Video Calling" },
-        {
-          text: "Standard Youtube & Facebook",
-        },
-        { text: "HD Video Calling" },
-        {
-          text: "Standard Youtube & Facebook",
-        },
-        {
-          text: "5% Vat Applicable",
-        },
+        { text: t("pricing_basic_feature1") },
+        { text: t("pricing_basic_feature2") },
+        { text: t("pricing_basic_feature3") },
+        { text: t("pricing_basic_feature4") },
+        { text: t("pricing_basic_feature5") },
+        { text: t("pricing_basic_feature6") },
       ],
     },
     {
       id: 2,
-      name: "Premium",
-      speed: "70 Mbps",
-      price: "1,000 Tk",
-      popular: true,
+      name: t("pricing_premium"),
+      speed: '70 Mbps',
+      price: t("pricing_premium_price"),
       features: [
-        {
-          text: "Up to 70 Mbps Internet (1:8 Ratio)",
-        },
-        {
-          text: "IP Addresses: Both IPv4 & IPv6 Public IP",
-        },
-        { text: "Extra Speed on VAS" },
-        {
-          text: "Enrich BDIX FTP Servers",
-        },
-        {
-          text: "Uncapped Speed in IX and Gaming servers",
-        },
-        {
-          text: "Smooth 4k Video Calling",
-        },
-        {
-          text: "Bufferless Youtube & Facebook",
-        },
-        {
-          text: "5% Vat Applicable",
-        },
+        { text: t("pricing_premium_feature1") },
+        { text: t("pricing_premium_feature2") },
+        { text: t("pricing_premium_feature3") },
+        { text: t("pricing_premium_feature4") },
+        { text: t("pricing_premium_feature5") },
+        { text: t("pricing_premium_feature6") },
+        { text: t("pricing_premium_feature7") },
+        { text: t("pricing_premium_feature8") },
       ],
     },
     {
       id: 3,
-      name: "Business",
-      speed: "80 Mbps",
-      price: "1,200 Tk",
-      popular: false,
+      name: t("pricing_business"),
+      speed: '80 Mbps',
+      price: t("pricing_business_price"),
       features: [
-        {
-          text: "Up to 80 Mbps Internet (1:6 Ratio)",
-        },
-        {
-          text: "Multiple IPv4 & IPv6 Public IP",
-        },
-        { text: "Priority Speed on VAS" },
-        {
-          text: "Premium BDIX FTP Servers",
-        },
-        {
-          text: "Advanced Security Features",
-        },
-        { text: "Ultra HD Video Calling" },
-        { text: "Business Grade Support" },
-        {
-          text: "5% Vat Applicable",
-        },
+        { text: t("pricing_business_feature1") },
+        { text: t("pricing_business_feature2") },
+        { text: t("pricing_business_feature3") },
+        { text: t("pricing_business_feature4") },
+        { text: t("pricing_business_feature5") },
+        { text: t("pricing_business_feature6") },
+        { text: t("pricing_business_feature7") },
+        { text: t("pricing_business_feature8") },
       ],
     },
     {
       id: 4,
-      name: "Enterprise",
-      speed: "90 Mbps",
-      price: "1,500 Tk",
-      popular: false,
+      name: t("pricing_enterprise"),
+      speed: '90 Mbps',
+      price: t("pricing_enterprise_price"),
       features: [
-        {
-          text: "Up to 90 Mbps Internet (1:4 Ratio)",
-        },
-        {
-          text: "Dedicated IPv4 & IPv6 Block",
-        },
-        {
-          text: "Maximum Speed on All Services",
-        },
-        {
-          text: "Dedicated BDIX FTP Servers",
-        },
-        {
-          text: "Enterprise Security Suite",
-        },
-        { text: "24/7 Dedicated Support" },
-        { text: "SLA Guaranteed Uptime" },
-        {
-          text: "5% Vat Applicable",
-        },
+        { text: t("pricing_enterprise_feature1") },
+        { text: t("pricing_enterprise_feature2") },
+        { text: t("pricing_enterprise_feature3") },
+        { text: t("pricing_enterprise_feature4") },
+        { text: t("pricing_enterprise_feature5") },
+        { text: t("pricing_enterprise_feature6") },
+        { text: t("pricing_enterprise_feature7") },
+        { text: t("pricing_enterprise_feature8") },
       ],
     },
   ];
@@ -129,7 +81,7 @@ const PricingCard = () => {
         {/* Header */}
         <div className="text-center mb-6 lg:mb-9">
           <h2 className="text-3xl md:text-4xl leading-snug font-medium mb-8">
-            Sylhet’s Most Popular Broadband Package – SyncIT
+            {t("pricing_header")}
           </h2>
 
           <div className="flex items-center justify-center">
@@ -146,7 +98,6 @@ const PricingCard = () => {
                   <path d="M12 2l2.39 6.9h7.27l-5.88 4.27 2.39 6.9L12 15.8l-5.88 4.27 2.39-6.9L2.63 8.9h7.27L12 2z" />
                 </svg>
               </div>
-              {/* Right Line */}
               <div className="flex-1 border-t border-[#bd2335]"></div>
             </div>
           </div>
@@ -154,13 +105,12 @@ const PricingCard = () => {
 
         {/* Pricing Cards Grid */}
         <div className="gap-10 md:gap-16 lg:gap-20 space-y-10 md:space-y-16 lg:space-y-20">
-          {pricingPlans.map((plan, index) => (
+          {pricingPlans.map((plan) => (
             <div key={plan.id} className="relative group">
-              {/* Card */}
               <div className="relative bg-gradient-to-t from-[#ff00333a] to-[#bd556a1f] rounded-xl md:rounded-2xl lg:rounded-4xl p-4 sm:p-6 lg:px-12 lg:py-20 shadow-xl md:shadow-2xl h-full flex flex-col">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 md:gap-10 lg:gap-16 text-left md:text-center items-center md:mx-auto">
                   {/* Plan Badge */}
-                  <div className="space-y-3 sm:space-y-4 md:space-y-5 col-span-12 lg:col-span-3  text-left lg:text-center lg:mx-auto">
+                  <div className="space-y-3 sm:space-y-4 md:space-y-5 col-span-12 lg:col-span-3 text-left lg:text-center lg:mx-auto">
                     <div>
                       <div className="inline-block px-2 sm:px-3 text-gray-200/70 py-1 rounded-full text-xs font-medium border-gray-100/50 border self-start">
                         {plan.name}
@@ -195,18 +145,16 @@ const PricingCard = () => {
                   </div>
 
                   {/* CTA Button */}
-                  <div className="text-left  text-left lg:text-center lg:mx-auto col-span-12 lg:col-span-3">
-                    <button>
-                      <Link
-                        href="/new-connection"
-                        className="flex items-center justify-center md:justify-between gap-1 sm:gap-2 py-2 sm:py-3 px-4 sm:px-6 rounded-2xl sm:rounded-3xl font-medium bg-gradient-to-b from-[#ff0033] to-[#bd556a63]"
-                      >
-                        <p className="text-sm sm:text-base md:text-lg font-semibold">
-                          Get Today
-                        </p>
-                        <FaArrowRightLong className="text-sm sm:text-base" />
-                      </Link>
-                    </button>
+                  <div className="text-left lg:text-center lg:mx-auto col-span-12 lg:col-span-3">
+                    <Link
+                      href="/new-connection"
+                      className="flex items-center justify-center md:justify-between gap-1 sm:gap-2 py-2 sm:py-3 px-4 sm:px-6 rounded-2xl sm:rounded-3xl font-medium bg-gradient-to-b from-[#ff0033] to-[#bd556a63]"
+                    >
+                      <p className="text-sm sm:text-base md:text-lg font-semibold">
+                        {t("pricing_button")}
+                      </p>
+                      <FaArrowRightLong className="text-sm sm:text-base" />
+                    </Link>
                   </div>
                 </div>
               </div>

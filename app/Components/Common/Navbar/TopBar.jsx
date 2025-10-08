@@ -1,37 +1,52 @@
 "use client";
-import React, { useState } from "react";
+
+import React, { useState, useEffect } from "react";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import Image from "next/image";
-const TopBar = () => {
-  const [language, setLanguage] = useState("en");
+import { useTranslation } from "react-i18next";
+import i18n from "@/app/lib/i18n";
 
-  const handleLanguageChange = (lang) => {
-    setLanguage(lang);
+const TopBar = () => {
+  const { t } = useTranslation("common");
+  const [language, setLanguage] = useState("en"); // default English
+
+  // Sync language state with i18next on external changes (e.g. page refresh)
+  useEffect(() => {
+    const handleLanguageChanged = (lng) => setLanguage(lng);
+    i18n.on("languageChanged", handleLanguageChanged);
+    return () => {
+      i18n.off("languageChanged", handleLanguageChanged);
+    };
+  }, []);
+
+  const handleLanguageChange = (lng) => {
+    i18n.changeLanguage(lng);
+    setLanguage(lng);
   };
 
   return (
     <div className="bg-primaryColor text-black text-sm py-2 px-4 mb-0">
       <div className="container max-w-6xl mx-auto flex justify-end md:justify-between items-center">
-        {/* Left Side: */}
-        <div className="hidden md:block ">
-          <div className="flex items-center space-x-6 ">
+        {/* Left Side */}
+        <div className="hidden md:block">
+          <div className="flex items-center space-x-6">
             {/* Phone */}
             <div className="flex items-center gap-1">
               <FaPhoneAlt className="text-lg" />
-              <span className="font-semibold">09638559900</span>
+              <span className="font-semibold">{t("topbar_phone")}</span>
             </div>
 
             {/* Email */}
             <div className="flex items-center gap-1">
               <MdEmail className="text-lg" />
-              <span className="font-semibold">support@syncit.com.bd
-              </span>
+              <span className="font-semibold">{t("topbar_email")}</span>
             </div>
           </div>
         </div>
-        {/* Right Side: Language Selector */}
-        <div className="dropdown dropdown-end ">
+
+        {/* Language Selector */}
+        <div className="dropdown dropdown-end">
           <div
             tabIndex={0}
             role="button"
@@ -42,9 +57,11 @@ const TopBar = () => {
               alt="Flag"
               width={20}
               height={20}
-              className=" mr-2"
+              className="mr-2"
             />
-            {language === "en" ? "English" : "বাংলা"}
+            {language === "en"
+              ? t("topbar_language_en")
+              : t("topbar_language_bn")}
             <svg
               className="ml-2 w-4 h-4 fill-current"
               xmlns="http://www.w3.org/2000/svg"
@@ -63,22 +80,16 @@ const TopBar = () => {
                 onClick={() => handleLanguageChange("en")}
               >
                 <Image src="/en.png" alt="English" width={20} height={20} />
-                English
+                {t("topbar_language_en")}
               </button>
             </li>
             <li>
               <button
                 className="flex items-center gap-2 hover:text-primaryColor"
-                onClick={() => handleLanguageChange("bd")}
+                onClick={() => handleLanguageChange("bn")}
               >
-                <Image
-                  src="/bn.png"
-                  alt="Bangla"
-                  width={20}
-                  height={20}
-                  className=""
-                />
-                বাংলা
+                <Image src="/bn.png" alt="Bangla" width={20} height={20} />
+                {t("topbar_language_bn")}
               </button>
             </li>
           </ul>
@@ -87,4 +98,5 @@ const TopBar = () => {
     </div>
   );
 };
+
 export default TopBar;

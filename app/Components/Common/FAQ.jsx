@@ -2,34 +2,32 @@
 import { useState } from "react";
 import { ChevronDown, Minus } from "lucide-react";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
+
 export default function FAQSection() {
+  const { t } = useTranslation("common");
   const [openIndex, setOpenIndex] = useState(0);
 
   const faqs = [
     {
-      question: "How can I contact customer support ?",
-      answer:
-        "SyncIT support is available 24/7. Call our hotline 01965300500 / 09638559900, or message us on WhatsApp at wa.me/8801978169689. Our expert technicians are always ready to solve your issues quickly.",
+      question: t("faq_question1"),
+      answer: t("faq_answer1"),
     },
     {
-      question: "How can I pay bill ?",
-      answer:
-        "You can pay your SyncIT bill easily via bKash, Nagad, Rocket, credit/debit card, or online through our customer panel. You can also visit our nearest office for in-person payments.",
+      question: t("faq_question2"),
+      answer: t("faq_answer2"),
     },
     {
-      question: "How to get a new internet connection ?",
-      answer:
-        "Choose your package, call our team, and we’ll install your SyncIT fiber internet in Sylhet within 24–48 hours.",
+      question: t("faq_question3"),
+      answer: t("faq_answer3"),
     },
     {
-      question:
-        "What is the line charge of the new or line transferred charge?",
-      answer:
-        "A standard line charge applies for new or transferred SyncIT connections. The amount may vary depending on your location in Sylhet. Please contact our support team for exact details.",
+      question: t("faq_question4"),
+      answer: t("faq_answer4"),
     },
   ];
 
-  const FAQ = (index) => {
+  const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? -1 : index);
   };
 
@@ -41,10 +39,10 @@ export default function FAQSection() {
           <div className="order-2 lg:order-1">
             <div className="text-left mb-8">
               <h1 className="text-3xl md:text-4xl leading-snug font-medium mb-6">
-                Your Queries
+                {t("faq_header1")}
                 <br />
                 <span className="bg-gradient-to-r from-[#ff0033] to-[#f39f5a] bg-clip-text text-transparent">
-                  Our Solution
+                  {t("faq_header2")}
                 </span>
               </h1>
             </div>
@@ -53,13 +51,13 @@ export default function FAQSection() {
               {faqs.map((faq, index) => (
                 <div
                   key={index}
-                  className="border border-gray-700  overflow-hidden transition-all duration-300 ease-in-out "
+                  className="border border-gray-700 overflow-hidden transition-all duration-300 ease-in-out"
                 >
                   <button
-                    onClick={() => FAQ(index)}
-                    className="w-full px-6 py-3 text-left flex items-center justify-between cursor-pointer  duration-200"
+                    onClick={() => toggleFAQ(index)}
+                    className="w-full px-6 py-3 text-left flex items-center justify-between cursor-pointer duration-200"
                   >
-                    <span className="text-white  font-bold sm:text-base lg:text-lg">
+                    <span className="text-white font-bold sm:text-base lg:text-lg">
                       {faq.question}
                     </span>
                     <div className="ml-4 flex-shrink-0">
@@ -78,8 +76,8 @@ export default function FAQSection() {
                         : "max-h-0 opacity-0"
                     }`}
                   >
-                    <div className="px-6 py-4  border-t border-gray-700">
-                      <p className="text-[#b2b5af] text-lg  leading-8">
+                    <div className="px-6 py-4 border-t border-gray-700">
+                      <p className="text-[#b2b5af] text-lg leading-8">
                         {faq.answer}
                       </p>
                     </div>
@@ -95,7 +93,6 @@ export default function FAQSection() {
               width={300}
               height={300}
               alt="FAQ"
-              className=""
             />
           </div>
         </div>

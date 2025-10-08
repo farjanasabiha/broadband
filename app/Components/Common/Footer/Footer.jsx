@@ -1,6 +1,8 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { BsWhatsapp } from "react-icons/bs";
 import {
   FaFacebookF,
@@ -11,29 +13,27 @@ import {
 } from "react-icons/fa";
 
 const Footer = () => {
+  const { t } = useTranslation("common");
+
   return (
-    <footer className="">
+    <footer>
       <div className="max-w-6xl mx-auto px-5 py-20">
-        <div className=" grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10">
           {/* Left - Logo & Description */}
           <div className="flex flex-col justify-between col-span-12 lg:col-span-4">
             <div className="lg:pr-8">
               <div className="flex items-center space-x-3 mb-4">
                 <div>
                   <h1 className="text-primaryColor font-bold text-lg sm:text-xl leading-tight">
-                    SYNCIT BANGLADESH
+                    {t("footer_company_name")}
                   </h1>
                   <p className="text-xs sm:text-sm italic text-white">
-                    Smart Life’s Internet Partner
+                    {t("footer_tagline")}
                   </p>
                 </div>
               </div>
               <p className="text-sm sm:text-[15px] text-[#b2b2b2] leading-relaxed mb-4">
-                SyncIT is Sylhet’s most trusted fiber broadband provider —
-                serving homes, businesses, and gamers with ultra-fast BDIX
-                speed, 99.99% uptime, and 24/7 support. Over 5000+ happy
-                customers already enjoy our bufferless, high-speed internet
-                experience.
+                {t("footer_description")}
               </p>
               <div className="flex space-x-4 mt-4">
                 <Link
@@ -43,7 +43,7 @@ const Footer = () => {
                   <FaFacebookF className="text-primaryColor text-lg hover:text-white transition-colors" />
                 </Link>
                 <Link
-                  href="https://www.facebook.com/syncitbd"
+                  href="https://www.youtube.com/@syncitbd"
                   className="hover:text-white transition-colors"
                 >
                   <FaYoutube className="text-primaryColor text-lg hover:text-white transition-colors" />
@@ -58,7 +58,7 @@ const Footer = () => {
               {/* Company */}
               <div>
                 <h2 className="text-white text-lg sm:text-xl md:text-2xl font-semibold mb-3 sm:mb-4">
-                  Company
+                  {t("footer_company_title")}
                 </h2>
                 <ul className="text-sm text-[#b2b2b2] space-y-1 sm:space-y-2">
                   <li>
@@ -66,7 +66,7 @@ const Footer = () => {
                       href="/blog"
                       className="hover:text-primaryColor transition-colors"
                     >
-                      Blog
+                      {t("footer_blog")}
                     </Link>
                   </li>
                   <li>
@@ -74,7 +74,7 @@ const Footer = () => {
                       href="/faq"
                       className="hover:text-primaryColor transition-colors"
                     >
-                      Faq
+                      {t("footer_faq")}
                     </Link>
                   </li>
                   <li>
@@ -82,7 +82,7 @@ const Footer = () => {
                       href="/privacy-policy"
                       className="hover:text-primaryColor transition-colors"
                     >
-                      Privacy Policy
+                      {t("footer_privacy_policy")}
                     </Link>
                   </li>
                   <li>
@@ -90,7 +90,7 @@ const Footer = () => {
                       href="/terms-and-conditions"
                       className="hover:text-primaryColor transition-colors"
                     >
-                      Terms & Conditions
+                      {t("footer_terms_conditions")}
                     </Link>
                   </li>
                   <li>
@@ -98,7 +98,7 @@ const Footer = () => {
                       href="#"
                       className="hover:text-primaryColor transition-colors"
                     >
-                      Career
+                      {t("footer_career")}
                     </Link>
                   </li>
                 </ul>
@@ -107,7 +107,7 @@ const Footer = () => {
               {/* Services */}
               <div>
                 <h2 className="text-white text-lg sm:text-xl md:text-2xl font-semibold mb-3 sm:mb-4">
-                  Services
+                  {t("footer_services_title")}
                 </h2>
                 <ul className="text-sm text-[#b2b2b2] space-y-1 sm:space-y-2">
                   <li>
@@ -115,7 +115,7 @@ const Footer = () => {
                       href="/packages"
                       className="hover:text-primaryColor transition-colors"
                     >
-                      Packages
+                      {t("footer_packages")}
                     </Link>
                   </li>
                   <li>
@@ -123,7 +123,7 @@ const Footer = () => {
                       href="/coverage"
                       className="hover:text-primaryColor transition-colors"
                     >
-                      Coverage Area
+                      {t("footer_coverage")}
                     </Link>
                   </li>
                   <li>
@@ -131,23 +131,15 @@ const Footer = () => {
                       href="/offers"
                       className="hover:text-primaryColor transition-colors"
                     >
-                      Offers
+                      {t("footer_offers")}
                     </Link>
                   </li>
-                  {/* <li>
-                    <Link
-                      href="/social-media-marketing-strategy"
-                      className="hover:text-primaryColor transition-colors"
-                    >
-                      Social Media Marketing Strategy
-                    </Link>
-                  </li> */}
                   <li>
                     <Link
                       href="/contact"
                       className="hover:text-primaryColor transition-colors"
                     >
-                      Support
+                      {t("footer_support")}
                     </Link>
                   </li>
                 </ul>
@@ -156,7 +148,7 @@ const Footer = () => {
               {/* Address */}
               <div>
                 <h2 className="text-white text-lg sm:text-xl md:text-2xl font-semibold mb-3 sm:mb-4">
-                  Address
+                  {t("footer_address_title")}
                 </h2>
                 <ul className="text-sm text-[#b2b2b2] space-y-2">
                   <li className="flex items-start">
@@ -165,7 +157,7 @@ const Footer = () => {
                       href="tel:01965300500"
                       className="hover:text-primaryColor transition-colors"
                     >
-                      01965300500 / 09638559900
+                      {t("footer_phone")}
                     </Link>
                   </li>
                   <li className="flex items-start">
@@ -174,24 +166,24 @@ const Footer = () => {
                       href="mailto:support@syncit.com.bd"
                       className="hover:text-primaryColor transition-colors"
                     >
-                      support@syncit.com.bd
+                      {t("footer_email")}
                     </Link>
                   </li>
                   <li className="flex items-start">
                     <BsWhatsapp className="text-primaryColor mt-1 mr-2 flex-shrink-0" />
                     <Link
-                      href="https://wa.me/8801978169689?text=Hello%20I%20am%20interested%20in%20your%20services"
+                      href="https://wa.me/8801978169689"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-primaryColor transition-colors"
                     >
-                      wa.me/8801978169689
+                      {t("footer_whatsapp")}
                     </Link>
                   </li>
                   <li className="flex items-start">
                     <FaMapMarkerAlt className="text-primaryColor mt-1 mr-2 flex-shrink-0" />
                     <span className="hover:text-primaryColor transition-colors">
-                      Sylhet, Bangladesh
+                      {t("footer_location")}
                     </span>
                   </li>
                 </ul>
@@ -206,10 +198,10 @@ const Footer = () => {
               {/* Left - App download */}
               <div>
                 <p className="text-sm sm:text-base text-[#b2b2b2] mb-1">
-                  For smooth experience
+                  {t("footer_app_smooth")}
                 </p>
                 <p className="text-lg sm:text-xl md:text-2xl font-semibold text-white mb-3">
-                  Download Our Mobile App
+                  {t("footer_app_download")}
                 </p>
                 <div className="flex flex-wrap gap-2 sm:gap-3">
                   <Link
@@ -230,9 +222,9 @@ const Footer = () => {
                   >
                     <Image
                       src="/appStore.png"
+                      alt="App Store"
                       height={150}
                       width={150}
-                      alt="App Store"
                       className="h-8 sm:h-10 object-contain"
                     />
                   </Link>
@@ -241,14 +233,14 @@ const Footer = () => {
 
               {/* Right - Copyright */}
               <div className="flex flex-col md:items-end text-xs sm:text-sm text-gray-400 text-center md:text-right mt-4 md:mt-0">
-                <p className="mb-1 md:mb-2">All rights — SyncIT</p>
+                <p className="mb-1 md:mb-2">{t("footer_rights")}</p>
                 <p>
-                  Developed By:
+                  {t("footer_developed_by")}
                   <Link
                     href="#"
                     className="text-primaryColor font-medium hover:underline"
                   >
-                    SyncIT Team
+                    {t("footer_team")}
                   </Link>
                 </p>
               </div>

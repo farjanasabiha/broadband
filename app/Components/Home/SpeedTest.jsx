@@ -1,14 +1,20 @@
+"use client";
+
 import Link from "next/link";
 import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { useTranslation } from "react-i18next";
 
 const SpeedTest = () => {
+  const { t } = useTranslation("common");
+
   return (
-    <div className=" container max-w-6xl mx-auto px-5">
+    <div className="container max-w-6xl mx-auto px-5">
       {/* Title */}
       <h2 className="text-3xl md:text-4xl font-medium text-left leading-snug mb-12">
-        Sylhet Internet Speed Test – Powered by SyncIT
+        {t("speed_test_title")}
       </h2>
+
       <div style={{ minHeight: "360px" }}>
         <div
           style={{
@@ -35,37 +41,22 @@ const SpeedTest = () => {
           />
         </div>
       </div>
+
       <div className="text-center pt-6">
-        <p className="text-[18px] mb-5">
-          Check your internet speed anytime from mobile or laptop. SyncIT
-          customers in Sylhet enjoy ultra-fast BDIX speeds (YouTube & Facebook
-          up to 200 Mbps) and 99.99% uptime — the most reliable fiber connection
-          in the city.
-        </p>
-          <p className="text-[26px] mb-5">“Not happy with your current speed? Upgrade to SyncIT
-          today”
-        </p>
+        <p className="text-[18px] mb-5">{t("speed_test_description")}</p>
+        <p className="text-[26px] mb-5">{t("speed_test_cta")}</p>
+
         <button>
           <Link
-            className="flex items-center  justify-between gap-2 py-3 px-8 rounded-3xl font-medium bg-gradient-to-b from-[#ff0033] to-[#bd556a63]"
+            className="flex items-center justify-between gap-2 py-3 px-8 rounded-3xl font-medium bg-gradient-to-b from-[#ff0033] to-[#bd556a63]"
             target="_blank"
             href="/new-connection"
           >
-            <span className="">Get New Connection</span> <FaArrowRightLong />
+            <span>{t("speed_test_button")}</span>
+            <FaArrowRightLong />
           </Link>
         </button>
       </div>
-      {/* <div>
-        Provided by{" "}
-        <a
-          href="https://www.meter.net"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-500 underline"
-        >
-          Meter.net
-        </a>
-      </div> */}
     </div>
   );
 };
