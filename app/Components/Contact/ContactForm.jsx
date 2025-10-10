@@ -20,7 +20,7 @@ const ContactForm = () => {
 
           {/* Phone */}
           <input
-            type="number"
+            type="tel"
             placeholder={t("contactform_phone_placeholder")}
             className="col-span-12 md:col-span-6 rounded-full px-6 py-3 bg-[#1f1f1f] border border-gray-600 focus:outline-none placeholder-primaryColor text-white"
           />
