@@ -27,8 +27,7 @@ const page = () => {
     <div className="bg-black">
       <TopBar />
       <Navbar />
-<CommonHeader translationKey="commonHeader.coverage" />
-
+      <CommonHeader translationKey="commonHeader.coverage" />
       <div className="space-y-24">
         <AllCoverage />
         <NetworkCoverage />

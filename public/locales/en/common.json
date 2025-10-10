@@ -216,51 +216,164 @@
     "goalDesc": "Our goal is to make high-speed fiber internet in Sylhet affordable, reliable, and accessible to everyone — from families and students to gamers and businesses. SyncIT is committed to supporting Sylhet’s growth by providing BDIX-powered speeds, 99.99% uptime, and customer-first service, making internet access a necessity, not a luxury."
   },
 
-    "commonHeader": {
-      "syncitAbout": {
-        "title": "SyncIT Bangladesh",
-        "header": "About SyncIT – Sylhet’s Trusted & Reliable Internet Provider",
-        "desc": "SyncIT Bangladesh is Sylhet’s most trusted fiber broadband provider, serving many happy customers with lightning-fast fiber internet, BDIX-boosted speeds, and 24/7 technical support. From homes and gamers to freelancers and businesses, we are redefining what reliable internet means in Sylhet."
-      },
-      "speedChallenge": {
-        "title": "SyncIT Speed Challenge",
-        "header": "Test Your Internet Speed in Sylhet",
-        "desc": "Join Sylhet’s best fiber internet speed challenge with SyncIT. Test your speed using Ookla, Fast.com, or other tools and see why SyncIT always leads."
-      },
-      "packages": {
-        "title": "High Speed Internet Packages",
-        "header": "Choose the Perfect Plan for Your Needs",
-        "desc": "Confusion! Contact Us – Super Fast Optical Fiber Internet Connectivity is Now on Your Hands. At least try once, you have never experienced it before."
-      },
-      "coverage": {
-        "title": "Check Our Internet Availability on Your Location",
-        "header": "Coverage",
-        "desc": "You can see our high speed internet connectivity network coverage zone."
-      },
-      "contact": {
-        "title": "Hey! Share Your Opinion",
-        "header": "Contact SyncIT – Sylhet’s #1 Reliable Fiber Internet Provider",
-        "desc": "“Call, WhatsApp, or email SyncIT – Sylhet’s most reliable internet provider, available 24/7.”"
-      },
-      "payBill": {
-        "title": "Pay Your Internet Bill",
-        "header": "Pay Your SyncIT Internet Bill – Fast, Easy & Secure",
-        "desc": "Pay online anytime through bKash, Nagad, Rocket, Bank Transfer, or QR Code. Hassle-free billing for all SyncIT customers in Sylhet."
-      },
-      "referDiscount": {
-      "title" : "Referral Offer",
+  "commonHeader": {
+    "syncitAbout": {
+      "title": "SyncIT Bangladesh",
+      "header": "About SyncIT – Sylhet’s Trusted & Reliable Internet Provider",
+      "desc": "SyncIT Bangladesh is Sylhet’s most trusted fiber broadband provider, serving many happy customers with lightning-fast fiber internet, BDIX-boosted speeds, and 24/7 technical support. From homes and gamers to freelancers and businesses, we are redefining what reliable internet means in Sylhet."
+    },
+    "speedChallenge": {
+      "title": "SyncIT Speed Challenge",
+      "header": "Test Your Internet Speed in Sylhet",
+      "desc": "Join Sylhet’s best fiber internet speed challenge with SyncIT. Test your speed using Ookla, Fast.com, or other tools and see why SyncIT always leads."
+    },
+    "packages": {
+      "title": "High Speed Internet Packages",
+      "header": "Choose the Perfect Plan for Your Needs",
+      "desc": "Confusion! Contact Us – Super Fast Optical Fiber Internet Connectivity is Now on Your Hands. At least try once, you have never experienced it before."
+    },
+    "coverage": {
+      "title": "Check Our Internet Availability on Your Location",
+      "header": "Coverage",
+      "desc": "You can see our high speed internet connectivity network coverage zone."
+    },
+    "contact": {
+      "title": "Hey! Share Your Opinion",
+      "header": "Contact SyncIT – Sylhet’s #1 Reliable Fiber Internet Provider",
+      "desc": "“Call, WhatsApp, or email SyncIT – Sylhet’s most reliable internet provider, available 24/7.”"
+    },
+    "payBill": {
+      "title": "Pay Your Internet Bill",
+      "header": "Pay Your SyncIT Internet Bill – Fast, Easy & Secure",
+      "desc": "Pay online anytime through bKash, Nagad, Rocket, Bank Transfer, or QR Code. Hassle-free billing for all SyncIT customers in Sylhet."
+    },
+    "referDiscount": {
+      "title": "Referral Offer",
       "header": "Refer & Get Discount",
       "desc": "Now, refer a SyncIT connection and get BDT 500 discount on your monthly bill."
     },
-      "offers": {
+    "offers": {
       "title": "Latest Offers",
       "header": "Don’t Miss Our Special Deals!",
       "desc": "Explore our newest discounts and promotions. Grab limited-time offers and save big on your favorite products or services."
-      },
-          "services": {
+    },
+    "services": {
       "title": "High Speed Internet Services",
       "header": "Services",
       "desc": "You can find here all-in-one solutions for your company."
     }
+  },
+
+  "coverage_city": "Sylhet",
+  "coverage_subtext": "Check the available area for the Sylhet Region",
+  "coverage_search_placeholder": "Search for an area...",
+  "coverage_no_match": "No matching areas found.",
+
+  "area_ambarkhana": "Ambarkhana",
+  "area_akhalia": "Akhalia",
+  "area_baluchar": "Baluchar",
+  "area_bandar_bazar": "Bandar Bazar",
+  "area_chondipul": "Chondipul",
+  "area_chowhatta": "Chowhatta",
+  "area_chowkidekhi": "Chowkidekhi",
+  "area_dargah_gate": "Dargah Gate",
+  "area_eidgah": "Eidgah",
+  "area_kadamtoli": "Kadamtoli",
+  "area_kumarpara": "Kumarpara",
+  "area_kumargaon": "Kumargaon",
+  "area_lamabazar": "Lamabazar",
+  "area_modina_market": "Modina Market",
+  "area_naiorpool": "Naiorpool",
+  "area_nayasarak": "Nayasarak",
+  "area_sheikh_ghat": "Sheikh Ghat",
+  "area_subid_bazar": "Subid Bazar",
+  "area_tilagor": "Tilagor",
+  "area_zindabazar": "Zindabazar",
+
+  "network_coverage_title": "Network Coverage",
+  "network_pop_up": "POP UP",
+  "network_total_customer": "Total Customer",
+  "network_regional_hubs": "Regional Hubs",
+  "network_districts": "Districts",
+  "network_upazilas": "Number of Upazilas",
+
+  "service_iot_title": "IoT Solutions",
+  "service_iot_desc": "Smart life, connected future",
+  "service_cctv_title": "CCTV System Solutions",
+  "service_cctv_desc": "24/7 security, total safety",
+  "service_network_title": "Complete Network Solutions",
+  "service_network_desc": "Strong networks, seamless work",
+  "service_security_title": "Network Security",
+  "service_security_desc": "Stay safe, stay online",
+  "service_ip_title": "IP Telephone Service",
+  "service_ip_desc": "Clear calls, smarter business",
+  "service_cloud_title": "Cloud Services",
+  "service_cloud_desc": "Secure data, endless growth",
+
+  "paybill_bkash": "Bkash",
+  "paybill_nagad": "Nagad",
+  "paybill_rocket": "Rocket",
+  "paybill_banktransfer": "Bank Transfer",
+  "paybill_qrcode": "QR Code",
+  "bkash_step": "Step",
+  "nagad_step": "Step",
+
+  "bankBills": {
+    "title": "Pay your internet bill with easy bank transfer",
+    "ucb": {
+      "name": "UCB Bank",
+      "desc": "Pay with your UCB bank account",
+      "accountName": "Account name: Asian Network",
+      "accountNo": "Account no: 1102101000006339",
+      "routingNo": "Routing no: 245331671",
+      "branch": "Branch: TONGI STATION ROAD"
+    },
+    "brac": {
+      "name": "BRAC Bank",
+      "desc": "Pay with your BRAC Bank account",
+      "accountName": "Account name: Asian Network",
+      "accountNo": "Account no: 2053759690001",
+      "routingNo": "Routing no: 60331630",
+      "branch": "Branch: TONGI BAZAR"
     }
+  },
+
+  "offers": {
+    "offer1": {
+      "title": "Make a Referral and Earn BDT 500!",
+      "desc": "Offer: 'Refer and Earn' promotion for all existing customers. Refer a new user and get rewarded!"
+    },
+    "offer2": {
+      "title": "500 BDT Discount on Connection Charge",
+      "desc": "Enjoy a 500 BDT discount on your connection fee when you pay 2 months in advance."
+    },
+    "offer3": {
+      "title": "Free Connection Charge on 4 Months Advance Payment",
+      "desc": "Get a free connection charge when you make an advance payment for 4 months."
+    },
+    "offer4": {
+      "title": "1000 BDT Discount on Connection Charge",
+      "desc": "Enjoy a 1000 BDT discount on your connection fee when you pay 3 months in advance."
+    }
+  },
+  "warning": {
+    "text1": "The type of the offer and the validity can be changed anytime based on the situation.",
+    "text2": "Helpline number: 01965300500 / 09638559900",
+    "text3": "E-Mail:"
+  },
+  "contact": {
+    "title": "Contact SyncIT – Always Here for Sylhet",
+    "subtitle": "Reach us via WhatsApp, Facebook, Instagram, phone, or email – available 24/7 for your internet needs.",
+    "facebook": "Message us on Facebook"
+  },
+  "contactform_name_placeholder": "Name",
+  "contactform_phone_placeholder": "Phone",
+  "contactform_email_placeholder": "Email",
+  "contactform_address_placeholder": "Address",
+  "contactform_option_service_related": "Service Related",
+  "contactform_option_support": "Support",
+  "contactform_option_sales": "Sales",
+  "contactform_option_other": "Other",
+  "contactform_message_placeholder": "Your Message",
+  "contactform_submit_button": "Submit Now"
 }

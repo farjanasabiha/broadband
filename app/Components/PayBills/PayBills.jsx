@@ -3,35 +3,37 @@ import React, { useState } from "react";
 import Bkash from "./Bkash";
 import Nagad from "./Nagad";
 import Rocket from "./Rocket";
-// import MFSBills from "./MFSBills";
 import BankBills from "./BankBills";
 import QrCode from "./QrCode";
+import { useTranslation } from "react-i18next";
 
 const PayBills = () => {
+  const { t } = useTranslation("common");
   const [activeTab, setActiveTab] = useState("Bkash");
 
+  // All Bill Components
   const AllBills = {
     Bkash: <Bkash />,
     Nagad: <Nagad />,
     Rocket: <Rocket />,
-    // MFS: <MFSBills />,
     BankTransfer: <BankBills />,
     QrCode: <QrCode />,
   };
 
+  // Tabs with translated labels
   const tabs = [
-    { label: "Bkash", value: "Bkash" },
-    { label: "Nagad", value: "Nagad" },
-    { label: "Rocket", value: "Rocket" },
-    // { label: "MFS", value: "MFS" },
-    { label: "Bank Transfer", value: "BankTransfer" },
-    { label: "Qr Code", value: "QrCode" },
+    { label: t("paybill_bkash"), value: "Bkash" },
+    { label: t("paybill_nagad"), value: "Nagad" },
+    { label: t("paybill_rocket"), value: "Rocket" },
+    { label: t("paybill_banktransfer"), value: "BankTransfer" },
+    { label: t("paybill_qrcode"), value: "QrCode" },
   ];
+
   return (
     <div>
-      <div className="bg-black container max-w-6xl mx-auto px-5 pt-10">
+      <div className="bg-black container max-w-6xl mx-auto px-5 pt-10 pb-10 rounded-lg">
         {/* Tab Navigation */}
-        <div className="flex justify-center mb-4 pb-10">
+        <div className="flex justify-center mb-8">
           <div className="lg:flex space-x-4 space-y-4 lg:space-y-0 lg:space-x-2 backdrop-blur-sm rounded-full p-2">
             {tabs.map((tab) => (
               <button
@@ -49,7 +51,7 @@ const PayBills = () => {
           </div>
         </div>
 
-        {/* Internet Grid */}
+        {/* Bill Component */}
         <div>{AllBills[activeTab]}</div>
       </div>
     </div>

@@ -247,21 +247,133 @@
       "header": "আপনার SyncIT ইন্টারনেট বিল পরিশোধ করুন – দ্রুত, সহজ এবং নিরাপদ",
       "desc": "bKash, Nagad, Rocket, ব্যাংক ট্রান্সফার বা QR কোডের মাধ্যমে যেকোনো সময় অনলাইনে পরিশোধ করুন। সিলেটের সকল SyncIT গ্রাহকের জন্য ঝামেলামুক্ত বিলিং।"
     },
-      "referDiscount": {
-      "title" : "রেফারেল অফার",
+    "referDiscount": {
+      "title": "রেফারেল অফার",
       "header": "রেফার করুন, ডিস্কাউন্ট পান",
       "desc": "এখন SyncIT এর সংযোগ রেফার করলেই মাসিক বিল এ পাবেন ৫০০ টাকা ডিসকাউন্ট।"
     },
 
-      "offers": {
+    "offers": {
       "title": "সর্বশেষ অফার",
       "header": "আমাদের বিশেষ ডিল মিস করবেন না!",
       "desc": "নতুন ছাড় ও প্রোমোশনগুলি এক্সপ্লোর করুন। সীমিত সময়ের অফার উপভোগ করুন এবং আপনার প্রিয় পণ্য বা সেবায় বড় সঞ্চয় করুন।"
     },
-      "services": {
+    "services": {
       "title": "উচ্চ গতির ইন্টারনেট সেবা",
       "header": "সেবা",
       "desc": "আপনার কোম্পানির জন্য এখানে সবকিছু এক জায়গায় খুঁজে পেতে পারেন।"
     }
-  }
+  },
+
+  "coverage_city": "সিলেট",
+  "coverage_subtext": "সিলেট অঞ্চলে আমাদের ইন্টারনেট সংযোগের এলাকা দেখুন",
+  "coverage_search_placeholder": "এলাকা অনুসন্ধান করুন...",
+  "coverage_no_match": "❌ কোনও এলাকা পাওয়া যায়নি।",
+
+  "area_ambarkhana": "আম্বরখানা",
+  "area_akhalia": "আখালিয়া",
+  "area_baluchar": "বালুচর",
+  "area_bandar_bazar": "বন্দর বাজার",
+  "area_chondipul": "চন্ডিপুল",
+  "area_chowhatta": "চৌহট্টা",
+  "area_chowkidekhi": "চৌকিদিঘি",
+  "area_dargah_gate": "দরগাহ গেট",
+  "area_eidgah": "ঈদগাহ",
+  "area_kadamtoli": "কদমতলী",
+  "area_kumarpara": "কুমারপাড়া",
+  "area_kumargaon": "কুমারগাঁও",
+  "area_lamabazar": "লামাবাজার",
+  "area_modina_market": "মদিনা মার্কেট",
+  "area_naiorpool": "নইররপুল",
+  "area_nayasarak": "নয়া সড়ক",
+  "area_sheikh_ghat": "শেখঘাট",
+  "area_subid_bazar": "সুবিদ বাজার",
+  "area_tilagor": "টিলাগড়",
+  "area_zindabazar": "জিন্দাবাজার",
+
+  "network_coverage_title": "নেটওয়ার্ক কভারেজ",
+  "network_pop_up": "পপ আপ",
+  "network_total_customer": "মোট গ্রাহক",
+  "network_regional_hubs": "আঞ্চলিক হাব",
+  "network_districts": "জেলা",
+  "network_upazilas": "উপজেলার সংখ্যা",
+
+  "service_iot_title": "আইওটি সলিউশনস",
+  "service_iot_desc": "স্মার্ট জীবন, সংযুক্ত ভবিষ্যৎ",
+  "service_cctv_title": "সিসিটিভি সিস্টেম সলিউশনস",
+  "service_cctv_desc": "২৪/৭ নিরাপত্তা, সম্পূর্ণ সুরক্ষা",
+  "service_network_title": "সম্পূর্ণ নেটওয়ার্ক সলিউশনস",
+  "service_network_desc": "দৃঢ় নেটওয়ার্ক, নিরবচ্ছিন্ন কাজ",
+  "service_security_title": "নেটওয়ার্ক সিকিউরিটি",
+  "service_security_desc": "নিরাপদ থাকুন, অনলাইনে থাকুন",
+  "service_ip_title": "আইপি টেলিফোন সার্ভিস",
+  "service_ip_desc": "পরিষ্কার কল, স্মার্ট ব্যবসা",
+  "service_cloud_title": "ক্লাউড সার্ভিসেস",
+  "service_cloud_desc": "নিরাপদ ডেটা, সীমাহীন উন্নতি",
+
+  "paybill_bkash": "বিকাশ",
+  "paybill_nagad": "নগদ",
+  "paybill_rocket": "রকেট",
+  "paybill_banktransfer": "ব্যাংক ট্রান্সফার",
+  "paybill_qrcode": "কিউআর কোড",
+  "bkash_step": "ধাপ",
+  "nagad_step": "ধাপ",
+
+  "bankBills": {
+    "title": "সহজ ব্যাংক ট্রান্সফারের মাধ্যমে আপনার ইন্টারনেট বিল পরিশোধ করুন",
+    "ucb": {
+      "name": "ইউসিবি ব্যাংক",
+      "desc": "আপনার ইউসিবি ব্যাংক একাউন্ট দিয়ে পরিশোধ করুন",
+      "accountName": "একাউন্ট নাম: এশিয়ান নেটওয়ার্ক",
+      "accountNo": "একাউন্ট নম্বর: 1102101000006339",
+      "routingNo": "রাউটিং নম্বর: 245331671",
+      "branch": "শাখা: টঙ্গী স্টেশন রোড"
+    },
+    "brac": {
+      "name": "ব্র্যাক ব্যাংক",
+      "desc": "আপনার ব্র্যাক ব্যাংক একাউন্ট দিয়ে পরিশোধ করুন",
+      "accountName": "একাউন্ট নাম: এশিয়ান নেটওয়ার্ক",
+      "accountNo": "একাউন্ট নম্বর: 2053759690001",
+      "routingNo": "রাউটিং নম্বর: 60331630",
+      "branch": "শাখা: টঙ্গী বাজার"
+    }
+  },
+  "offers": {
+    "offer1": {
+      "title": "একজন বন্ধুকে রেফার করুন এবং ৫০০ টাকা আয় করুন!",
+      "desc": "অফার: 'রেফার অ্যান্ড আর্ন' প্রচারাভিযান। এক্সর্ড অনলাইনের বিদ্যমান গ্রাহকরা নতুন গ্রাহক রেফার করলে পুরস্কার পান!"
+    },
+    "offer2": {
+      "title": "সংযোগ চার্জে ৫০০ টাকা ছাড়",
+      "desc": "২ মাসের অগ্রিম বিল পরিশোধ করলে সংযোগ ফিতে পাবেন ৫০০ টাকার ছাড়।"
+    },
+    "offer3": {
+      "title": "৪ মাসের অগ্রিম বিল পরিশোধে ফ্রি সংযোগ চার্জ",
+      "desc": "একসাথে ৪ মাসের অগ্রিম পরিশোধ করলে সংযোগ চার্জ সম্পূর্ণ ফ্রি!"
+    },
+    "offer4": {
+      "title": "সংযোগ চার্জে ১০০০ টাকা ছাড়",
+      "desc": "৩ মাসের অগ্রিম বিল পরিশোধ করলে সংযোগ ফিতে পাবেন ১০০০ টাকার ছাড়।"
+    }
+  },
+  "warning": {
+    "text1": "অফারের ধরন এবং মেয়াদ পরিস্থিতি অনুযায়ী যেকোনো সময় পরিবর্তন করা হতে পারে।",
+    "text2": "হেল্পলাইন নাম্বার: ০১৯৬৫৩০০৫০০ / ০৯৬৩৮৫৫৯৯০০",
+    "text3": "ই-মেইল:"
+  },
+  "contact": {
+    "title": "যোগাযোগ করুন SyncIT – সবসময় সিলেটের পাশে",
+    "subtitle": "হোয়াটসঅ্যাপ, ফেসবুক, ইনস্টাগ্রাম, ফোন বা ইমেইলের মাধ্যমে আমাদের সাথে যোগাযোগ করুন – আপনার ইন্টারনেট সেবার জন্য আমরা ২৪/৭ প্রস্তুত।",
+    "facebook": "ফেসবুকে মেসেজ করুন"
+  },
+  "contactform_name_placeholder": "নাম",
+  "contactform_phone_placeholder": "ফোন নম্বর",
+  "contactform_email_placeholder": "ইমেইল",
+  "contactform_address_placeholder": "ঠিকানা",
+  "contactform_option_service_related": "সার্ভিস সংক্রান্ত",
+  "contactform_option_support": "সহায়তা",
+  "contactform_option_sales": "বিক্রয়",
+  "contactform_option_other": "অন্যান্য",
+  "contactform_message_placeholder": "আপনার বার্তা লিখুন",
+  "contactform_submit_button": "সাবমিট করুন"
 }
