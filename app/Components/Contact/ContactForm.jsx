@@ -109,7 +109,10 @@ const ContactForm = () => {
       </div> */}
 
       <div className="bg-gradient-to-t from-[#ff00333a] to-[#0000004b] flex items-center justify-center py-10">
-        <form className="w-full max-w-5xl text-[16px] grid grid-cols-12 gap-5" onSubmit={handleSubmit}>
+        <form
+          className="w-full max-w-5xl text-[16px] grid grid-cols-12 gap-5  px-5"
+          onSubmit={handleSubmit}
+        >
           <input
             className="col-span-12 rounded-full px-6 py-3 bg-[#1f1f1f] border border-gray-600 focus:outline-none placeholder-primaryColor text-white"
             type="text"
@@ -147,7 +150,7 @@ const ContactForm = () => {
             className="col-span-12 md:col-span-6 rounded-full px-6 py-3 bg-[#1f1f1f] border border-gray-600 focus:outline-none placeholder-primaryColor text-white"
           />
           <select
-             className="col-span-12 md:col-span-6 rounded-full px-6 py-3 bg-[#1f1f1f] border border-gray-600 focus:outline-none text-primaryColor appearance-none pr-10"
+            className="col-span-12 md:col-span-6 rounded-full px-6 py-3 bg-[#1f1f1f] border border-gray-600 focus:outline-none text-primaryColor appearance-none pr-10"
             name="service"
             value={formData.service}
             onChange={handleChange}
@@ -165,7 +168,7 @@ const ContactForm = () => {
             onChange={handleChange}
             placeholder={t("contactform_message_placeholder")}
             required
-            rows="4"
+            rows="5"
           />
           <button
             type="submit"
@@ -185,7 +188,7 @@ const ContactForm = () => {
 
       {/* Google Map */}
       <div
-        className="mx-auto max-w-5xl mt-6"
+        className="mx-auto max-w-5xl mt-6  px-5"
         style={{ width: "100%", height: "300px" }}
       >
         <iframe

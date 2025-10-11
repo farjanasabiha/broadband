@@ -10,7 +10,7 @@ const CTA = () => {
 
   return (
     <div>
-      <div className="bg-black container max-w-6xl mx-auto px-5 pb-16">
+      <div className="bg-black container max-w-6xl mx-auto px-5">
         <div className="space-y-10">
           {/* Header */}
           <div className="text-left">

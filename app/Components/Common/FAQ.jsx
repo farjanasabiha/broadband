@@ -87,12 +87,13 @@ export default function FAQSection() {
             </div>
           </div>
 
-          <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
+          <div className="order-1 lg:order-2 flex justify-center lg:justify-end w-full max-w-md">
             <Image
               src="/faq-1-300x300.webp"
-              width={300}
-              height={300}
               alt="FAQ"
+              width={600} // original width
+              height={600} // original height
+              className="w-full h-auto object-contain"
             />
           </div>
         </div>

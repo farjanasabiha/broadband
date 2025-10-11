@@ -17,7 +17,7 @@ const Footer = () => {
 
   return (
     <footer>
-      <div className="max-w-6xl mx-auto px-5 py-20">
+      <div className="max-w-6xl mx-auto px-5 pb-20">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10">
           {/* Left - Logo & Description */}
           <div className="flex flex-col justify-between col-span-12 lg:col-span-4">
