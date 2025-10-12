@@ -18,13 +18,7 @@ const page = () => {
     <div className="bg-black">
       <TopBar />
       <Navbar />
-      <CommonHeader
-        title={"Asian Network"}
-        header={"Terms & Conditions"}
-        desc={
-          "Please read our terms and conditions. If you have queries? Contact Us."
-        }
-      />
+      <CommonHeader translationKey="commonHeader.termsAndConditions" />
       <div className="space-y-24">
         <TermsAndConditions />
         <Testimonial />

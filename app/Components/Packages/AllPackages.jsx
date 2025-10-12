@@ -2,10 +2,12 @@
 
 import React, { useState } from "react";
 import HomeInternet from "./HomeInternet";
-import CorporateInternet from "./CorporateInternet";
 import SMEInternet from "./SMEInternet";
+import { useTranslation } from "react-i18next";
+import CorporateInternet from "./CorporateInternet";
 
 const AllPackages = () => {
+  const { t } = useTranslation("common");
   const [activeTab, setActiveTab] = useState("HomeInternet");
 
   const InternetDeals = {
@@ -15,9 +17,9 @@ const AllPackages = () => {
   };
 
   const tabs = [
-    { label: "Home Internet", value: "HomeInternet" },
-    { label: "Corporate", value: "Corporate" },
-    { label: "SME", value: "SME" },
+    { label: t("all_packages_tab_home"), value: "HomeInternet" },
+    { label: t("all_packages_tab_corporate"), value: "Corporate" },
+    { label: t("all_packages_tab_sme"), value: "SME" },
   ];
 
   return (

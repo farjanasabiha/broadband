@@ -167,3 +167,5 @@ const PricingCard = () => {
 };
 
 export default PricingCard;
+
+
