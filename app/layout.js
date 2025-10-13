@@ -3,6 +3,7 @@ import "./globals.css";
 import { ReactLenis } from "lenis/react";
 import WhatsAppButton from "./Components/WhatsAppButton/WhatsAppButton";
 import TranslationProvider from "./Components/TranslationProvider";
+import { Toaster } from "react-hot-toast";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -40,6 +41,20 @@ export default function RootLayout({ children }) {
       >
         <ReactLenis root data-theme="dark">
           <TranslationProvider>{children}</TranslationProvider>
+          <Toaster
+            position="top-center"
+            reverseOrder={false}
+            toastOptions={{
+              duration: 3000,
+              style: {
+                background: "#fff",
+                color: "#000",
+                borderRadius: "10px",
+                padding: "12px 18px",
+                fontSize: "15px",
+              },
+            }}
+          />
           <WhatsAppButton />
         </ReactLenis>
       </body>

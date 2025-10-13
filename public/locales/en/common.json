@@ -271,6 +271,11 @@
       "title": "Asian Network",
       "header": "Terms & Conditions",
       "desc": "Please read our terms and conditions. If you have queries? Contact Us."
+    },
+    "faq" : {
+      "title": "Find Answers",
+      "header": "FAQ",
+      "desc": "Have questions in mind? Explore our frequently asked questions to get quick and clear answers."
     }
   },
 
