@@ -44,7 +44,7 @@ const ContactForm = () => {
           message: "",
         });
       } else {
-        toast.error(`❌ ${data.message || "Something went wrong, please try again."}`);
+        toast.error(` ${data.message || "Something went wrong, please try again."}`);
       }
     } catch (error) {
       console.error(error);

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { Phone, Mail } from "lucide-react";
+import toast from "react-hot-toast";
 
 export default function OfferForm() {
   const image = "/asian-network-mission-1024x638.webp";
@@ -24,9 +25,27 @@ export default function OfferForm() {
     });
   };
 
-  const handleSubmit = () => {
-    console.log("Form submitted:", formData);
-    alert("Form submitted successfully!");
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    
+    // Validate required fields
+    if (!formData.name || !formData.phone || !formData.email || !formData.address) {
+      toast.error("Please fill in all required fields");
+      return;
+    }
+    // Here you would typically send the data to your API
+    toast.success("Form submitted successfully! We'll contact you soon.");
+    
+    // Reset form
+    setFormData({
+      name: "",
+      phone: "",
+      email: "",
+      address: "",
+      district: "",
+      upazilla: "",
+      package: "Surfer Plus (50 Mbps)",
+    });
   };
 
   return (

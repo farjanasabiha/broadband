@@ -1,25 +1,32 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import Link from 'next/link'
 import { ArrowBigUp } from "lucide-react";
-const resources = [
-  {
-    title: "How to build audience personas",
-    description: "RELATED RESOURCE",
-    image: "/audience-personas.webp",
-  },
-  {
-    title: "Content Creation Guide",
-    description: "RELATED RESOURCE",
-    image: "/audience-personas.webp",
-  },
-    {
-    title: "Content Creation Guide",
-    description: "RELATED RESOURCE",
-    image: "/audience-personas.webp",
-  },
-];
+import { useTranslation } from "react-i18next";
+
 const AudiencePersonas = () => {
+  const { t } = useTranslation("common");
+
+  const resources = [
+    {
+      title: t("socialMediaMarketing.relatedResources.resource3Title"),
+      description: t("socialMediaMarketing.relatedResources.resource3Desc"),
+      image: "/audience-personas.webp",
+    },
+    {
+      title: t("socialMediaMarketing.relatedResources.resource4Title"),
+      description: t("socialMediaMarketing.relatedResources.resource4Desc"),
+      image: "/audience-personas.webp",
+    },
+    {
+      title: t("socialMediaMarketing.relatedResources.resource4Title"),
+      description: t("socialMediaMarketing.relatedResources.resource4Desc"),
+      image: "/audience-personas.webp",
+    },
+  ];
+
   return (
     <div className="mx-auto px-10 relative z-1">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-between gap-8">
@@ -35,7 +42,7 @@ const AudiencePersonas = () => {
                 href="/"
                 className="bg-white font-medium text-black px-5 py-2 rounded-lg"
               >
-                Read Now
+                {t("socialMediaMarketing.readNow")}
               </Link>
             </div>
             <div className="w-full max-w-[500px]">

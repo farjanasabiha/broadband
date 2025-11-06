@@ -276,6 +276,11 @@
       "title": "Find Answers",
       "header": "FAQ",
       "desc": "Have questions in mind? Explore our frequently asked questions to get quick and clear answers."
+    },
+    "socialMediaMarketing": {
+      "title": "Social Media Marketing",
+      "header": "Social Media Marketing Strategy",
+      "desc": "Eight easy steps to develop your social media presence"
     }
   },
 
@@ -623,5 +628,51 @@
   "packages_business_SME_feature5": "Advanced Security Features",
   "packages_business_SME_feature6": "Ultra HD Video Calling",
   "packages_business_SME_feature7": "Business Grade Support",
-  "packages_business_SME_feature8": "5% Vat Applicable"
+  "packages_business_SME_feature8": "5% Vat Applicable",
+
+  "socialMediaMarketing": {
+    "title": "Social Media Marketing Strategy",
+    "subtitle": "Eight easy steps to develop your social media presence",
+    "readNow": "Read Now",
+    "relatedResource": "RELATED RESOURCE",
+    
+    "step1": {
+      "title": "Step 1: Set social media marketing goals that align to business objectives",
+      "description": "The more specific your strategy is, the more effective the execution will be. Set SMART goals and track the right metrics to set yourself up for success.",
+      "smartGoalsTitle": "Set SMART goals",
+      "smartGoalsDesc": "The first step to creating a social media marketing strategy is to establish your objectives and goals. Without goals, you have no way to measure your success or your social media return on investment (ROI). Each of your goals should be:",
+      "specific": "Specific",
+      "measurable": "Measurable",
+      "attainable": "Attainable",
+      "relevant": "Relevant",
+      "timeBound": "Time-bound",
+      "smartGoalsExample": "An example of a SMART goal for your business might be 'Grow our Instagram audience by 50 new followers per week.' With SMART goals, you'll make sure your goals actually lead to real business results, rather than just lofty ideals.",
+      "trackMetricsTitle": "Track meaningful metrics",
+      "trackMetricsDesc": "While vanity metrics like retweets and likes can be fun to share and easy to track, it's hard to prove their real value for your business. Instead, focus on targets such as leads generated, web referrals, and conversion rate. You may want to track different goals for different channels, or even different uses of each channel. For example, you can use paid campaigns to increase brand awareness, but measure acquisition and engagement for organic social posts. Make sure to align your social media goals with your overall marketing strategy. This will make it easier for you to show the value of your work and get executive buy-in and investment. Start developing your social media marketing plan by writing down at least three social media goals."
+    },
+    
+    "step2": {
+      "title": "Step 2: Learn everything you can about your audience",
+      "description": "If you're not engaged in social media listening, you're creating your business strategy with blinders on—and you're missing out on mountains of actionable insights from real people who are actively talking about you or your industry online.",
+      "subtitle": "Here's how to start listening and building your understanding of your audience and their needs.",
+      "personasTitle": "Create audience personas",
+      "personasDesc1": "Knowing who your audience is and what they want to see on social is key to creating content that they will like, comment on, and share. This knowledge also critical for planning how to develop your social media fans into customers for your business.",
+      "personasDesc2": "Try creating audience personas. For example, a retail brand might create different personas based on demographics, buying motivations, common buying objections, and the emotional needs of each type of customer.",
+      "personasDesc3": "Personas sharpen your marketing tactics. Luxury buyers, for example, might not respond to Facebook ads with sales. But they might respond to Facebook ads with exclusive in-store events to be the first to see a new line of clothing. With personas, you'll have the customer insights you need to create campaigns that speak to the real desires and motivations of your buyers.",
+      "dataTitle": "Gather real-world data",
+      "dataDesc1": "Don't make assumptions. Social media analytics can also provide a ton of valuable information about who your followers are, where they live, which languages they speak, and how they interact with your brand on social. These insights allow you to refine your strategy and better target your social ads.",
+      "dataDesc2": "Jugnoo, an Uber-like service for auto-rickshaws in India, used Facebook Analytics to learn that 90 percent of their users who referred other customers were between 18 and 34 years old, and that 65 percent of that group was using Android. They used this information to target their ads, resulting in a 40 percent lower cost per referral."
+    },
+    
+    "relatedResources": {
+      "resource1Title": "Social Media Marketing Strategy",
+      "resource1Desc": "RELATED RESOURCE",
+      "resource2Title": "Content Creation Guide",
+      "resource2Desc": "Learn how to create engaging posts that connect with your audience",
+      "resource3Title": "How to build audience personas",
+      "resource3Desc": "RELATED RESOURCE",
+      "resource4Title": "Content Creation Guide",
+      "resource4Desc": "RELATED RESOURCE"
+    }
+  }
 }

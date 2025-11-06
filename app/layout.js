@@ -4,6 +4,7 @@ import { ReactLenis } from "lenis/react";
 import WhatsAppButton from "./Components/WhatsAppButton/WhatsAppButton";
 import TranslationProvider from "./Components/TranslationProvider";
 import { Toaster } from "react-hot-toast";
+import Preloader from "./Components/Preloader/Preloader";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -39,6 +40,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black`}
       >
+        <Preloader />
         <ReactLenis root data-theme="dark">
           <TranslationProvider>{children}</TranslationProvider>
           <Toaster

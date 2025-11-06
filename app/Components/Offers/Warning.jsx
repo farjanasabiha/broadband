@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import React from "react";
 import { useTranslation } from "react-i18next";
 
@@ -12,10 +13,13 @@ const Warning = () => {
       <div className="grid grid-cols-12 gap-5 card card-side bg-base-100 shadow-sm">
         <div className="col-span-12 md:col-span-3">
           <figure className="h-full w-full md:h-[170px] hidden md:w-[200px] bg-[#fecf00] px-5">
-            <img
+            <Image
               className="h-full w-[200px]"
               src="/UniqueSizzlingFinwhale-max-1mb.gif"
               alt="Offer Warning"
+              width={200}
+              height={170}
+              unoptimized
             />
           </figure>
         </div>
