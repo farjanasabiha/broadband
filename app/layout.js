@@ -38,6 +38,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
         className="antialiased bg-black"
+        suppressHydrationWarning={true}
       >
         <Preloader />
         <ReactLenis root data-theme="dark">

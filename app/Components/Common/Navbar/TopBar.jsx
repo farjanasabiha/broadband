@@ -10,15 +10,25 @@ import i18n from "@/app/lib/i18n";
 const TopBar = () => {
   const { t } = useTranslation("common");
   const [language, setLanguage] = useState("en"); // default English
+  const [isClient, setIsClient] = useState(false);
+
+  // Ensure client-side rendering
+  useEffect(() => {
+    setIsClient(true);
+    // Set initial language from i18n after client mount
+    setLanguage(i18n.language || "en");
+  }, []);
 
   // Sync language state with i18next on external changes (e.g. page refresh)
   useEffect(() => {
+    if (!isClient) return;
+    
     const handleLanguageChanged = (lng) => setLanguage(lng);
     i18n.on("languageChanged", handleLanguageChanged);
     return () => {
       i18n.off("languageChanged", handleLanguageChanged);
     };
-  }, []);
+  }, [isClient]);
 
   const handleLanguageChange = (lng) => {
     i18n.changeLanguage(lng);

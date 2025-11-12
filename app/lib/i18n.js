@@ -21,7 +21,17 @@ if (!i18n.isInitialized) {
         order: ["localStorage", "cookie", "navigator", "htmlTag"],
         caches: ["localStorage", "cookie"],
       },
-      react: { useSuspense: false },
+      react: { 
+        useSuspense: false,
+        bindI18n: 'languageChanged',
+        bindI18nStore: '',
+        transEmptyNodeValue: '',
+        transSupportBasicHtmlNodes: true,
+        transKeepBasicHtmlNodesFor: ['br', 'strong', 'i'],
+      },
+      interpolation: {
+        escapeValue: false,
+      },
     });
 }
 

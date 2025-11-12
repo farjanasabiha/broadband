@@ -1,55 +1,29 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { usePathname } from "next/navigation";
 import "./preloader.css";
 
 const Preloader = () => {
   const [loading, setLoading] = useState(true);
-  const [initialLoad, setInitialLoad] = useState(true);
   const [fadeOut, setFadeOut] = useState(false);
-  const pathname = usePathname();
 
-  // Handle initial page load
+  // Handle initial page load only
   useEffect(() => {
-    if (initialLoad) {
-      const fadeTimer = setTimeout(() => {
-        setFadeOut(true);
-      }, 800); // Start fade out earlier
-      
-      const hideTimer = setTimeout(() => {
-        setLoading(false);
-        setInitialLoad(false);
-        setFadeOut(false);
-      }, 1000); // Complete hide
+    // Start fade out after content is loaded
+    const fadeTimer = setTimeout(() => {
+      setFadeOut(true);
+    }, 1000); // Show loader for 1 second
+    
+    // Complete hide after fade animation (0.4s transition + buffer)
+    const hideTimer = setTimeout(() => {
+      setLoading(false);
+    }, 1500); // Total: 1s display + 0.4s fade + 0.1s buffer
 
-      return () => {
-        clearTimeout(fadeTimer);
-        clearTimeout(hideTimer);
-      };
-    }
-  }, [initialLoad]);
-
-  // Handle route changes
-  useEffect(() => {
-    if (!initialLoad) {
-      setLoading(true);
-      setFadeOut(false);
-      
-      const fadeTimer = setTimeout(() => {
-        setFadeOut(true);
-      }, 300);
-      
-      const hideTimer = setTimeout(() => {
-        setLoading(false);
-      }, 500);
-
-      return () => {
-        clearTimeout(fadeTimer);
-        clearTimeout(hideTimer);
-      };
-    }
-  }, [pathname, initialLoad]);
+    return () => {
+      clearTimeout(fadeTimer);
+      clearTimeout(hideTimer);
+    };
+  }, []); // Empty dependency array - runs only once on mount
 
   if (!loading) return null;
 

@@ -11,15 +11,26 @@ const Navbar = () => {
   const { t } = useTranslation("common"); // ✅ translation hook
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isClient, setIsClient] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  useEffect(() => {
+    if (!isClient) return;
+    
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
     };
+    
+    // Set initial scroll state
+    handleScroll();
+    
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [isClient]);
 
   const navLinks = [
     { key: "nav_home", href: "/" },

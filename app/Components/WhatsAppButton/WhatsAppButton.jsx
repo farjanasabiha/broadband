@@ -1,8 +1,19 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 
 const WhatsAppButton = () => {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  // Don't render on server side to avoid hydration mismatch
+  if (!isClient) {
+    return null;
+  }
+
   return (
     <div
       style={{
