@@ -7,17 +7,26 @@ import "./preloader.css";
 const Preloader = () => {
   const [loading, setLoading] = useState(true);
   const [initialLoad, setInitialLoad] = useState(true);
+  const [fadeOut, setFadeOut] = useState(false);
   const pathname = usePathname();
 
   // Handle initial page load
   useEffect(() => {
     if (initialLoad) {
-      const timer = setTimeout(() => {
+      const fadeTimer = setTimeout(() => {
+        setFadeOut(true);
+      }, 800); // Start fade out earlier
+      
+      const hideTimer = setTimeout(() => {
         setLoading(false);
         setInitialLoad(false);
-      }, 1500);
+        setFadeOut(false);
+      }, 1000); // Complete hide
 
-      return () => clearTimeout(timer);
+      return () => {
+        clearTimeout(fadeTimer);
+        clearTimeout(hideTimer);
+      };
     }
   }, [initialLoad]);
 
@@ -25,18 +34,27 @@ const Preloader = () => {
   useEffect(() => {
     if (!initialLoad) {
       setLoading(true);
-      const timer = setTimeout(() => {
+      setFadeOut(false);
+      
+      const fadeTimer = setTimeout(() => {
+        setFadeOut(true);
+      }, 300);
+      
+      const hideTimer = setTimeout(() => {
         setLoading(false);
-      }, 800);
+      }, 500);
 
-      return () => clearTimeout(timer);
+      return () => {
+        clearTimeout(fadeTimer);
+        clearTimeout(hideTimer);
+      };
     }
   }, [pathname, initialLoad]);
 
   if (!loading) return null;
 
   return (
-    <div className="preloader-overlay">
+    <div className={`preloader-overlay ${fadeOut ? 'fade-out' : ''}`}>
       <div className="preloader-content">
         <div className="spinner">
           <div className="double-bounce1"></div>

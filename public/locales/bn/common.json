@@ -239,8 +239,8 @@
     },
     "contact": {
       "title": "হেই! আপনার মতামত শেয়ার করুন",
-      "header": "সंपর্ক করুন SyncIT – সিলেটের #1 নির্ভরযোগ্য ফাইবার ইন্টারনেট প্রদানকারী",
-      "desc": "“কল করুন, WhatsApp করুন, অথবা ইমেইল করুন SyncIT – সিলেটের সবচেয়ে নির্ভরযোগ্য ইন্টারনেট প্রদানকারী, 24/7 উপলব্ধ।”"
+      "header": "সার্চ করুন SyncIT – সিলেটের #1 নির্ভরযোগ্য ফাইবার ইন্টারনেট প্রদানকারী",
+      "desc": "কল করুন, WhatsApp করুন, অথবা ইমেইল করুন SyncIT – সিলেটের সবচেয়ে নির্ভরযোগ্য ইন্টারনেট প্রদানকারী, 24/7 উপলব্ধ।"
     },
     "payBill": {
       "title": "আপনার ইন্টারনেট বিল পরিশোধ করুন",
@@ -282,6 +282,11 @@
       "title": "সোশ্যাল মিডিয়া মার্কেটিং",
       "header": "সোশ্যাল মিডিয়া মার্কেটিং কৌশল",
       "desc": "আপনার সোশ্যাল মিডিয়া উপস্থিতি বিকাশের জন্য আটটি সহজ ধাপ"
+    },
+    "newConnection": {
+      "title": "আপনার প্রয়োজনীয় ইন্টারনেট প্যাকেজটি বেছে নিন",
+      "header": "নতুন সংযোগ নিন",
+      "desc": "প্যাকেজটি বেছে নিয়ে আপনার তথ্য দিন। আমরা খুব শীঘ্রই আপনার সাথে যোগাযোগ করব।"
     }
   },
 
@@ -396,6 +401,22 @@
   "contactform_option_other": "অন্যান্য",
   "contactform_message_placeholder": "আপনার বার্তা লিখুন",
   "contactform_submit_button": "সাবমিট করুন",
+
+  "newconnection_name_placeholder": "নাম",
+  "newconnection_phone_placeholder": "আপনার মোবাইল নম্বর দিন",
+  "newconnection_email_placeholder": "আপনার ইমেইল দিন",
+  "newconnection_address_placeholder": "আপনার সম্পূর্ণ ঠিকানা",
+  "newconnection_maplink_placeholder": "আপনার গুগল ম্যাপ লিংক",
+  "newconnection_service_placeholder": "সার্ভিস প্যাকেজ নির্বাচন করুন",
+  "newconnection_service_home_basic": "হোম বেসিক (১০ এমবিপিএস)",
+  "newconnection_service_home_premium": "হোম প্রিমিয়াম (২৫ এমবিপিএস)",
+  "newconnection_service_home_ultra": "হোম আল্ট্রা (৫০ এমবিপিএস)",
+  "newconnection_service_business": "বিজনেস প্যাকেজ",
+  "newconnection_service_custom": "কাস্টম প্যাকেজ",
+  "newconnection_date_placeholder": "একটি তারিখ নির্বাচন করুন",
+  "newconnection_message_placeholder": "আপনার বার্তা",
+  "newconnection_submit_button": "সংযোগের অনুরোধ জমা দিন",
+  "newconnection_submitting": "অনুরোধ জমা দেওয়া হচ্ছে...",
 
   "blog_category": "ইন্টারনেট",
   "blog_read_more": "আরও পড়ুন",

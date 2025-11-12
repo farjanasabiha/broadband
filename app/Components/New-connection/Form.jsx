@@ -1,10 +1,10 @@
 'use client'
 import React, { useState } from "react";
-import { PhoneCall, Smartphone, Mail, MapPinHouse } from "lucide-react";
-import Image from "next/image";
 import toast from "react-hot-toast";
+import { useTranslation } from "react-i18next";
 
 const Form = () => {
+  const { t } = useTranslation("common");
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -29,32 +29,52 @@ const Form = () => {
       toast.error("Please fill in all required fields");
       return;
     }
+
+    // Validate email format
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      toast.error("Please enter a valid email address");
+      return;
+    }
+
+    // Validate phone number
+    const phoneRegex = /^[\+]?[0-9\s\-\(\)]{10,}$/;
+    if (!phoneRegex.test(formData.phone)) {
+      toast.error("Please enter a valid phone number");
+      return;
+    }
     
     setLoading(true);
     
     try {
-      // Here you would typically send the data to your API
-      // const response = await fetch('/api/new-connection', {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify(formData),
-      // });
-      
-      toast.success("Connection request submitted successfully! We'll contact you soon.");
-      
-      // Reset form
-      setFormData({
-        name: "",
-        phone: "",
-        email: "",
-        address: "",
-        mapLink: "",
-        service: "",
-        date: "",
-        message: "",
+      const response = await fetch('/api/new-connection', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
       });
+
+      const result = await response.json();
+      
+      if (response.ok && result.success) {
+        toast.success(result.message || "Submitted successfully! We'll contact you soon.");
+        
+        // Reset form
+        setFormData({
+          name: "",
+          phone: "",
+          email: "",
+          address: "",
+          mapLink: "",
+          service: "",
+          date: "",
+          message: "",
+        });
+      } else {
+        toast.error(result.error || result.message || "Failed to submit request. Please try again.");
+      }
     } catch (error) {
-      toast.error("Something went wrong. Please try again.");
+      console.error("Form submission error:", error);
+      toast.error("Network error. Please check your connection and try again.");
     } finally {
       setLoading(false);
     }
@@ -70,7 +90,7 @@ const Form = () => {
             name="name"
             value={formData.name}
             onChange={handleChange}
-            placeholder="Name"
+            placeholder={t("newconnection_name_placeholder")}
             required
             className="col-span-12  rounded-full px-6 py-3 bg-[#1f1f1f] border border-gray-600 focus:outline-none placeholder-primaryColor text-white"
           />
@@ -80,7 +100,7 @@ const Form = () => {
               name="phone"
               value={formData.phone}
               onChange={handleChange}
-              placeholder="Enter your mobile number"
+              placeholder={t("newconnection_phone_placeholder")}
               required
               className="col-span-12 md:col-span-6 rounded-full px-6 py-3 bg-[#1f1f1f] border border-gray-600 focus:outline-none placeholder-primaryColor text-white"
             />
@@ -89,7 +109,7 @@ const Form = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              placeholder="Enter your email"
+              placeholder={t("newconnection_email_placeholder")}
               required
               className="col-span-12 md:col-span-6 rounded-full px-6 py-3 bg-[#1f1f1f] border border-gray-600 focus:outline-none placeholder-primaryColor text-white"
             />
@@ -99,7 +119,7 @@ const Form = () => {
               name="address"
               value={formData.address}
               onChange={handleChange}
-              placeholder="Your full address location"
+              placeholder={t("newconnection_address_placeholder")}
               required
               className="col-span-12  rounded-full px-6 py-3 bg-[#1f1f1f] border border-gray-600 focus:outline-none placeholder-primaryColor text-white"
             />
@@ -109,7 +129,7 @@ const Form = () => {
             name="mapLink"
             value={formData.mapLink}
             onChange={handleChange}
-            placeholder="Your Google Map Link"
+            placeholder={t("newconnection_maplink_placeholder")}
             className="col-span-12  rounded-full px-6 py-3 bg-[#1f1f1f] border border-gray-600 focus:outline-none placeholder-primaryColor text-white"
           />
 
@@ -120,10 +140,12 @@ const Form = () => {
                 onChange={handleChange}
                 className="w-full rounded-full px-6 py-3 bg-[#1f1f1f] border border-gray-600 focus:outline-none text-primaryColor appearance-none pr-10"
               >
-                <option value="">Service Related</option>
-                <option value="support">Support</option>
-                <option value="sales">Sales</option>
-                <option value="other">Other</option>
+                <option value="">{t("newconnection_service_placeholder")}</option>
+                <option value="home-basic">{t("newconnection_service_home_basic")}</option>
+                <option value="home-premium">{t("newconnection_service_home_premium")}</option>
+                <option value="home-ultra">{t("newconnection_service_home_ultra")}</option>
+                <option value="business">{t("newconnection_service_business")}</option>
+                <option value="custom">{t("newconnection_service_custom")}</option>
               </select>
               {/* Dropdown Arrow */}
               <div className="pointer-events-none absolute inset-y-0 right-4 flex items-center text-primaryColor">
@@ -138,7 +160,7 @@ const Form = () => {
   onChange={handleChange}
   onFocus={(e) => (e.target.type = "date")}
   onBlur={(e) => (e.target.type = "text")}
-  placeholder="Select a date"
+  placeholder={t("newconnection_date_placeholder")}
   className="col-span-12 md:col-span-6 rounded-full px-6 py-3 bg-[#1f1f1f] border border-gray-600 focus:outline-none placeholder-primaryColor text-white"
 />
 
@@ -148,7 +170,7 @@ const Form = () => {
             name="message"
             value={formData.message}
             onChange={handleChange}
-            placeholder="Your Message"
+            placeholder={t("newconnection_message_placeholder")}
             className="col-span-12 rounded-2xl px-6 py-4 bg-[#1f1f1f] border border-gray-600 focus:outline-none placeholder-primaryColor text-white resize-none"
           ></textarea>
 
@@ -156,9 +178,16 @@ const Form = () => {
           <button
             type="submit"
             disabled={loading}
-            className="col-span-12 flex text-center mx-auto text-white font-semibold items-center cursor-pointer justify-center md:justify-between gap-1 sm:gap-2 py-2 sm:py-3 px-4 sm:px-6 rounded-2xl sm:rounded-3xl bg-gradient-to-b from-[#ff0033] to-[#bd556a63] disabled:opacity-50 disabled:cursor-not-allowed"
+            className="col-span-12 flex text-center mx-auto text-white font-semibold items-center cursor-pointer justify-center md:justify-between gap-1 sm:gap-2 py-3 sm:py-4 px-6 sm:px-8 rounded-2xl sm:rounded-3xl bg-gradient-to-b from-[#ff0033] to-[#bd556a63] transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed  min-h-[50px]"
           >
-            {loading ? "Submitting..." : "Submit"}
+            {loading ? (
+              <div className="flex items-center gap-2">
+                <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                {t("newconnection_submitting")}
+              </div>
+            ) : (
+              t("newconnection_submit_button")
+            )}
           </button>
         </form>
       </div>

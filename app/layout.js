@@ -14,7 +14,6 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-
 export const metadata = {
   title:
     "SyncIT – Best Internet & WiFi Service Provider in Sylhet | Fiber Broadband",
@@ -38,7 +37,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black`}
+        className="antialiased bg-black"
       >
         <Preloader />
         <ReactLenis root data-theme="dark">

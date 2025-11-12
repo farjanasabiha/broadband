@@ -19,11 +19,7 @@ const page = () => {
       <TopBar />
       <Navbar />
       <CommonHeader
-        title={"Choose your required internet package "}
-        header={"Get New Connection"}
-        desc={
-          "Choose and share your details. We will contact you soon. "
-        }
+        translationKey="commonHeader.newConnection"
       />
       <div className="space-y-24">
         <Form/>

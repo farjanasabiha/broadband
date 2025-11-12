@@ -281,6 +281,11 @@
       "title": "Social Media Marketing",
       "header": "Social Media Marketing Strategy",
       "desc": "Eight easy steps to develop your social media presence"
+    },
+    "newConnection": {
+      "title": "Choose your required internet package",
+      "header": "Get New Connection",
+      "desc": "Choose and share your details. We will contact you soon. "
     }
   },
 
@@ -396,6 +401,22 @@
   "contactform_option_other": "Other",
   "contactform_message_placeholder": "Your Message",
   "contactform_submit_button": "Submit Now",
+
+  "newconnection_name_placeholder": "Name",
+  "newconnection_phone_placeholder": "Enter your mobile number",
+  "newconnection_email_placeholder": "Enter your email",
+  "newconnection_address_placeholder": "Your full address location",
+  "newconnection_maplink_placeholder": "Your Google Map Link",
+  "newconnection_service_placeholder": "Select Service Package",
+  "newconnection_service_home_basic": "Home Basic (10 Mbps)",
+  "newconnection_service_home_premium": "Home Premium (25 Mbps)",
+  "newconnection_service_home_ultra": "Home Ultra (50 Mbps)",
+  "newconnection_service_business": "Business Package",
+  "newconnection_service_custom": "Custom Package",
+  "newconnection_date_placeholder": "Select a date",
+  "newconnection_message_placeholder": "Your Message",
+  "newconnection_submit_button": "Submit Connection Request",
+  "newconnection_submitting": "Submitting Request...",
 
   "blog_category": "INTERNET",
   "blog_read_more": "READ MORE",
