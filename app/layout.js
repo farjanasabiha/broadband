@@ -1,6 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { ReactLenis } from "lenis/react";
+import SmoothScrollProvider from "./Components/SmoothScrollProvider";
 import WhatsAppButton from "./Components/WhatsAppButton/WhatsAppButton";
 import TranslationProvider from "./Components/TranslationProvider";
 import { Toaster } from "react-hot-toast";
@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
         suppressHydrationWarning={true}
       >
         <Preloader />
-        <ReactLenis root data-theme="dark">
+        <SmoothScrollProvider>
           <TranslationProvider>{children}</TranslationProvider>
           <Toaster
             position="top-center"
@@ -58,7 +58,7 @@ export default function RootLayout({ children }) {
             }}
           />
           <WhatsAppButton />
-        </ReactLenis>
+        </SmoothScrollProvider>
       </body>
     </html>
   );
